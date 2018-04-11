@@ -1,0 +1,45 @@
+<FrameLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_gravity="bottom"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout android:id="@+id/ll_placeholder_register_step_three"
+        android:layout_marginBottom="@dimen/login_margin_top_bottom"
+        android:layout_gravity="bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/tvEmailSent"
+            style="@style/StyleTextViewLoginScreen"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/text_email_was_send"
+            android:layout_marginBottom="@dimen/margin_top_bottom" />
+
+        <TextView
+            android:id="@+id/tvAcknowledge"
+            android:layout_marginBottom="@dimen/margin_top_bottom"
+            style="@style/StyleTextViewLoginScreen"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/text_must_acknowledge" />
+        <EditText
+            android:id="@+id/edtPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:hint="@string/text_choose_password"
+            android:background="@drawable/metro_ui_edittext_radius"
+            android:drawableRight="@drawable/ic_visible"
+            style="@style/StyleEditTextLoginScreen"
+            android:inputType="textPassword"
+            android:layout_marginBottom="5dp"
+            />
+
+    </LinearLayout>
+
+
+</FrameLayout>

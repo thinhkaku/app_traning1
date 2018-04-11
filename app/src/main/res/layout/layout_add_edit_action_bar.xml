@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/height_actionbar"
+    android:background="@color/mcc_cyan"
+    android:gravity="center_vertical"
+    android:orientation="horizontal">
+
+    <ImageButton
+        android:id="@+id/ibMenu"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:background="@android:color/transparent"
+        android:padding="@dimen/padding_image_menu"
+        android:src="@drawable/btn_right_menu" />
+    <TextView
+        android:id="@+id/tv_cancel"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_vertical|left"
+        android:background="@drawable/bg_action_bar_button"
+        android:drawableLeft="@drawable/ic_comeback"
+        android:drawablePadding="10dp"
+        android:gravity="center|left"
+        android:visibility="gone"
+        android:padding="10dp"
+        android:text="BACK"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/action_bar_text_size" />
+
+    <LinearLayout
+        android:layout_width="0dip"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:gravity="center_vertical|end"
+        >
+
+        <!--<TextView
+            android:id="@+id/tv_action_bar_left"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:background="@drawable/bg_action_bar_button"
+            android:drawableLeft="@drawable/ic_cancel_white"
+            android:drawablePadding="13dp"
+            android:padding="10dp"
+            android:text="CANCEL"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/action_bar_text_size" />-->
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@color/background_white" />
+
+        <TextView
+            android:id="@+id/tv_action_bar_right"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="3dp"
+            android:gravity="center"
+            android:background="@drawable/bg_action_bar_button"
+            android:drawableLeft="@drawable/ic_check_white"
+            android:drawablePadding="13dp"
+            android:padding="10dp"
+            android:text="SAVE"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/action_bar_text_size" />
+    </LinearLayout>
+</LinearLayout>

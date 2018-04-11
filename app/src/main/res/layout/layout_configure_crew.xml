@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/white">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/padding_text_title_route"
+            android:background="@color/grey_toolbar"
+            android:gravity="center"
+            android:text="@string/text_flight_crew"
+            android:textColor="@color/mcc_blue"
+            android:textSize="@dimen/size_text_title_flight_add"
+            android:textStyle="bold"
+            android:typeface="sans"
+            android:layout_gravity="center_vertical"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_title_crew"
+            android:background="@android:color/white"
+            android:paddingLeft="@dimen/padding_icon_title_route"
+            android:paddingRight="@dimen/padding_icon_title_route"
+            android:layout_marginLeft="@dimen/margin_icon_title_route"/>
+
+    </FrameLayout>
+
+    <aero.pilotlog.widgets.ItemFlightConfigure
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:configure_title="PIC"
+        android:tag="item_Pilot1"
+        app:is_display_configure_checkbox="true"
+        app:configure_description="Name of the Pilot-in-Command"
+        android:layout_marginTop="5dp"
+        android:id="@+id/item_configure_pilot_1"/>
+
+    <aero.pilotlog.widgets.ItemFlightConfigure
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:configure_title="2nd PILOT"
+        android:tag="item_Pilot2"
+        app:is_display_configure_checkbox="true"
+        app:configure_description="Name of the First Officer"
+        android:id="@+id/item_configure_pilot_2"/>
+
+    <aero.pilotlog.widgets.ItemFlightConfigure
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:configure_title="3rd PILOT"
+        android:tag="item_Pilot3"
+        app:is_display_configure_checkbox="true"
+        app:configure_description="Name of the third pilot (or examiner)"
+        android:id="@+id/item_configure_pilot_3"/>
+
+    <aero.pilotlog.widgets.ItemFlightConfigure
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:configure_title="4th PILOT"
+        android:tag="item_Pilot4"
+        app:is_display_configure_checkbox="true"
+        app:configure_description="Name of the fourth pilot (extra crew)"
+        android:id="@+id/item_configure_pilot_4"/>
+
+    <aero.pilotlog.widgets.ItemFlightConfigure
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:configure_title="CREW LIST"
+        android:tag="item_CrewList"
+        app:is_display_configure_checkbox="true"
+        app:configure_description="Entire Crew List with roles"
+        android:id="@+id/item_configure_crew_list"/>
+
+</LinearLayout>

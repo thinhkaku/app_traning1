@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@color/mcc_red"
+    android:gravity="center_vertical"
+    android:tag="back">
+
+    <Button
+        android:id="@+id/btnDelete"
+        android:layout_width="@dimen/size_width_button_swipe_delete"
+        android:layout_height="wrap_content"
+        android:background="@drawable/btn_delete" />
+
+</LinearLayout>

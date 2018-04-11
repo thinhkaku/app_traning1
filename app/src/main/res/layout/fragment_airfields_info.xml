@@ -1,0 +1,627 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:id="@+id/sv_airfield_info"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/transparent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout android:id="@+id/ln_country"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="50dp"
+                android:orientation="horizontal">
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.9"
+                    android:orientation="horizontal">
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <ImageView
+                        android:id="@+id/iv_flag"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="@dimen/margin_left_right"
+                        android:layout_marginRight="@dimen/margin_left_right" />
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/margin_left_right"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tv_city"
+                        style="@style/ItemSettingFormatTitle2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:maxLines="2" />
+
+                    <TextView
+                        android:id="@+id/tv_country"
+                        style="@style/ItemSettingFormatDescriptionExtra2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:maxLines="1" />
+                </LinearLayout>
+                    </LinearLayout>
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="0.1"
+                    android:src="@drawable/ic_arrow" />
+            </LinearLayout>
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:background="@color/grey_divider" />
+
+            <LinearLayout
+                android:id="@+id/ln_lat_long"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <aero.pilotlog.widgets.ItemInputText
+                    android:id="@+id/item_airfield_latitude"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.45"
+                    app:input_type="8192"
+                    app:isClickEnable="false"
+                    app:isVisibleLineEnd="false"
+                    app:title_setting="LATITUDE" />
+
+                <aero.pilotlog.widgets.ItemInputText
+                    android:id="@+id/item_airfield_longitude"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.45"
+                    app:input_type="8192"
+                    app:isClickEnable="false"
+                    app:isVisibleLineEnd="false"
+                    app:title_setting="LONGITUDE" />
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="0.1"
+                    android:src="@drawable/ic_arrow" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@color/grey_divider" />
+
+            <LinearLayout android:id="@+id/ln_time_zone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <aero.pilotlog.widgets.ItemInputText
+                    android:id="@+id/item_airfield_local_time"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.45"
+                    app:input_type="8192"
+                    app:isClickEnable="false"
+                    app:isVisibleLineEnd="false"
+                    app:title_setting="LOCAL TIME" />
+
+                <aero.pilotlog.widgets.ItemInputText
+                    android:id="@+id/item_airfield_timezone"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.45"
+                    app:input_type="8192"
+                    app:isClickEnable="false"
+                    app:isVisibleLineEnd="false"
+                    app:title_setting="TIME ZONE" />
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="0.1"
+                    android:src="@drawable/ic_arrow" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@color/grey_divider" />
+
+            <LinearLayout android:id="@+id/ln_globe"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <aero.pilotlog.widgets.ItemInputText
+                    android:id="@+id/item_airfield_sunrise"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.45"
+                    app:input_type="8192"
+                    app:isClickEnable="false"
+                    app:isVisibleLineEnd="false"
+                    app:title_setting="SUNRISE" />
+
+                <aero.pilotlog.widgets.ItemInputText
+                    android:id="@+id/item_airfield_sunset"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.45"
+                    app:input_type="8192"
+                    app:isClickEnable="false"
+                    app:isVisibleLineEnd="false"
+                    app:title_setting="SUNSET" />
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="0.1"
+                    android:src="@drawable/ic_arrow" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/event_info_gray"
+                android:paddingBottom="5dp"
+                android:paddingLeft="10dp"
+                android:paddingTop="5dp"
+                android:text="Notes"
+                android:textColor="@color/black"
+                android:layout_marginBottom="@dimen/margin_title_item_menu"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/margin_left_right"
+                android:minHeight="75dp">
+
+                <TextView
+                    android:id="@+id/notes_mcc"
+                    style="@style/ItemSettingFormatFootNode"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/margin_left_right"
+                    android:text="Notes by MCC" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@color/grey_divider" />
+
+            <LinearLayout android:id="@+id/ln_notes_user"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/margin_left_right"
+                android:minHeight="75dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/notes_user"
+                    style="@style/ItemSettingFormatFootNode"
+                    android:textColor="@color/black"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/margin_left_right"
+                    android:layout_marginTop="@dimen/margin_title_item_menu"
+                    android:layout_weight="0.9"
+                    android:hint="Write your own notes here"/>
+
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="0.1"
+                    android:src="@drawable/ic_arrow" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@color/grey_divider" />
+
+            <LinearLayout android:id="@+id/ln_notams"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <aero.pilotlog.widgets.ItemInputTextFootnote
+                    android:id="@+id/item_airfield_notams"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.9"
+                    app:description_setting="@string/notams"
+                    app:input_type="8192"
+                    app:isClickEnable="false"
+                    app:isVisibleLineEnd="false"
+                    app:title_setting="NOTAMS" />
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="0.1"
+                    android:src="@drawable/ic_arrow" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="25dp"
+                android:background="@color/event_info_gray"
+                android:paddingBottom="5dp"
+                android:paddingLeft="10dp"
+                android:paddingTop="5dp"
+                android:text="Weather"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="@dimen/height_layout_weather">
+                <TextView android:id="@+id/tvUnableWeather"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone"
+                    android:text="Unable to load weather"
+                    android:layout_centerInParent="true"
+                    style="@style/ItemSettingFormatDescriptionExtra2"/>
+                <ProgressBar
+                    android:id="@+id/progress"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"/>
+                <LinearLayout
+                    android:id="@+id/llWeather"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:minHeight="@dimen/height_layout_weather"
+                    android:orientation="horizontal">
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_weight="0.3"
+                        android:layout_height="match_parent">
+                        <TextView
+                            android:id="@+id/temp"
+                            android:layout_centerInParent="true"
+                            style="@style/ItemSettingFormatDescriptionExtra2"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="left|center_vertical"
+                            android:layout_width="wrap_content"
+                            android:gravity="left|center_vertical" />
+                    </RelativeLayout>
+
+                    <TextView
+                        android:id="@+id/imgWeather"
+                        android:layout_width="0dp"
+                        android:layout_weight="0.4"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="center" />
+
+                    <TextView
+                        android:id="@+id/txtWeather"
+                        style="@style/ItemSettingFormatDescriptionExtra2"
+                        android:layout_width="0dp"
+                        android:layout_weight="0.3"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="left"
+                        android:text="" />
+                </LinearLayout>
+            </RelativeLayout>
+
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@color/grey_divider" />
+
+            <LinearLayout
+                android:id="@+id/ln_forecast"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <aero.pilotlog.widgets.ItemInputTextFootnote
+                    android:id="@+id/item_airfield_forecast"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.9"
+                    app:description_setting="@string/forecast_info_label"
+                    app:input_type="8192"
+                    app:isClickEnable="false"
+                    app:isVisibleLineEnd="false"
+                    app:title_setting="FORECAST" />
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="0.1"
+                    android:src="@drawable/ic_arrow" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@color/grey_divider" />
+
+            <LinearLayout
+                android:id="@+id/ll_metar_taf"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <aero.pilotlog.widgets.ItemInputTextFootnote
+                    android:id="@+id/item_airfield_metar_taf"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.9"
+                    app:description_setting="@string/metar_label"
+                    app:input_type="8192"
+                    app:isClickEnable="false"
+                    app:isVisibleLineEnd="false"
+                    app:title_setting="METAR - TAF" />
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="0.1"
+                    android:src="@drawable/ic_arrow" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@color/grey_divider" />
+
+            <LinearLayout
+                android:id="@+id/ll_airfield_more_weather"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <aero.pilotlog.widgets.ItemInputTextFootnote
+                    android:id="@+id/item_airfield_more_weather"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.9"
+                    app:description_setting="@string/more_weather_info_label"
+                    app:input_type="8192"
+                    app:isClickEnable="false"
+                    app:isVisibleLineEnd="false"
+                    app:title_setting="MORE WEATHER" />
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="0.1"
+                    android:src="@drawable/ic_arrow" />
+            </LinearLayout>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/event_info_gray"
+                android:paddingBottom="5dp"
+                android:paddingLeft="10dp"
+                android:paddingTop="5dp"
+                android:text="History"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+            <aero.pilotlog.widgets.ItemInputTextWithIcon
+                android:id="@+id/edt_item_airfield_history"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:input_type="8192"
+                app:isClickEnable="false"
+                app:title_setting="LAST FLIGHT" />
+            <LinearLayout
+                android:id="@+id/ln_history"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/margin_left_right"
+                android:layout_marginRight="@dimen/margin_left_right"
+                android:gravity="center_vertical|right"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/ItemSettingFormatTitle2"
+                    android:layout_marginTop="0dp"
+                    android:paddingBottom="0dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/margin_left_right"
+                    android:text="Show full History"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_arrow" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/event_info_gray"
+                android:paddingBottom="5dp"
+                android:paddingLeft="10dp"
+                android:paddingTop="5dp"
+                android:text="Additional Info"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <LinearLayout android:id="@+id/ln_trip_advisor"
+                android:layout_marginLeft="@dimen/margin_left_right"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="0.2"
+                    android:src="@drawable/ic_tripadvisor" />
+
+                <aero.pilotlog.widgets.ItemInputTextFootnote
+                    android:id="@+id/item_airfield_trip_advisor"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.7"
+                    app:description_setting="@string/tripadvisor"
+                    app:input_type="8192"
+                    app:isClickEnable="false"
+                    app:isVisibleLineEnd="false"
+                    app:title_setting="TripAdvisor" />
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="0.1"
+                    android:src="@drawable/ic_arrow" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@color/grey_divider" />
+
+            <LinearLayout
+                android:id="@+id/ln_sky_vector"
+                android:layout_marginLeft="@dimen/margin_left_right"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="0.2"
+                    android:src="@drawable/ic_skyvector" />
+
+                <aero.pilotlog.widgets.ItemInputTextFootnote
+                    android:id="@+id/item_airfield_sky_vector"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.7"
+                    app:description_setting="@string/sky_vector"
+                    app:input_type="8192"
+                    app:isClickEnable="false"
+                    app:isVisibleLineEnd="false"
+                    app:title_setting="SkyVector" />
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="0.1"
+                    android:src="@drawable/ic_arrow" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@color/grey_divider" />
+
+            <LinearLayout android:id="@+id/ln_wiki"
+                android:layout_marginLeft="@dimen/margin_left_right"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="0.2"
+                    android:src="@drawable/ic_wiki" />
+
+                <aero.pilotlog.widgets.ItemInputTextFootnote
+                    android:id="@+id/item_airfield_wiki"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.7"
+                    app:description_setting="@string/wikipedia"
+                    app:input_type="8192"
+                    app:isClickEnable="false"
+                    app:isVisibleLineEnd="false"
+                    app:title_setting="Wikipedia" />
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="0.1"
+                    android:src="@drawable/ic_arrow" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <include layout="@layout/airfield_header_with_image" />
+</RelativeLayout>
+

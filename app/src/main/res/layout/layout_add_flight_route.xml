@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_marginTop="@dimen/margin_top_bottom">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_icon_title_route"
+            android:background="@android:color/white"
+            android:paddingLeft="@dimen/padding_icon_title_route"
+            android:paddingRight="@dimen/padding_icon_title_route"
+            android:src="@drawable/ic_title_route_2" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_marginLeft="@dimen/margin_left2_item_logbook"
+            android:layout_marginRight="@dimen/margin_right_item_logbook"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="ROUTE"
+                android:textColor="@color/mcc_blue"
+                android:textSize="@dimen/size_text_title_duty"
+                android:textStyle="bold"
+                android:typeface="normal" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="@color/mcc_blue" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <aero.pilotlog.widgets.ItemsFlightView
+        android:id="@+id/item_flight_route_date"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_row_witch_title"
+        app:enable_edit_text="false"
+        android:visibility="gone"
+        app:item_type="1"
+        app:title_flight="@string/text_flight_route_date" />
+
+    <aero.pilotlog.widgets.ItemsFlightView
+        android:id="@+id/item_flight_route_aircraft"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:enable_edit_text="true"
+        android:visibility="gone"
+        app:item_type="1"
+        app:hint="@string/tail_number"
+        app:title_flight="@string/text_flight_route_aircraft" />
+
+    <aero.pilotlog.widgets.ItemsFlightView
+        android:id="@+id/item_flight_route_departure"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:enable_edit_text="true"
+        app:item_type="1"
+        app:max_length="4"
+        app:is_all_cap="true"
+        android:visibility="gone"
+        app:hint="@string/icao_iata_hint"
+        app:have_line_border="false"
+        app:title_flight="@string/text_flight_route_departure" />
+
+    <aero.pilotlog.widgets.ItemsFlightView
+        android:id="@+id/item_flight_runway_departure"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:enable_edit_text="true"
+        app:item_type="5"
+        app:max_length="12"
+        app:hint="‒‒‒"
+        app:is_all_cap="true"
+        app:resIdIcon2="@drawable/icon_cross"
+        app:icon_type="2"
+        app:title_flight="RUNWAY" />
+
+    <aero.pilotlog.widgets.ItemsFlightView
+        android:id="@+id/item_flight_route_arrival"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:enable_edit_text="true"
+        app:item_type="1"
+        app:max_length="4"
+        app:is_all_cap="true"
+        android:visibility="gone"
+        app:hint="@string/icao_iata_hint"
+        app:have_line_border="false"
+        app:title_flight="@string/text_flight_route_arrival" />
+
+    <aero.pilotlog.widgets.ItemsFlightView
+        android:id="@+id/item_flight_runway_arrival"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:enable_edit_text="true"
+        app:item_type="5"
+        app:max_length="12"
+        app:is_all_cap="true"
+        app:hint="‒‒‒"
+        app:resIdIcon2="@drawable/icon_cross"
+        app:icon_type="2"
+        app:title_flight="RUNWAY" />
+
+    <aero.pilotlog.widgets.ItemsFlightView
+        android:id="@+id/item_flight_flightno"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:enable_edit_text="true"
+        app:item_type="4"
+        app:max_length="15"
+        app:is_all_cap="true"
+        app:hint="‒‒‒"
+        app:resIdIcon2="@drawable/icon_cross"
+        app:icon_type="2"
+        app:have_line_border="false"
+        app:title_flight="FLIGHT NUMBER" />
+
+    <aero.pilotlog.widgets.ItemsFlightView
+        android:id="@+id/item_flight_pairing"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:enable_edit_text="true"
+        app:item_type="5"
+        app:max_length="15"
+        app:is_all_cap="true"
+        app:hint="‒‒‒"
+        app:resIdIcon2="@drawable/icon_cross"
+        app:icon_type="2"
+        app:have_line_border="false"
+        app:title_flight="PAIRING" />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginRight="@dimen/margin_left_item_logbook"
+        android:layout_marginLeft="@dimen/margin_left_item_logbook"
+        android:background="@color/grey_toolbar" />
+</LinearLayout>

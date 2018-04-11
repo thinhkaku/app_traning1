@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/white">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/padding_text_title_route"
+            android:background="@color/grey_toolbar"
+            android:gravity="center"
+            android:text="@string/text_flight_currencies"
+            android:textColor="@color/mcc_blue"
+            android:textSize="@dimen/size_text_title_flight_add"
+            android:textStyle="bold"
+            android:typeface="sans"
+            android:layout_gravity="center_vertical"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_title_currency"
+            android:background="@android:color/white"
+            android:paddingLeft="@dimen/padding_icon_title_route"
+            android:paddingRight="@dimen/padding_icon_title_route"
+            android:layout_marginLeft="@dimen/margin_icon_title_route"/>
+
+    </FrameLayout>
+
+    <aero.pilotlog.widgets.ItemFlightConfigure
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:configure_title="TASK"
+        android:tag="item_Task"
+        app:is_display_configure_checkbox="true"
+        app:configure_description="Pilot Flying, Pilot Monitoring (Non-Flying)"
+        android:layout_marginTop="5dp"
+        android:id="@+id/item_configure_task"/>
+
+    <aero.pilotlog.widgets.ItemFlightConfigure
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:configure_title="TO DAY"
+        android:tag="item_TOday"
+        app:is_display_configure_checkbox="true"
+        app:configure_description="Number of Takeoffs during Daylight"
+        android:id="@+id/item_configure_today"/>
+
+    <aero.pilotlog.widgets.ItemFlightConfigure
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:configure_title="TO NIGHT"
+        android:tag="item_TOnight"
+        app:is_display_configure_checkbox="true"
+        app:configure_description="Number of Takeoffs during Night"
+        android:id="@+id/item_configure_tonight"/>
+
+    <aero.pilotlog.widgets.ItemFlightConfigure
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:configure_title="LDG DAY"
+        android:tag="item_LDGday"
+        app:is_display_configure_checkbox="true"
+        app:configure_description="Number of Landings during Daylight"
+        android:id="@+id/item_configure_ldg_day"/>
+
+    <aero.pilotlog.widgets.ItemFlightConfigure
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:configure_title="LDG NIGHT"
+        android:tag="item_LDGnight"
+        app:is_display_configure_checkbox="true"
+        app:configure_description="Number of Landings during Night"
+        android:id="@+id/item_configure_ldg_night"/>
+
+   <!-- <net.mcc3si.widgets.ItemFlightConfigure
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:configure_title="AUTOLAND"
+        android:tag="item_Autoland"
+        app:is_display_configure_checkbox="true"
+        app:configure_description="Number of autolands"
+        android:id="@+id/item_configure_autoland"/>-->
+
+    <aero.pilotlog.widgets.ItemFlightConfigure
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:configure_title="LIFTS"
+        android:tag="item_Lifts"
+        app:is_display_configure_checkbox="true"
+        app:configure_description="Number of Lifts (Sling &amp; Winch)"
+        android:id="@+id/item_configure_lift"/>
+
+    <aero.pilotlog.widgets.ItemFlightConfigure
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:configure_title="HOLDING"
+        android:tag="item_Holding"
+        app:is_display_configure_checkbox="true"
+        app:configure_description="Number of turns in the hold"
+        android:id="@+id/item_configure_holding"/>
+    <aero.pilotlog.widgets.ItemFlightConfigure
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:configure_title="PAX"
+        android:tag="item_Pax"
+        app:is_display_configure_checkbox="true"
+        app:configure_description="Number of passengers carried"
+        android:id="@+id/item_configure_pax"/>
+
+    <aero.pilotlog.widgets.ItemFlightConfigure
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:configure_title="USER NUMERIC"
+        android:tag="item_UserNum"
+        app:is_display_configure_checkbox="true"
+        app:configure_description="Setup your own numeric field"
+        android:id="@+id/item_configure_user_numeric"/>
+
+    <aero.pilotlog.widgets.ItemFlightConfigure
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:configure_title="USER TEXT"
+        android:tag="item_UserText"
+        app:is_display_configure_checkbox="true"
+        app:configure_description="Setup your own text field"
+        android:id="@+id/item_configure_user_text"/>
+
+    <aero.pilotlog.widgets.ItemFlightConfigure
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:tag="item_UserBool"
+        app:configure_title="USER BOOLEAN"
+        app:is_display_configure_checkbox="true"
+        app:configure_description="Setup your own Yes-No field"
+        android:id="@+id/item_configure_user_boolean"/>
+
+    <aero.pilotlog.widgets.ItemFlightConfigure
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:configure_title="DE-ICING"
+        android:tag="item_DeIcing"
+        app:is_display_configure_checkbox="true"
+        app:configure_description="Aircraft was de-iced for takeoff"
+        android:id="@+id/item_configure_deicing"/>
+
+    <aero.pilotlog.widgets.ItemFlightConfigure
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:configure_title="FUEL"
+        android:tag="item_Fuel"
+        app:is_display_configure_checkbox="true"
+        app:configure_description="Total Fuel on board (kg or lbs)"
+        android:id="@+id/item_configure_fuel"/>
+    <aero.pilotlog.widgets.ItemFlightConfigure
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:configure_title="FUEL PLANNED"
+        android:tag="item_FuelPlanned"
+        app:is_display_configure_checkbox="true"
+        app:configure_description="Planned Fuel Used (trip + taxi)"
+        android:id="@+id/item_configure_fuel_planned"/>
+    <aero.pilotlog.widgets.ItemFlightConfigure
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:configure_title="FUEL USED"
+        android:tag="item_FuelUsed"
+        app:is_display_configure_checkbox="true"
+        app:configure_description="Fuel Used (insert minus fuel remaining)"
+        android:id="@+id/item_configure_fuel_used"/>
+
+
+
+    <aero.pilotlog.widgets.ItemFlightConfigure
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:configure_title="TYPE OPERATION"
+        android:tag="item_Ops"
+        app:is_display_configure_checkbox="true"
+        app:configure_description="Solo, SPIC, Observer, LowVis, FAR 121..."
+        android:id="@+id/item_configure_type_ops"/>
+
+    <aero.pilotlog.widgets.ItemFlightConfigure
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:configure_title="TYPE APPROACH"
+        android:tag="item_Approach"
+        app:is_display_configure_checkbox="true"
+        app:configure_description="Select Type of Approach"
+        android:id="@+id/item_configure_app_type"/>
+
+    <aero.pilotlog.widgets.ItemFlightConfigure
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:configure_title="GLIDER LAUNCH"
+        android:tag="item_Launch"
+        app:is_display_configure_checkbox="true"
+        app:configure_description="Select Type of Glider Launch"
+        android:id="@+id/item_configure_glider"/>
+
+    <aero.pilotlog.widgets.ItemFlightConfigure
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:configure_title="DELAY"
+        android:tag="item_Delay"
+        app:is_display_configure_checkbox="true"
+        app:configure_description="IATA code(s) for delay"
+        android:id="@+id/item_configure_delay"/>
+
+    <aero.pilotlog.widgets.ItemFlightConfigure
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:configure_title="SIGN BOX"
+        android:tag="item_SignBox"
+        app:is_display_configure_checkbox="true"
+        app:configure_description="Insert the number of the signature box"
+        android:id="@+id/item_configure_sign_box"/>
+
+    <aero.pilotlog.widgets.ItemFlightConfigure
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:configure_title="SIGN PEN"
+        android:tag="item_SignPen"
+        app:is_display_configure_checkbox="true"
+        app:configure_description="Capture signatures with your phone"
+        android:id="@+id/item_configure_sign_pen"/>
+
+</LinearLayout>

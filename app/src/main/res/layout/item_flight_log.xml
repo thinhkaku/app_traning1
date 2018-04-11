@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/white"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/lnFlight"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/margin_left_item_logbook"
+        android:layout_marginBottom="@dimen/margin_bottom_numeric_code"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.85"
+            android:focusableInTouchMode="true"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tvFlightTitle"
+                style="@style/ItemSettingFormatTitle2"
+                android:layout_marginTop="0dp"
+                android:text="@string/text_flight_route_date" />
+
+            <aero.pilotlog.widgets.MccEditText
+                android:id="@+id/edtFlightValue1"
+                style="@style/ItemSettingFormatDescriptionExtra2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_top_route"
+                android:background="@drawable/bg_button_main_normal"
+                android:gravity="start"
+                android:imeOptions="actionDone"
+                android:singleLine="true" />
+
+
+            <TextView
+                android:id="@+id/edtFlightValue2"
+                style="@style/ItemSettingFormatFootNode"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginLeft="@dimen/margin_left_item_logbook"
+                android:layout_marginTop="@dimen/margin_top_route"
+                android:background="@null"
+                android:gravity="left"
+                android:visibility="invisible" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ln_flight_icon_2"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.15"
+            android:background="@drawable/bg_image_view_click"
+            android:gravity="right">
+
+            <ImageView
+                android:id="@+id/ivFlightIcon2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right|center_vertical"
+                android:layout_marginRight="@dimen/margin_left_right"
+                android:src="@drawable/icon_cross" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:id="@+id/viewLineBorderFlight"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="@dimen/margin_left_item_logbook"
+        android:layout_marginRight="@dimen/margin_left_item_logbook"
+        android:background="@color/grey_toolbar" />
+</LinearLayout>

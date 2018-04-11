@@ -1,0 +1,231 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="aero.pilotlog.fragments.SyncFragment"
+    android:paddingLeft="@dimen/margin_left_right"
+    android:paddingRight="@dimen/margin_left_right"
+    android:paddingBottom="70dp"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/margin_left_right"
+        android:gravity="center"
+        android:orientation="horizontal">
+        <TextView
+            android:gravity="left"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="LAST SYNC"
+            android:layout_weight="0.3"
+            style="@style/StyleTextTitle"/>
+        <TextView
+            android:layout_weight="0.7"
+            android:gravity="right"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="10 Sept 2017  03:24:25"
+            style="@style/StyleTextDescription"/>
+
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/grey_divider"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:padding="@dimen/margin_left_right"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
+        <TextView
+            android:gravity="left"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="USERNAME"
+            android:layout_weight="0.3"
+            style="@style/StyleTextTitle"/>
+        <TextView
+            android:layout_weight="0.7"
+            android:gravity="right"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="dodangphuc"
+            style="@style/StyleTextDescription"/>
+
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/grey_divider"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="@dimen/margin_left_right"
+        android:orientation="horizontal">
+        <TextView
+            android:gravity="left"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="NETWORK"
+            android:layout_weight="0.3"
+            style="@style/StyleTextTitle"/>
+        <TextView
+            android:layout_weight="0.7"
+            android:gravity="right"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Wifi"
+            style="@style/StyleTextDescription"/>
+
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/grey_divider"/>
+
+
+
+    <LinearLayout
+        android:id="@+id/layout_log"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <net.cachapa.expandablelayout.ExpandableLayout
+            android:id="@+id/expandable_layout"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            app:el_duration="600"
+            app:el_expanded="false"
+            app:el_parallax="0.5">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:paddingLeft="@dimen/margin_left_right"
+                android:paddingRight="@dimen/margin_left_right"
+                android:paddingTop="@dimen/margin_left_right"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:paddingBottom="0dp"
+                android:orientation="horizontal">
+                <TextView
+                    android:gravity="left"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="STATUS"
+                    android:layout_weight="0.3"
+                    style="@style/StyleTextTitle"/>
+                <ProgressBar
+                    android:progressBackgroundTint="@color/mcc_cyan"
+                    android:layout_gravity="center"
+                    android:id="@+id/progressBar"
+                    android:layout_marginLeft="@dimen/margin_left_right"
+                    style="@android:style/Widget.Holo.Light.ProgressBar.Horizontal"
+                    android:layout_width="0dp"
+                    android:layout_weight="0.55"
+                    android:layout_height="match_parent" />
+                <TextView android:id="@+id/tvPercentProgress"
+                    android:layout_weight="0.15"
+                    android:gravity="right"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="0%"
+                    style="@style/StyleTextDescription"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:paddingLeft="@dimen/margin_left_right"
+                android:paddingRight="@dimen/margin_left_right"
+                android:paddingBottom="@dimen/margin_left_right"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal">
+                <TextView
+                    android:gravity="left"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="STATUS"
+                    android:visibility="invisible"
+                    android:layout_weight="0.3"
+                    style="@style/StyleTextTitle"/>
+
+                <TextView android:id="@+id/tvProgress"
+                    android:layout_weight="0.7"
+                    android:gravity="left"
+                    android:layout_width="0dp"
+                    android:layout_marginLeft="@dimen/margin_left_right"
+                    android:layout_height="wrap_content"
+                    android:text="Download Flight"
+                    style="@style/StyleTextDescription"/>
+
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/grey_divider"/>
+            <LinearLayout
+                android:padding="@dimen/margin_left_right"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+                <TextView
+                    android:gravity="left"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="SYNC LOG"
+                    style="@style/StyleTextTitle"/>
+            <ScrollView android:id="@+id/scrollView_log"
+                android:layout_width="match_parent"
+                android:paddingLeft="@dimen/margin_left_right"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView android:id="@+id/tvSyncLog"
+                    android:gravity="left"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    style="@style/StyleTextFootnote"/>
+
+            </ScrollView>
+
+            </LinearLayout>
+            </LinearLayout>
+        </net.cachapa.expandablelayout.ExpandableLayout>
+        <LinearLayout android:id="@+id/ll_sync"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <!--<View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/grey_divider"/>-->
+
+            <Button
+                android:layout_marginTop="@dimen/margin_left_right"
+                android:id="@+id/bntSync"
+                style="@style/Widget.AppCompat.Button.Colored"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="Sync now" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+
+
+</LinearLayout>

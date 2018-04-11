@@ -1,0 +1,238 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_white"
+    tools:context="aero.pilotlog.fragments.SettingGeneralFragment">
+
+    <ScrollView
+        android:id="@+id/scrollView3"
+        android:visibility="invisible"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/event_info_gray"
+                android:paddingBottom="5dp"
+                android:paddingLeft="10dp"
+                android:paddingTop="5dp"
+                android:text="Flight Logging"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <aero.pilotlog.widgets.ItemInputTextWithIcon
+                android:id="@+id/item_home_base"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:input_type="4096"
+                app:maxLength="3"
+                app:tag_setting="HomeBase"
+                app:title_setting="HOME BASE" />
+
+            <aero.pilotlog.widgets.ItemSwitch
+                android:id="@+id/item_suggest_home_base_airfield"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:tag_setting="DepArrField"
+                app:title_setting="SUGGEST HOME BASE" />
+
+            <aero.pilotlog.widgets.ItemInputTextWithIcon
+                android:id="@+id/item_auto_load_task"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:input_type="4096"
+                app:maxLength="3"
+                app:tag_setting="mode_TaskPF"
+                app:title_setting="AUTO LOAD TASK" />
+
+            <aero.pilotlog.widgets.ItemSwitch
+                android:id="@+id/item_auto_load_xc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:tag_setting="mode_AutoXC"
+                app:title_setting="AUTO LOAD CROSS-COUNTRY" />
+
+            <aero.pilotlog.widgets.ItemSwitchAutoLoad
+                android:id="@+id/item_auto_load_ins"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:text_checkbox="Only when PF"
+                app:tag_setting="mode_ActualPercentage"
+                app:title_setting="AUTO LOAD ACTUAL INSTRUMENT" />
+
+            <aero.pilotlog.widgets.ItemSwitchAutoLoad
+                android:id="@+id/item_auto_load_relief"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:text_checkbox="Deduct Relief time from my Total Time"
+                app:tag_setting="mode_ReliefPercentage"
+                app:tag_setting2="mode_DeductRelief"
+                app:title_setting="AUTO LOAD PILOT RELIEF" />
+
+            <aero.pilotlog.widgets.ItemSwitch
+                android:id="@+id/item_auto_load_remind_pilot"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:isVisibleLineEnd="false"
+                app:tag_setting="RemindPilot"
+                app:title_setting="MONITOR PILOT PHONE / E-MAIL" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/event_info_gray"
+                android:paddingBottom="5dp"
+                android:paddingLeft="10dp"
+                android:paddingTop="5dp"
+                android:text="Night Time"
+                android:textColor="@color/black"
+                android:layout_marginTop="@dimen/margin_left_right"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+            <aero.pilotlog.widgets.ItemInputTextWithIcon
+                android:id="@+id/item_night_mode"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:input_type="4096"
+                app:tag_setting="NightMode"
+                app:title_setting="AUTO CALCULATE NIGHT TIME" />
+            <aero.pilotlog.widgets.ItemInputText
+                android:visibility="gone"
+                android:layout_marginLeft="@dimen/margin_left_input"
+                android:id="@+id/item_night_ss_sr"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:tag_setting="NightTimeSR"
+                app:title_setting="NIGHT SR+/SS-" />
+            <aero.pilotlog.widgets.ItemInputText
+                android:visibility="gone"
+                android:layout_marginLeft="@dimen/margin_left_input"
+                android:id="@+id/item_night_from"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:tag_setting="NightTimeFrom"
+                app:title_setting="NIGHT FROM" />
+            <aero.pilotlog.widgets.ItemInputText
+                android:visibility="gone"
+                android:layout_marginLeft="@dimen/margin_left_input"
+                android:id="@+id/item_night_to"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:tag_setting="NightTimeUntil"
+                app:title_setting="NIGHT TO" />
+            <View android:layout_marginTop="@dimen/margin_left_right"
+                android:visibility="gone"
+                android:id="@+id/item_night_mode_do_not_suggest_ldg_line_top"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginRight="@dimen/margin_left_right"
+                android:layout_marginLeft="@dimen/margin_left_right"
+                android:background="@color/grey_divider"/>
+
+            <aero.pilotlog.widgets.ItemSwitch
+                android:id="@+id/item_night_mode_do_not_suggest_ldg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:tag_setting="NightMode"
+                android:visibility="gone"
+                app:title_setting="DO NOT SUGGEST TO-LDG DAY-NIGHT" />
+
+            <aero.pilotlog.widgets.ItemSwitch
+                android:id="@+id/item_night_task"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:isVisibleLineEnd="false"
+                app:tag_setting="mode_NightTask"
+                app:title_setting="DO NOT LINK TO-LDG WITH THE TASK PF/PM" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/event_info_gray"
+                android:paddingBottom="5dp"
+                android:paddingLeft="10dp"
+                android:paddingTop="5dp"
+                android:text="Fuel"
+                android:layout_marginTop="@dimen/margin_left_right"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <aero.pilotlog.widgets.MccSwitch
+                android:id="@+id/item_fuel_unit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:title="FUEL"
+                app:description_left="kg"
+                app:description_right="lbs"
+                app:foot_note_left="Kilograms"
+                app:foot_note_right="Pounds"
+                app:text_left="kg"
+                app:text_right="lbs"
+                app:setting_code="141"/>
+
+            <aero.pilotlog.widgets.ItemSwitch
+                android:id="@+id/item_fuel_entries"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:tag_setting="MonitorFuelEntries"
+                app:title_setting="MONITOR FUEL ENTRIES" />
+
+            <aero.pilotlog.widgets.ItemSwitchAutoLoad
+                android:id="@+id/item_fuel_co"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:tag_setting="FuelCO"
+                app:title_setting="CO2 level"
+                app:isVisibleLineEnd="false"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/event_info_gray"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:paddingLeft="10dp"
+                android:textColor="@color/black"
+                android:text="Running 2 logbooks"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+            <aero.pilotlog.widgets.ItemSwitch
+                android:id="@+id/item_run_2_logbooks"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:title_setting="RUN 2 LOGBOOKS" />
+
+        </LinearLayout>
+    </ScrollView>
+    <LinearLayout
+        android:id="@+id/llLoading"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:visibility="visible">
+
+        <ProgressBar
+            android:indeterminate="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/loading"
+            android:layout_marginLeft="@dimen/margin_text_loading"
+            />
+    </LinearLayout>
+</RelativeLayout>

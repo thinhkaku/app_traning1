@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/margin_left_right"
+        android:paddingTop="@dimen/margin_top_bottom"
+        android:paddingBottom="@dimen/margin_top_bottom"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tvTitle1"
+            style="@style/ItemSettingFormatTitle2"
+            android:layout_marginTop="0dp"
+            android:paddingBottom="0dp"
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1" />
+
+        <TextView
+            android:id="@+id/tvValue1"
+            style="@style/ItemSettingFormatDescriptionExtra2"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginRight="@dimen/margin_left_numeric_code"
+            android:gravity="right|center_vertical" />
+
+    </LinearLayout>
+
+    <View
+        android:id="@+id/viewLineTotals"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@color/right_menu_divider_color" />
+
+   <!-- <LinearLayout android:id="@+id/ln_total_row2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/margin_top_item_totals"
+        android:layout_marginTop="@dimen/margin_top_item_totals"
+        android:layout_marginLeft="@dimen/margin_left_right"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tvTitle2"
+            style="@style/ItemSettingFormatTitle2"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text=""
+            android:typeface="sans" />
+
+        <TextView
+            android:id="@+id/tvValue2"
+            style="@style/ItemSettingFormatDescriptionExtra2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/margin_left_numeric_code"
+            android:gravity="right"
+            android:text=""
+            android:textStyle="bold"
+            android:typeface="sans" />
+
+    </LinearLayout>
+    &lt;!&ndash;JIRA PL-813&ndash;&gt;
+
+    <View
+        android:id="@+id/v_viewTotalItem3"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@color/grey_divider" />
+
+    <LinearLayout
+        android:id="@+id/ln_total_row3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/margin_left_right"
+        android:layout_marginBottom="@dimen/margin_top_item_totals"
+        android:layout_marginTop="@dimen/margin_top_item_totals"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tvTitle3"
+            style="@style/ItemSettingFormatTitle2"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text=""
+            android:typeface="sans" />
+
+        <TextView
+            android:id="@+id/tvValue3"
+            style="@style/ItemSettingFormatDescriptionExtra2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/margin_left_numeric_code"
+            android:gravity="right"
+            android:text=""
+            android:textStyle="bold"
+            android:typeface="sans" />
+
+    </LinearLayout>
+    &lt;!&ndash;End JIRA PL-813&ndash;&gt;
+    <View
+        android:id="@+id/viewLineTotals"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@color/grey_divider" />-->
+</LinearLayout>

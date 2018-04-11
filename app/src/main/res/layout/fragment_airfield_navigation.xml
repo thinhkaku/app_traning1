@@ -1,0 +1,361 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <include layout="@layout/title_bar_layout" />
+
+            <!--   <RelativeLayout
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:orientation="horizontal"
+                   android:padding="@dimen/padding_bottom">-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:padding="@dimen/margin_left_right">
+
+                <TextView
+                    style="@style/StyleTextTitle"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="top"
+                    android:layout_weight="0.3"
+                    android:text="FROM"
+                    android:textColor="@color/mcc_cyan" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.7"
+                    android:focusableInTouchMode="true"
+                    android:gravity="end"
+                    android:orientation="vertical">
+
+                    <aero.pilotlog.widgets.MccEditText
+                        android:id="@+id/edt_airfield_from"
+                        style="@style/StyleTextDescription"
+                        android:layout_width="@dimen/airfield_navigation_input_width"
+                        android:layout_height="wrap_content"
+                        android:background="@color/edit_text_bg"
+                        android:gravity="center"
+                        android:imeOptions="actionDone"
+                        android:inputType="textCapCharacters|textNoSuggestions"
+                        android:maxLength="4" />
+
+
+                    <TextView
+                        android:id="@+id/tv_airfield_from_name"
+                        style="@style/StyleTextTitle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/mcc_cyan" />
+
+                    <TextView
+                        android:id="@+id/tv_airfield_from_country"
+                        style="@style/StyleTextFootnote"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/grey_footer_text" />
+                </LinearLayout>
+
+                <LinearLayout android:id="@+id/iv_search_airfield_from"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.1"
+                    android:gravity="center|right">
+
+                    <ImageView
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:src="@drawable/ic_arrow" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <!--</RelativeLayout>-->
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/grey_divider" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:padding="@dimen/margin_left_right">
+
+                <TextView
+                    style="@style/StyleTextTitle"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="top"
+                    android:layout_weight="0.3"
+                    android:text="TO"
+                    android:textColor="@color/mcc_cyan" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.7"
+                    android:focusableInTouchMode="true"
+                    android:gravity="end"
+                    android:orientation="vertical">
+
+                    <aero.pilotlog.widgets.MccEditText
+                        android:id="@+id/edt_airfield_to"
+                        style="@style/StyleTextDescription"
+                        android:layout_width="@dimen/airfield_navigation_input_width"
+                        android:layout_height="wrap_content"
+                        android:background="@color/edit_text_bg"
+                        android:gravity="center"
+                        android:imeOptions="actionDone"
+                        android:inputType="textCapCharacters|textNoSuggestions"
+                        android:maxLength="4" />
+
+
+                    <TextView
+                        android:id="@+id/tv_airfield_to_name"
+                        style="@style/StyleTextTitle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/mcc_cyan" />
+
+                    <TextView
+                        android:id="@+id/tv_airfield_to_country"
+                        style="@style/StyleTextFootnote"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/grey_footer_text" />
+                </LinearLayout>
+
+                <LinearLayout  android:id="@+id/iv_search_airfield_to"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.1"
+                    android:gravity="center|right">
+
+                    <ImageView
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:src="@drawable/ic_arrow" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/grey_divider" />
+
+            <LinearLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="@dimen/margin_left_right">
+
+                <TextView
+                    style="@style/StyleTextTitle"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:text="GREAT CIRCLE"
+                    android:textColor="@color/mcc_cyan" />
+
+                <LinearLayout
+                    android:layout_gravity="right"
+                    android:gravity="right"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.4"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tv_great_circle_kilometers"
+                        style="@style/StyleTextFootnote"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:id="@+id/tv_great_circle_statute_mile"
+                        style="@style/StyleTextFootnote"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:id="@+id/tv_great_circle_miles"
+                        style="@style/StyleTextFootnote"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.1" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/grey_divider" />
+
+            <LinearLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="@dimen/margin_left_right">
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:orientation="vertical">
+                    <TextView
+                        style="@style/StyleTextTitle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.5"
+                        android:text="RHUMB LINE"
+                        android:textColor="@color/mcc_cyan" />
+                    <TextView
+                        android:id="@+id/tv_rhumb_line_track"
+                        style="@style/StyleTextFootnote"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_gravity="right"
+                    android:gravity="right"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.4"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tv_rhumb_line_kilometers"
+                        style="@style/StyleTextFootnote"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:id="@+id/tv_rhmb_statute_mile"
+                        style="@style/StyleTextFootnote"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:id="@+id/tv_rhumb_line_miles"
+                        style="@style/StyleTextFootnote"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.1" />
+
+            </LinearLayout>
+       <!--     <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingBottom="@dimen/about_padding_bottom"
+                android:paddingLeft="@dimen/padding_left_right_top"
+                android:paddingRight="@dimen/padding_left_right_top"
+                android:paddingTop="@dimen/about_padding_bottom">
+
+                <TextView
+                    style="@style/StyleTextTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="RHUMB LINE"
+                    android:textColor="@color/mcc_cyan" />
+
+                <TextView
+                    android:id="@+id/tv_rhumb_line_kilometers"
+                    style="@style/StyleTextFootnote"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="@dimen/padding_bottom"
+                    android:paddingRight="@dimen/padding_bottom" />
+
+                <TextView
+                    android:id="@+id/tv_rhumb_line_miles"
+                    style="@style/StyleTextFootnote"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="@dimen/padding_bottom"
+                    android:paddingRight="@dimen/padding_bottom" />
+
+                <TextView
+                    android:id="@+id/tv_rhumb_line_track"
+                    style="@style/StyleTextFootnote"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="@dimen/padding_bottom"
+                    android:paddingRight="@dimen/padding_bottom" />
+            </LinearLayout>
+-->
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/grey_divider" />
+
+
+            <!--<LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingLeft="@dimen/padding_left_right_top"
+                android:paddingRight="@dimen/padding_left_right_top"
+                android:paddingTop="@dimen/about_padding_bottom"
+                android:paddingBottom="@dimen/about_padding_bottom">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="RHUMB LINE"
+                    android:textColor="@color/mcc_cyan"
+                    android:textSize="@dimen/add_airfield_title_size" />
+
+                <TextView
+                    android:id="@+id/tv_rhumb_line_track"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="@dimen/padding_bottom"
+                    android:paddingRight="@dimen/padding_bottom"
+                    android:textSize="@dimen/airfield_info_text_size" />
+
+            </LinearLayout>-->
+
+
+        </LinearLayout>
+
+    </ScrollView>
+</LinearLayout>

@@ -1,0 +1,125 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/sv_duty_add"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:isScrollContainer="false"
+    android:background="@color/background_white"
+    tools:context="aero.pilotlog.fragments.DutyAddFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/background_white"
+        android:focusableInTouchMode="true"
+        android:orientation="vertical">
+
+        <include layout="@layout/title_bar_layout" />
+
+        <aero.pilotlog.widgets.ItemsFlightView
+            android:id="@+id/item_duty_date"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:enable_edit_text="false"
+            app:item_type="1"
+            app:title_flight="@string/text_flight_route_date" />
+
+        <aero.pilotlog.widgets.ItemsFlightView
+            android:id="@+id/item_duty_check_in"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:enable_edit_text="true"
+            app:flight_type="2"
+            app:hint="@string/hours_hint"
+            app:icon_type="2"
+            app:is_numeric="true"
+            app:item_type="2"
+            app:max_length="5"
+            app:resIdIcon2="@drawable/icon_cross"
+            app:title_flight="@string/text_duty_hours_check_in" />
+        <aero.pilotlog.widgets.ItemsFlightView
+            android:id="@+id/item_time_zone_in"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:enable_edit_text="true"
+            app:item_type="6"
+            app:flight_type="2"
+            app:is_numeric="true"
+            app:icon_type="0"
+            android:visibility="gone"
+            app:title_flight="@string/text_time_zone" />
+
+        <aero.pilotlog.widgets.ItemsFlightView
+            android:id="@+id/item_duty_check_out"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:enable_edit_text="true"
+            app:flight_type="2"
+            app:hint="@string/hours_hint"
+            app:icon_type="2"
+            app:is_numeric="true"
+            app:item_type="2"
+            app:max_length="5"
+            app:resIdIcon2="@drawable/icon_cross"
+            app:title_flight="@string/text_duty_hours_check_out" />
+        <aero.pilotlog.widgets.ItemsFlightView
+            android:id="@+id/item_time_zone_out"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:enable_edit_text="true"
+            app:item_type="6"
+            app:flight_type="2"
+            app:is_numeric="true"
+            app:icon_type="0"
+            android:visibility="gone"
+            app:title_flight="@string/text_time_zone" />
+
+        <aero.pilotlog.widgets.ItemsFlightView
+            android:id="@+id/item_duty_duration"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:enable_edit_text="true"
+            app:flight_type="2"
+            app:icon_type="2"
+            app:is_numeric="true"
+            app:item_type="2"
+            app:max_length="5"
+            app:resIdIcon2="@drawable/icon_cross"
+            app:title_flight="@string/text_duty_hours_duration" />
+
+        <aero.pilotlog.widgets.ItemsFlightView
+            android:id="@+id/item_type_of_event"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:enable_edit_text="true"
+            app:flight_log_no_icon="false"
+            app:flight_type="5"
+            app:icon_type="3"
+            app:max_length="1024"
+            app:title_flight="@string/text_duty_type_event" />
+
+        <aero.pilotlog.widgets.ItemsFlightView
+            android:id="@+id/item_description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:enable_edit_text="true"
+            app:flight_log_no_icon="false"
+            app:flight_type="5"
+            app:icon_type="3"
+            app:max_length="254"
+            app:title_flight="@string/duty_description" />
+
+        <aero.pilotlog.widgets.ItemsFlightView
+            android:id="@+id/item_notes"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:enable_edit_text="true"
+            app:flight_log_no_icon="false"
+            app:flight_type="5"
+            app:icon_type="3"
+            app:max_length="1024"
+            app:title_flight="@string/text_duty_notes" />
+    </LinearLayout>
+</ScrollView>

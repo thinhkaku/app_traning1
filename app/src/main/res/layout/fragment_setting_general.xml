@@ -1,0 +1,156 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_white"
+    tools:context="aero.pilotlog.fragments.SettingGeneralFragment">
+    <ScrollView
+        android:id="@+id/scrollView3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="invisible"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/event_info_gray"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:paddingLeft="10dp"
+                android:textColor="@color/black"
+                android:text="Application"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <aero.pilotlog.widgets.MccSwitch
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:title="LOG DATES IN"
+                app:description_left="UTC"
+                app:description_center="Local"
+                app:description_right="Base"
+                app:foot_note_left="UTC - GMT - Zulu date"
+                app:foot_note_center="Local Date at each Airfield"
+                app:foot_note_right="Local Date at the Home Base"
+                app:text_left="UTC"
+                app:text_center="Local"
+                app:text_right="Base"
+                app:setting_code="309"/>
+
+            <aero.pilotlog.widgets.MccSwitch
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:title="LOG TIMES IN"
+                app:description_left="UTC"
+                app:description_center="Local"
+                app:description_right="Base"
+                app:foot_note_left="UTC - GMT - Zulu time"
+                app:foot_note_center="Local Time at each Airfield"
+                app:foot_note_right="Local Time at the Home Base"
+                app:text_left="UTC"
+                app:text_center="Local"
+                app:text_right="Base"
+                app:setting_code="308"/>
+
+            <aero.pilotlog.widgets.MccSwitch
+                android:id="@+id/item_log_decimal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:title="LOG HOURS IN"
+                app:description_left="H:mm"
+                app:description_right="H.h"
+                app:foot_note_left="Hours - Minutes"
+                app:foot_note_right="Decimal Hours"
+                app:text_left="H:mm"
+                app:text_right="H.h"
+                app:setting_code="50"/>
+            <aero.pilotlog.widgets.MccSwitch
+                android:id="@+id/item_log_accuracy"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:title="SAVE HOURS"
+                app:description_left="Precise"
+                app:description_right="Rounded"
+                app:text_left="Precise"
+                app:text_right="Rounded"
+                app:foot_note_left="Highest Accuracy (1 minute)"
+                app:setting_code="500"/>
+            <aero.pilotlog.widgets.MccSwitch
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:title="@string/airfield_identifier"
+                app:foot_note_left="Preferred airfield code for entry and display"
+                app:foot_note_right="Preferred airfield code for entry and display"
+                app:description_left="ICAO"
+                app:description_right="IATA"
+                app:text_left="ICAO"
+                app:text_right="IATA"
+                app:setting_code="8"/>
+
+            <aero.pilotlog.widgets.ItemInputText
+                android:id="@+id/item_company_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:input_type="8192"
+                app:maxLength="30"
+                app:tag_setting="AirlineOperator"
+                app:title_setting="@string/company_name" />
+
+            <aero.pilotlog.widgets.ItemInputText
+                android:id="@+id/item_flight_prefix"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:input_type="4096"
+                app:maxLength="3"
+                app:tag_setting="FlightPrefix"
+                app:title_setting="@string/flight_prefix" />
+
+            <aero.pilotlog.widgets.ItemInputTextWithIcon
+                android:id="@+id/item_default_currency"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:input_type="4096"
+                app:maxLength="3"
+                app:tag_setting="DefaultCurrency"
+                app:title_setting="DEFAULT CURRENCY" />
+
+            <aero.pilotlog.widgets.ItemInputTextWithIcon
+                android:id="@+id/item_landing_page"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:input_type="4096"
+                app:maxLength="3"
+                app:tag_setting="LandingPage"
+                app:title_setting="LANDING PAGE" />
+
+
+        </LinearLayout>
+    </ScrollView>
+    <LinearLayout
+        android:id="@+id/llLoading"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:visibility="visible">
+
+        <ProgressBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/loading"
+            android:layout_marginLeft="@dimen/margin_text_loading"
+            />
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="login_padding_left_right">35dp</dimen>
+    <dimen name="logo_login_size">80dp</dimen>
+    <dimen name="login_padding_top_bottom_edittext">13dp</dimen>
+
+
+    <!--Menu-->
+    <dimen name="sliding_menu_offset">50dp</dimen>
+    <dimen name="text_size_settings">15sp</dimen>
+    <dimen name="text_size_description">13sp</dimen>
+
+    <!--Help-->
+    <dimen name="text_size_title_help">15sp</dimen>
+    <dimen name="margin_help">6dp</dimen>
+    <dimen name="margin_title_help">10dp</dimen>
+    <!--Setting-->
+
+    <dimen name="size_text_title_settings">15sp</dimen>
+    <dimen name="profile_image_size">60dp</dimen>
+    <dimen name="pilot_image_size">135dp</dimen>
+    <dimen name="pilot_height_sub_header_size">110dp</dimen>
+    <dimen name="margin_right_profile_image">8dp</dimen>
+    <dimen name="margin_top_profile_image">15dp</dimen>
+
+    <dimen name="size_text_route_small">15sp</dimen>
+    <dimen name="size_text_title_sub_route">15sp</dimen>
+
+    <dimen name="margin_bottom_title_dialog">18dp</dimen>
+    <dimen name="padding_top_bottom_title_dialog">15dp</dimen>
+    <dimen name="text_size_title_dialog">19sp</dimen>
+    <dimen name="padding_top_bottom_title_dialog_text">10dp</dimen>
+    <dimen name="size_image_info_empty">115dp</dimen>
+    <dimen name="padding_icon_watermark">8dp</dimen>
+    <dimen name="size_width_image_item_sign">180dp</dimen>
+    <dimen name="size_height_image_item_sign">90dp</dimen>
+</resources>

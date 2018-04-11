@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/white">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/padding_text_title_route"
+            android:background="@color/grey_toolbar"
+            android:gravity="center"
+            android:text="@string/text_flight_route"
+            android:textColor="@color/mcc_blue"
+            android:textSize="@dimen/size_text_title_flight_add"
+            android:textStyle="bold"
+            android:typeface="sans"
+            android:layout_gravity="center_vertical"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_title_route"
+            android:background="@android:color/white"
+            android:paddingLeft="@dimen/padding_icon_title_route"
+            android:paddingRight="@dimen/padding_icon_title_route"
+            android:layout_marginLeft="@dimen/margin_icon_title_route"/>
+
+    </FrameLayout>
+
+    <aero.pilotlog.widgets.ItemFlightConfigure
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:configure_title="DATE"
+        app:is_display_configure_checkbox="true"
+        app:configure_description="Date of Flight, either UTC or Local"
+        android:layout_marginTop="5dp"
+        android:id="@+id/item_configure_date"
+        />
+
+    <aero.pilotlog.widgets.ItemFlightConfigure
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:configure_title="AIRCRAFT"
+        app:is_display_configure_checkbox="true"
+        app:configure_description="Aircraft registration, such as N234PB"
+        android:id="@+id/item_configure_aircraft"/>
+
+    <aero.pilotlog.widgets.ItemFlightConfigure
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:configure_title="DEPARTURE"
+        app:is_display_configure_checkbox="true"
+        app:configure_description="ICAO or IATA code for departure airfield"
+        android:id="@+id/item_configure_departure_airfield"/>
+
+    <aero.pilotlog.widgets.ItemFlightConfigure
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:configure_title="DEPARTURE RUNWAY"
+        android:tag="item_DepRwy"
+        app:is_display_configure_checkbox="true"
+        app:configure_description="Runway designator for departure airfield"
+        android:id="@+id/item_configure_departure_airfield_runway"/>
+
+    <aero.pilotlog.widgets.ItemFlightConfigure
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:configure_title="ARRIVAL"
+        app:is_display_configure_checkbox="true"
+        app:configure_description="ICAO or IATA code for arrival airfield"
+        android:id="@+id/item_configure_arrival_airfield"/>
+
+    <aero.pilotlog.widgets.ItemFlightConfigure
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:configure_title="ARRIVAL RUNWAY"
+        android:tag="item_ArrRwy"
+        app:is_display_configure_checkbox="true"
+        app:configure_description="Runway designator for arrival airfield"
+        android:id="@+id/item_configure_arrival_airfield_runway"/>
+
+    <aero.pilotlog.widgets.ItemFlightConfigure
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:configure_title="FLIGHT NUMBER"
+        app:is_display_configure_checkbox="true"
+        android:tag="item_FlightNumber"
+        app:configure_description="Flight Number, such as EK550"
+        android:id="@+id/item_configure_flight_number"/>
+
+    <aero.pilotlog.widgets.ItemFlightConfigure
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:configure_title="PAIRING"
+        app:is_display_configure_checkbox="true"
+        android:tag="item_Pairing"
+        app:configure_description="Sequence of planned flights"
+        android:id="@+id/item_configure_pairing"/>
+
+</LinearLayout>

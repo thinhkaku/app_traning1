@@ -1,0 +1,323 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_white"
+    android:orientation="vertical"
+    tools:context="aero.pilotlog.fragments.UserAccountFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/event_info_gray"
+            android:paddingBottom="5dp"
+            android:paddingLeft="10dp"
+            android:text="My Account Id"
+            android:textColor="@color/black"
+            android:textSize="17sp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginBottom="@dimen/margin_help"
+            android:background="@drawable/list_selector"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_left_right"
+                android:layout_marginRight="@dimen/margin_left_right"
+                android:layout_weight="0.9"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tvAccountId"
+                    android:layout_marginTop="3dp"
+                    style="@style/ItemSettingFormatTitle2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Jame.brown@gmail.com"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                <TextView
+                    android:id="@+id/tvUserAccountEmail"
+                    style="@style/ItemSettingFormatFootNode"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="-4dp"
+                    android:textStyle="italic"
+                    android:text="Non-Verified User"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                <TextView
+                    android:id="@+id/tvDescriptionAccount"
+                    style="@style/ItemSettingFormatFootNode"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="3dp"
+                    android:text="You become a Verified User after a successful login to your airline company web portal" />
+
+
+            </LinearLayout>
+
+           <!-- <ImageView
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="0.12"
+                android:src="@drawable/ic_item_facebook" />-->
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/event_info_gray"
+            android:paddingBottom="5dp"
+            android:paddingLeft="10dp"
+            android:text="Change Password"
+            android:textColor="@color/black"
+            android:textSize="17sp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:id="@+id/layoutChangePassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_left_right"
+            android:layout_marginRight="@dimen/margin_left_right"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginBottom="@dimen/margin_help"
+                android:background="@drawable/list_selector"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/ItemSettingFormatFootNode"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="3dp"
+                    android:layout_weight="0.9"
+                    android:text="To change password of your user account.\nNot the password for your airline roster !" />
+
+                <ImageView
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="0.05"
+                    android:src="@drawable/ic_arrow" />
+            </LinearLayout>
+
+            <net.cachapa.expandablelayout.ExpandableLayout
+                android:id="@+id/expandable_layout"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                app:el_duration="600"
+                app:el_expanded="false"
+                app:el_parallax="0.5">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/margin_left_right"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            style="@style/ItemSettingFormatDescriptionExtra2"
+                            android:layout_width="0dp"
+                            android:layout_gravity="center_vertical"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.4"
+                            android:text="Old password" />
+
+                        <aero.pilotlog.widgets.MccEditText
+                            android:id="@+id/edtOldPassword"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="right"
+                            android:layout_marginLeft="@dimen/margin_left_right"
+                            android:layout_weight="0.6"
+                            android:background="@color/edit_text_bg"
+                            android:imeOptions="actionNext"
+                            android:inputType="textPassword"
+                            android:maxLength="50"
+                            android:padding="5dp"
+                            android:singleLine="true"
+                            android:textColor="@android:color/black"
+                            android:textColorHint="@color/grey_toolbar"
+                            android:textSize="@dimen/input_title_text_size" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/margin_left_right"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            style="@style/ItemSettingFormatDescriptionExtra2"
+                            android:layout_gravity="center_vertical"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.4"
+                            android:text="New password" />
+
+                        <aero.pilotlog.widgets.MccEditText
+                            android:id="@+id/edtNewPassword"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="right"
+                            android:layout_marginLeft="@dimen/margin_left_right"
+                            android:layout_weight="0.6"
+                            android:background="@color/edit_text_bg"
+                            android:imeOptions="actionNext"
+                            android:inputType="textPassword"
+                            android:maxLength="50"
+                            android:padding="5dp"
+                            android:singleLine="true"
+                            android:textColor="@android:color/black"
+                            android:textColorHint="@color/grey_toolbar"
+                            android:textSize="@dimen/input_title_text_size" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/margin_left_right"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            style="@style/ItemSettingFormatDescriptionExtra2"
+                            android:layout_width="0dp"
+                            android:layout_gravity="center_vertical"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.4"
+                            android:text="Confirm password" />
+
+                        <aero.pilotlog.widgets.MccEditText
+                            android:id="@+id/edtConfirmPassword"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="right"
+                            android:layout_marginLeft="@dimen/margin_left_right"
+                            android:layout_weight="0.6"
+                            android:background="@color/edit_text_bg"
+                            android:imeOptions="actionDone"
+                            android:inputType="textPassword"
+                            android:maxLength="50"
+                            android:padding="5dp"
+                            android:singleLine="true"
+                            android:textColor="@android:color/black"
+                            android:textColorHint="@color/grey_toolbar"
+                            android:textSize="@dimen/input_title_text_size" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_marginBottom="@dimen/margin_top"
+                        android:id="@+id/ll_sync"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+                        <android.support.v7.widget.AppCompatCheckBox
+                            android:id="@+id/cbShowPassword"
+                            android:layout_width="wrap_content"
+                            android:layout_marginTop="@dimen/margin_top"
+                            android:layout_marginLeft="-5dp"
+                            android:gravity="center"
+                            android:layout_gravity="left"
+                            android:layout_height="wrap_content"
+                            style="@style/ItemSettingFormatDescriptionExtra2"
+                            android:text="Show password"/>
+
+                        <Button
+                            android:id="@+id/btnChangePassword"
+                            style="@style/Widget.AppCompat.Button.Colored"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_marginTop="@dimen/margin_left_right"
+                            android:text="Change password" />
+                    </LinearLayout>
+                </LinearLayout>
+
+            </net.cachapa.expandablelayout.ExpandableLayout>
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/event_info_gray"
+            android:paddingBottom="5dp"
+            android:paddingLeft="10dp"
+            android:text="User License"
+            android:textColor="@color/black"
+            android:textSize="17sp"
+            android:textStyle="bold" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_left_right"
+            android:layout_marginRight="@dimen/margin_left_right"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginBottom="@dimen/margin_help"
+                android:background="@drawable/list_selector"
+                android:orientation="horizontal">
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.9"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:id="@+id/tvLicense"
+                        style="@style/ItemSettingFormatTitle2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginTop="0dp"
+                        android:textColor="@color/success"
+                        android:text="Valid until 17 AUG 2018" />
+                    <ImageView
+                        android:layout_marginLeft="@dimen/margin_left_right"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="left|center_vertical"
+                        android:src="@drawable/ic_check_sucess" />
+                </LinearLayout>
+
+
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="0.05"
+                    android:src="@drawable/ic_arrow" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+
+</LinearLayout>

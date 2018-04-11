@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<aero.pilotlog.widgets.swipelayout.SwipeLayout xmlns:swipe="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/swipe"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    swipe:leftEdgeSwipeOffset="0dp"
+    swipe:rightEdgeSwipeOffset="0dp"
+    android:background="@drawable/list_selector"
+    >
+
+    <include layout="@layout/layout_swipe_menu_delete" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="left">
+        <LinearLayout
+            android:id="@+id/rlFront"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:tag="front"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                >
+                <TextView
+                    android:id="@+id/tvAirfieldCode"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/margin_left_numeric_code"
+                    android:layout_marginTop="@dimen/margin_top_numeric_code"
+                    android:ellipsize="end"
+                    android:scrollHorizontally="true"
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/size_text_numeric_code"
+                    android:textStyle="bold"
+                    android:typeface="sans" />
+
+                <TextView
+                    android:id="@+id/tvAirfieldName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/margin_left_description"
+                    android:textColor="@color/mcc_cyan"
+                    android:textSize="@dimen/size_text_numeric_code"
+                    android:typeface="sans" />
+
+                <TextView
+                    android:id="@+id/tvCountryName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/margin_top_numeric_code"
+                    android:layout_marginLeft="@dimen/margin_left_description"
+                    android:layout_marginRight="@dimen/margin_right_description"
+                    android:textColor="@android:color/darker_gray"
+                    android:textSize="@dimen/size_text_description"
+                    android:typeface="sans" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tvWXReport"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:textSize="@dimen/size_text_description"
+                android:layout_marginLeft="@dimen/margin_left_numeric_code"
+                android:layout_marginBottom="@dimen/margin_bottom_numeric_code"
+                android:typeface="sans" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+</aero.pilotlog.widgets.swipelayout.SwipeLayout>

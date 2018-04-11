@@ -1,0 +1,78 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <include layout="@layout/layout_sign_action_bar" />
+
+    <RelativeLayout android:id="@+id/rl_signature"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/signature_background">
+
+        <aero.pilotlog.utilities.PaintUtils
+            android:id="@+id/mPaint"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginBottom="@dimen/signature_margin_bottom"
+            android:layout_marginLeft="@dimen/signature_margin_top"
+            android:layout_marginRight="@dimen/signature_margin_top"
+            android:layout_marginTop="@dimen/signature_margin_top"
+            android:background="@drawable/rectangle_edit_text" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:text="@string/signature_bottom_text"
+            android:textColor="@android:color/black"
+            android:textSize="18sp">
+
+        </TextView>
+
+        <ImageView
+            android:id="@+id/ivSign"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginBottom="@dimen/signature_margin_bottom"
+            android:layout_marginLeft="@dimen/signature_margin_top"
+            android:layout_marginRight="@dimen/signature_margin_top"
+            android:layout_marginTop="@dimen/signature_margin_top"
+            android:scaleType="fitXY"
+            android:background="@android:color/white"
+            android:visibility="visible" />
+        <ImageView
+            android:id="@+id/ivClear"
+            android:layout_width="@dimen/sign_cancel_button"
+            android:layout_height="@dimen/sign_cancel_button"
+            android:layout_alignParentLeft="false"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginRight="@dimen/signature_margin_top"
+            android:layout_marginTop="@dimen/signature_margin_top"
+            android:background="@android:color/transparent"
+            android:src="@drawable/ic_cancel_small" />
+
+       <!-- <ImageView
+            android:id="@+id/ivClear"
+            android:layout_width="@dimen/sign_cancel_button"
+            android:layout_height="@dimen/sign_cancel_button"
+            android:layout_alignParentLeft="false"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginRight="@dimen/signature_margin_left_right"
+            android:layout_marginTop="@dimen/signature_margin_top"
+            android:background="@android:color/transparent"
+            android:src="@drawable/ic_cancel_small" />-->
+
+    </RelativeLayout>
+
+
+</LinearLayout>
+

@@ -1,0 +1,204 @@
+<resources>
+    <!--circular floating menu-->
+    <dimen name="action_menu_radius">96dp</dimen>
+    <dimen name="login_margin_top_bottom">20dp</dimen>
+    <dimen name="sub_action_button_size">36dp</dimen>
+    <dimen name="sub_action_button_content_margin">6dp</dimen>
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <!--Fragment Main-->
+
+    <!--Menu-->
+    <dimen name="sliding_menu_offset">50dp</dimen>
+    <dimen name="shadow_width">5dp</dimen>
+    <dimen name="text_size_settings">20sp</dimen>
+    <dimen name="margin_item_settings">10dp</dimen>
+    <dimen name="text_size_description">15sp</dimen>
+    <dimen name="text_size_title_logo">17sp</dimen>
+    <dimen name="profile_image_margin_top">35dp</dimen>
+    <dimen name="profile_image_margin_left">15dp</dimen>
+    <dimen name="profile_image_margin_right">10dp</dimen>
+    <dimen name="profile_image_right_menu_size">80dp</dimen>
+    <dimen name="padding_image_menu">10dp</dimen>
+    <dimen name="margin_title_item_menu">8dp</dimen>
+    <dimen name="padding_item_menu">5dp</dimen>
+
+    <!--Layout Actionbar-->
+    <dimen name="height_actionbar">48dp</dimen>
+    <dimen name="margin_number">10dp</dimen>
+    <dimen name="size_text_number">22sp</dimen>
+    <dimen name="size_text_title">18sp</dimen>
+    <dimen name="padding_text_title">8dp</dimen>
+    <dimen name="width_button_save">48dp</dimen>
+
+    <!--Layout Bottom bar-->
+    <dimen name="height_bottom_bar">45dp</dimen>
+    <dimen name="width_button_bar">43dp</dimen>
+    <dimen name="big_width_button_bar">55dp</dimen>
+    <dimen name="padding_button_sort">8dp</dimen>
+    <dimen name="size_text_button_bar">14sp</dimen>
+
+    <!-- Layout setting page -->
+    <dimen name="margin_top_bottom">10dp</dimen>
+    <dimen name="margin_left_right">10dp</dimen>
+    <dimen name="margin_top">15dp</dimen>
+    <dimen name="margin_left_input">60dp</dimen>
+    <dimen name="input_title_text_size">18sp</dimen>
+    <dimen name="margin_right_footnote">50dp</dimen>
+
+    <!--Fragment About-->
+    <dimen name="text_size_button_visit">16sp</dimen>
+    <dimen name="margin_top_version">15dp</dimen>
+    <dimen name="margin_top_encounter">20dp</dimen>
+    <dimen name="margin_pilot_logbook">10dp</dimen>
+    <dimen name="about_padding_left_right">20dp</dimen>
+    <dimen name="about_padding_bottom">10dp</dimen>
+    <dimen name="about_padding_large_left">50dp</dimen>
+    <dimen name="about_padding_large_right">40dp</dimen>
+    <dimen name="about_padding_terms_bottom">20dp</dimen>
+    <dimen name="about_view_height">1dp</dimen>
+
+    <!--Fragment Delay-->
+    <dimen name="margin_top_numeric_code">2dp</dimen>
+    <dimen name="margin_bottom_numeric_code">3dp</dimen>
+    <dimen name="margin_left_numeric_code">20dp</dimen>
+    <dimen name="margin_left_description">40dp</dimen>
+    <dimen name="margin_right_description">20dp</dimen>
+    <dimen name="margin_right_delay">15dp</dimen>
+    <dimen name="size_text_numeric_code">17sp</dimen>
+    <dimen name="size_text_description">15sp</dimen>
+
+    <!--Fragment Weather-->
+
+    <!--Fragment Airfield-->
+    <dimen name="size_button_swipe_menu">60dp</dimen>
+
+    <!--Search Box-->
+    <dimen name="height_layout_search">41dp</dimen>
+    <dimen name="height_layout_weather">45dp</dimen>
+    <dimen name="padding_bottom_text_search">2dp</dimen>
+    <dimen name="padding_left_text_search">50dp</dimen>
+    <dimen name="size_text_search">17sp</dimen>
+    <dimen name="size_button_cancel">36dp</dimen>
+    <dimen name="margin_right_button_cancel">12dp</dimen>
+    <dimen name="margin_left_image_search">18dp</dimen>
+    <dimen name="margin_top_image_search">10dp</dimen>
+    <dimen name="size_image_search">16dp</dimen>
+    <dimen name="padding_left_text_search_tablet">30dp</dimen>
+    <dimen name="size_text_search_tablet">18sp</dimen>
+    <dimen name="margin_top_text_search">12dp</dimen>
+
+    <!--Dialog in tablet-->
+
+    <!--Pilot List-->
+    <dimen name="pilot_list_side_margin">20dp</dimen>
+    <dimen name="pilot_list_top_margin">1dp</dimen>
+    <dimen name="pilot_name_left_margin">40dp</dimen>
+    <dimen name="pilot_company_right_margin">20dp</dimen>
+    <dimen name="size_image_item_pilot">90dp</dimen>
+
+    <!--Pilot info page -->
+    <dimen name="padding_text_pilot_name">5dp</dimen>
+
+    <!--Fragment add airfield -->
+    <dimen name="add_airfield_input_width">180dp</dimen>
+    <dimen name="add_airfield_title_size">18sp</dimen>
+
+    <!--Plot Add/ Edit page-->
+    <dimen name="layout_weight_empty">0dp</dimen>
+    <dimen name="margin_top_pilot_add">30dp</dimen>
+    <dimen name="padding_top_pilot_add">15dp</dimen>
+    <dimen name="margin_edit_company">10dp</dimen>
+
+
+    <!--Airfield navigation -->
+    <dimen name="airfield_navigation_input_width">120dp</dimen>
+    <dimen name="padding_left_right_top">30dp</dimen>
+    <dimen name="padding_bottom">12dp</dimen>
+    <dimen name="airfield_info_text_size">16sp</dimen>
+
+    <!-- Fragment weather -->
+    <dimen name="action_bar_text_size">14sp</dimen>
+
+    <!-- Fragment Signature -->
+    <dimen name="signature_margin_top">15dp</dimen>
+    <dimen name="signature_margin_bottom">25dp</dimen>
+    <dimen name="sign_cancel_button">45dp</dimen>
+    <dimen name="sign_button_width">140dp</dimen>
+    <dimen name="sign_action_bar_height">48dp</dimen>
+    <dimen name="sign_title_text_size">17sp</dimen>
+    <dimen name="sign_padding">10dp</dimen>
+    <dimen name="sign_view_width">0.5dp</dimen>
+
+    <!--Sync screen -->
+
+    <!-- Fragment Aircraft List -->
+    <dimen name="aircraft_list_ref_margin">20dp</dimen>
+    <dimen name="aircraft_list_margin_top">1dp</dimen>
+    <dimen name="aircraft_list_model_margin">40dp</dimen>
+
+    <!-- Fragment Aircraft Info-->
+
+    <!--Logbook-->
+    <dimen name="margin_top_route">4dp</dimen>
+    <dimen name="margin_left_info_arrow">4dp</dimen>
+    <dimen name="padding_bottom_title">1.4dp</dimen>
+    <dimen name="margin_left_item_logbook">10dp</dimen>
+    <dimen name="margin_left2_item_logbook">20dp</dimen>
+    <dimen name="margin_right_item_logbook">10dp</dimen>
+    <dimen name="size_text_title_sub_route">16sp</dimen>
+    <dimen name="size_text_route_small">15sp</dimen>
+    <dimen name="size_text_menu_delete">18sp</dimen>
+    <dimen name="margin_item_menu_delete">10dp</dimen>
+    <dimen name="padding_item_menu_delete">15dp</dimen>
+    <dimen name="padding_icon_watermark">12dp</dimen>
+    <dimen name="margin_top_flight_deparr">7dp</dimen>
+    <dimen name="margin_top_flight">5dp</dimen>
+    <!--Flights-->
+    <dimen name="margin_left_item_pairing">40dp</dimen>
+    <dimen name="padding_icon_title_route">4dp</dimen>
+    <dimen name="margin_icon_title_route">15dp</dimen>
+    <dimen name="padding_text_title_route">5dp</dimen>
+    <dimen name="margin_row_witch_title">10dp</dimen>
+    <dimen name="size_text_title_flight_add">19sp</dimen>
+    <dimen name="size_text_title_duty">15sp</dimen>
+    <!--ProgressBar Loading-->
+    <dimen name="margin_text_loading">5dp</dimen>
+    <!--Totals-->
+    <!--Currencies-->
+    <!--Airfield Notes-->
+    <!-- Duty -->
+    <dimen name="margin_top__item_duty">10dp</dimen>
+    <dimen name="margin_top__list_duty">15dp</dimen>
+    <!--Settings-->
+    <!--Help-->
+    <dimen name="text_size_title_help">18sp</dimen>
+    <dimen name="margin_help">10dp</dimen>
+    <dimen name="margin_title_help">15dp</dimen>
+    <!--Setting-->
+    <dimen name="size_text_title_settings">16sp</dimen>
+    <dimen name="profile_image_size">90dp</dimen>
+    <dimen name="pilot_image_size">270dp</dimen>
+    <dimen name="pilot_height_sub_header_size">120dp</dimen>
+    <dimen name="margin_right_profile_image">10dp</dimen>
+    <dimen name="margin_top_profile_image">20dp</dimen>
+
+    <dimen name="size_flag_country_width">130dp</dimen>
+    <dimen name="size_flag_country_height">92dp</dimen>
+    <dimen name="margin_bottom_title_dialog">20dp</dimen>
+    <dimen name="padding_top_bottom_title_dialog">20dp</dimen>
+    <dimen name="text_size_title_dialog">20sp</dimen>
+    <dimen name="padding_top_bottom_title_dialog_text">15dp</dimen>
+
+    <dimen name="min_height_list_view_limit">70dp</dimen>
+
+    <dimen name="margin_top_qualification">4dp</dimen>
+    
+    <dimen name="size_width_button_swipe_delete">65dp</dimen>
+
+    <dimen name="padding_left_list">16dp</dimen>
+
+    <dimen name="size_image_info_empty">150dp</dimen>
+    <dimen name="size_width_image_item_sign">240dp</dimen>
+    <dimen name="size_height_image_item_sign">120dp</dimen>
+</resources>

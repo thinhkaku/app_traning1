@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="mcc_color_dark">#2D3C50</color>
+    <color name="mcc_color_login_screen">#F5F5F5</color>
+    <color name="mcc_color_login_screen_hint">#CCCCCC</color>
+    <color name="grey_toolbar">#ddd</color>
+    <color name="mcc_cyan">#558EBF</color>
+    <color name="mcc_cyan_derived">#BED7E6</color>
+    <color name="mcc_blue">#00457D</color>
+    <color name="mcc_red">#DC0000</color>
+    <color name="edit_text_bg">#F4F4F4</color>
+    <color name="event_info_gray">#D9D9D9</color>
+    <color name="grey_divider">#CCCCCC</color>
+    <color name="success">#22b14c</color>
+
+    <color name="mcc_magenta">#b3375a</color>
+    <color name="bg_top_custom_keyboard">#b3375a</color>
+    <color name="grey_footer_text">#AAAAAA</color>
+    <color name="bg_bottom_bar">#555555</color>
+    <color name="color_text_sort">#dedede</color>
+    <color name="grey_description_text">#808080</color>
+    <color name="color_text_title_logo">#58656E</color>
+    <color name="right_menu_divider_color">#C8C7CC</color>
+
+    <color name="signature_background">#EEEEEE</color>
+    <color name="title_bar_bg">#DDDDDD</color>
+    <color name="bg_top_menu_main">#DDEAF3</color>
+    <color name="color_red">#ff0000</color>
+    <color name="color_amber">#FABE1E</color>
+    <color name="mcc_amber">#FF9B0F</color>
+    <color name="background_menu">#F0F0F0</color>
+
+    <color name="transparent_grey">#99808080</color>
+    <color name="background_white">#FFFFFF</color>
+    <color name="transparent">#00FFFFFF</color>
+    <color name="mcc_green_credit">#00A000</color>
+
+    <!--LoadMore ListView-->
+    <color name="dark_slate_gray">#2F4F4F</color>
+    <color name="gray_2">#AFAFAF</color>
+    <color name="gray_1">#C0C0C0</color>
+    <color name="gray_hLight">#DDDDDD</color>
+    <color name="grey_stream_menu">#DCE1EB</color>
+    <color name="black">#000000</color>
+    <color name="help_start">#B43C5F</color>
+
+    <color name="blackOlive">#39393F</color>
+    <color name="about_text_normal">#555555</color>
+    <color name="txt_gray">#909090</color>
+
+    <color name="bg_incomplete">#C1F47B</color>
+    <color name="font_incomplete">#00C000</color>
+    <color name="bg_next_page">#FFEB78</color>
+    <color name="bg_previous">#BE9B78</color>
+    <color name="bg_simulator">#EEEEEE</color>
+    <color name="bg_drone">#BED7E6</color>
+    <color name="font_drone">#37698C</color>
+</resources>

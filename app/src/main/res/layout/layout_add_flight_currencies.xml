@@ -1,0 +1,293 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_marginTop="@dimen/margin_top_bottom">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:color/white"
+            android:src="@drawable/ic_title_currency_2"
+            android:paddingLeft="@dimen/padding_icon_title_route"
+            android:paddingRight="@dimen/padding_icon_title_route"
+            android:layout_marginLeft="@dimen/margin_icon_title_route"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_marginLeft="@dimen/margin_left2_item_logbook"
+            android:layout_marginRight="@dimen/margin_right_item_logbook"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="CURRENCIES"
+                android:textColor="@color/mcc_blue"
+                android:textSize="@dimen/size_text_title_duty"
+                android:textStyle="bold"
+                android:typeface="normal" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="@color/mcc_blue" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <aero.pilotlog.widgets.ItemsFlightView
+        android:id="@+id/item_flight_currencies_task"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_row_witch_title"
+        app:title_flight="@string/text_flight_currencies_task"
+
+        app:item_type="3"
+        app:is_all_cap="true"
+        app:max_length="2"
+        app:resIdIcon2="@drawable/ic_copy"
+        app:enable_edit_text="false"
+        />
+
+    <aero.pilotlog.widgets.ItemsFlightView
+        android:id="@+id/item_flight_currencies_today"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:title_flight="@string/text_flight_currencies_today"
+        app:item_type="3"
+        app:is_numeric="true"
+        app:max_length="1"
+        app:resIdIcon2="@drawable/ic_copy"
+        app:enable_edit_text="true"
+        app:icon_type="1"/>
+
+    <aero.pilotlog.widgets.ItemsFlightView
+        android:id="@+id/item_flight_currencies_tonight"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:title_flight="@string/text_flight_currencies_tonight"
+        app:item_type="3"
+        app:is_numeric="true"
+        app:max_length="1"
+        app:resIdIcon2="@drawable/ic_copy"
+        app:enable_edit_text="true"
+        app:icon_type="1"/>
+
+
+    <aero.pilotlog.widgets.ItemsFlightView
+        android:id="@+id/item_flight_currencies_ldgday"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:title_flight="@string/text_flight_currencies_ldg_day"
+        app:item_type="3"
+        app:is_numeric="true"
+        app:max_length="1"
+        app:resIdIcon2="@drawable/ic_copy"
+        app:enable_edit_text="true"
+        app:icon_type="1"/>
+
+    <aero.pilotlog.widgets.ItemsFlightView
+        android:id="@+id/item_flight_currencies_ldgnight"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:title_flight="@string/text_flight_currencies_ldg_night"
+        app:item_type="3"
+        app:is_numeric="true"
+        app:max_length="1"
+        app:resIdIcon2="@drawable/ic_copy"
+        app:enable_edit_text="true"
+        app:icon_type="1"/>
+
+    <aero.pilotlog.widgets.ItemsFlightView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:title_flight="@string/text_flight_currencies_autoland"
+        app:item_type="3"
+        app:is_numeric="true"
+        app:max_length="1"
+        app:resIdIcon2="@drawable/ic_copy"
+        app:enable_edit_text="true"
+        app:icon_type="1"/>
+
+    <aero.pilotlog.widgets.ItemsFlightView
+        android:id="@+id/item_flight_currencies_lifts"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:title_flight="@string/text_flight_currencies_lifts"
+        app:item_type="3"
+        app:is_numeric="true"
+        app:max_length="1"
+        app:enable_edit_text="true"
+        app:resIdIcon2="@drawable/ic_copy"
+        app:icon_type="1"/>
+
+    <aero.pilotlog.widgets.ItemsFlightView
+        android:id="@+id/item_flight_currencies_holding"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:title_flight="@string/text_flight_currencies_holding"
+        app:item_type="3"
+        app:is_numeric="true"
+        app:max_length="1"
+        app:resIdIcon2="@drawable/ic_copy"
+        app:enable_edit_text="true"
+        app:icon_type="1"/>
+
+    <aero.pilotlog.widgets.ItemsFlightView
+        android:id="@+id/item_flight_currencies_fuel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:title_flight="@string/text_flight_currencies_fuel"
+        app:item_type="3"
+        app:is_numeric="true"
+        app:max_length="9"
+        app:resIdIcon2="@drawable/icon_cross"
+        app:enable_edit_text="true"
+        app:icon_type="2"/>
+
+    <aero.pilotlog.widgets.ItemsFlightView
+        android:id="@+id/item_flight_currencies_fuel_planned"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:title_flight="@string/text_flight_currencies_fuel_planned"
+        app:item_type="3"
+        app:is_numeric="true"
+        app:max_length="9"
+        app:resIdIcon2="@drawable/icon_cross"
+        app:enable_edit_text="true"
+        app:icon_type="2"/>
+
+    <aero.pilotlog.widgets.ItemsFlightView
+        android:id="@+id/item_flight_currencies_fuel_used"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:title_flight="@string/text_flight_currencies_fuel_used"
+        app:item_type="3"
+        app:is_numeric="true"
+        app:max_length="9"
+        app:resIdIcon2="@drawable/icon_cross"
+        app:enable_edit_text="true"
+        app:icon_type="2"/>
+
+    <aero.pilotlog.widgets.ItemsFlightView
+        android:id="@+id/item_flight_currencies_pax"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:title_flight="@string/text_flight_currencies_pax"
+        app:item_type="3"
+        app:is_numeric="true"
+        app:max_length="5"
+        app:resIdIcon2="@drawable/icon_cross"
+        app:enable_edit_text="true"
+        app:icon_type="2"/>
+
+    <aero.pilotlog.widgets.ItemsFlightView
+        android:id="@+id/item_flight_currencies_user_n1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:item_type="3"
+        app:is_numeric="true"
+        app:max_length="10"
+        app:resIdIcon2="@drawable/icon_cross"
+        app:enable_edit_text="true"
+        app:icon_type="2"/>
+
+    <aero.pilotlog.widgets.ItemsFlightView
+        android:id="@+id/item_flight_currencies_user_n2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:item_type="3"
+        app:max_length="50"
+        app:resIdIcon2="@drawable/icon_cross"
+        app:enable_edit_text="true"
+        app:icon_type="2"/>
+
+    <aero.pilotlog.widgets.ItemsFlightView
+        android:id="@+id/item_flight_currencies_user_n3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:item_type="3"
+        app:max_length="1"
+        app:resIdIcon2="@drawable/ic_copy"
+        app:enable_edit_text="false"
+        app:icon_type="1"/>
+
+    <aero.pilotlog.widgets.ItemsFlightView
+        android:id="@+id/item_flight_currencies_deicing"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:title_flight="@string/text_flight_currencies_deicing"
+        app:max_length="1"
+        app:item_type="3"
+        app:resIdIcon2="@drawable/ic_copy"
+        app:enable_edit_text="false"
+        app:icon_type="1"/>
+
+    <aero.pilotlog.widgets.ItemsFlightView
+        android:id="@+id/item_flight_currencies_delay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:title_flight="@string/text_flight_currencies_delay"
+        app:item_type="1"
+        app:flight_type="6"
+        app:max_length="250"
+        app:enable_edit_text="false" />
+
+    <aero.pilotlog.widgets.ItemsFlightView
+        android:id="@+id/item_flight_currencies_approach1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:title_flight="@string/text_flight_currencies_approach"
+        app:item_type="1"
+        app:flight_type="6"
+        app:max_length="250"
+        app:enable_edit_text="false" />
+
+    <aero.pilotlog.widgets.ItemsFlightView
+        android:id="@+id/item_flight_currencies_operation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:title_flight="@string/text_flight_currencies_operation"
+        app:item_type="1"
+        app:flight_type="6"
+        app:max_length="250"
+        app:enable_edit_text="false" />
+
+    <aero.pilotlog.widgets.ItemsFlightView
+        android:id="@+id/item_flight_currencies_glider"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:title_flight="@string/text_flight_currencies_glider"
+        app:item_type="1"
+        app:flight_type="6"
+        app:max_length="250"
+        app:enable_edit_text="false" />
+
+    <aero.pilotlog.widgets.ItemsFlightView
+        android:id="@+id/item_flight_currencies_signbox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:title_flight="@string/text_flight_currencies_sign_box"
+        app:item_type="3"
+        app:is_numeric="true"
+        app:max_length="3"
+        app:resIdIcon2="@drawable/icon_cross"
+        app:enable_edit_text="true"
+        app:icon_type="2"/>
+
+    <aero.pilotlog.widgets.ItemsFlightView
+        android:id="@+id/item_flight_currencies_signpen"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:title_flight="@string/text_flight_currencies_sign_pen"
+        app:item_type="3"
+        app:max_length="1"
+        app:enable_edit_text="false" />
+</LinearLayout>

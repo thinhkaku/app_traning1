@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="login_padding_left_right">50dp</dimen>
+
+    <dimen name="logo_login_size">320dp</dimen>
+    <dimen name="login_padding_top_bottom_edittext">18dp</dimen>
+
+    <!--Tablet 10'-->
+    <dimen name="sign_cancel_button">70dp</dimen>
+    <dimen name="sliding_menu_offset">900dp</dimen>
+    <dimen name="text_size_button_visit">20sp</dimen>
+    <dimen name="size_text_numeric_code">19sp</dimen>
+    <dimen name="size_text_description">17sp</dimen>
+
+    <!--Signature-->
+    <dimen name="sign_button_width">250dp</dimen>
+    <dimen name="sign_action_bar_height">60dp</dimen>
+    <dimen name="sign_title_text_size">22sp</dimen>
+
+    <dimen name="profile_image_size">120dp</dimen>
+    <dimen name="pilot_image_size">360dp</dimen>
+    <dimen name="pilot_height_sub_header_size">130dp</dimen>
+    <dimen name="margin_right_profile_image">10dp</dimen>
+    <dimen name="margin_top_profile_image">20dp</dimen>
+
+    <dimen name="size_text_title_settings">17sp</dimen>
+
+    <dimen name="size_text_route_small">17sp</dimen>
+    <dimen name="size_text_title_sub_route">18sp</dimen>
+
+    <dimen name="margin_bottom_title_dialog">22dp</dimen>
+    <dimen name="padding_top_bottom_title_dialog">22dp</dimen>
+    <dimen name="text_size_title_dialog">21sp</dimen>
+    <dimen name="padding_top_bottom_title_dialog_text">16dp</dimen>
+    <dimen name="padding_icon_watermark">20dp</dimen>
+    <dimen name="size_image_info_empty">280dp</dimen>
+
+    <dimen name="size_width_image_item_sign">320dp</dimen>
+    <dimen name="size_height_image_item_sign">160dp</dimen>
+</resources>

@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_marginTop="@dimen/margin_top_bottom">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_title_crew_2"
+            android:background="@android:color/white"
+            android:paddingLeft="@dimen/padding_icon_title_route"
+            android:paddingRight="@dimen/padding_icon_title_route"
+            android:layout_marginLeft="@dimen/margin_icon_title_route"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_marginLeft="@dimen/margin_left2_item_logbook"
+            android:layout_marginRight="@dimen/margin_right_item_logbook"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="CREW"
+                android:textColor="@color/mcc_blue"
+                android:textSize="@dimen/size_text_title_duty"
+                android:textStyle="bold"
+                android:typeface="normal" />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="@color/mcc_blue" />
+        </LinearLayout>
+    </LinearLayout>
+    <aero.pilotlog.widgets.ItemsFlightView
+        android:id="@+id/item_flight_crew_pic"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_row_witch_title"
+        app:title_flight="@string/text_flight_crew_pic"
+        app:flight_type="4"
+        app:max_length="100"
+        app:crew_no_icon="false"
+        app:enable_edit_text="true" />
+
+    <aero.pilotlog.widgets.ItemsFlightView
+        android:id="@+id/item_flight_crew_2nd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:title_flight="@string/text_flight_crew_2nd"
+        app:flight_type="4"
+        app:max_length="100"
+        app:crew_no_icon="false"
+        app:enable_edit_text="true"
+        />
+
+    <aero.pilotlog.widgets.ItemsFlightView
+        android:id="@+id/item_flight_crew_3rd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:title_flight="@string/text_flight_crew_3rd"
+        app:flight_type="4"
+        app:max_length="100"
+        app:crew_no_icon="false"
+        app:enable_edit_text="true"
+        />
+
+    <aero.pilotlog.widgets.ItemsFlightView
+        android:id="@+id/item_flight_crew_4th"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:title_flight="@string/text_flight_crew_4th"
+        app:flight_type="4"
+        app:max_length="100"
+        app:crew_no_icon="false"
+        app:enable_edit_text="true"
+        />
+    <aero.pilotlog.widgets.ItemsFlightView
+        android:id="@+id/item_flight_crew_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:title_flight="CREW LIST"
+        app:flight_type="5"
+        app:max_length="1024"
+        app:icon_type="3"
+        app:flight_log_no_icon="false"
+        app:enable_edit_text="true" />
+
+</LinearLayout>

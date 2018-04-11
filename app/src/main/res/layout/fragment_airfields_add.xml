@@ -1,0 +1,406 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/background_white"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <include layout="@layout/title_bar_layout" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_left_right"
+                android:layout_marginRight="@dimen/margin_left_right"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/margin_left_right"
+                    android:layout_weight="0.5"
+                    android:orientation="vertical">
+
+                    <TextView
+                        style="@style/ItemSettingFormatTitle2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="ICAO" />
+
+
+                    <aero.pilotlog.widgets.MccEditText
+                        android:id="@+id/edt_item_airfield_icao"
+                        style="@style/TextBoxAircraftStyle"
+                        android:inputType="textCapCharacters"
+                        android:maxLength="4"
+                        android:singleLine="true"
+                        android:textColorHint="@color/grey_toolbar" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:orientation="vertical">
+
+                    <TextView
+                        style="@style/ItemSettingFormatTitle2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="IATA" />
+
+                    <aero.pilotlog.widgets.MccEditText
+                        android:id="@+id/edt_item_airfield_iata"
+                        style="@style/TextBoxAircraftStyle"
+                        android:inputType="textCapCharacters"
+                        android:maxLength="3" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/margin_left_right"
+                android:layout_marginRight="@dimen/margin_left_right"
+                android:orientation="vertical">
+
+                <TextView
+                    style="@style/ItemSettingFormatTitle2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="AIRFIELD NAME" />
+
+                <aero.pilotlog.widgets.MccEditText
+                    android:id="@+id/edt_item_airfield_airfield_name"
+                    style="@style/TextBoxAircraftStyle"
+                    android:maxLength="254" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="@dimen/margin_left_right"
+                android:layout_marginRight="@dimen/margin_left_right"
+                android:layout_marginTop="@dimen/margin_top"
+                android:background="@color/grey_toolbar" />
+
+            <aero.pilotlog.widgets.ItemInputTextWithIcon
+                android:id="@+id/item_airfield_country"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:input_type="4096"
+                app:is_show_footnote="false"
+                app:title_setting="COUNTRY" />
+
+            <aero.pilotlog.widgets.ItemInputTextWithIcon
+                android:id="@+id/item_airfield_timezone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:input_type="4096"
+                app:is_show_footnote="false"
+                app:title_setting="TIMEZONE" />
+
+            <aero.pilotlog.widgets.ItemInputTextWithIcon
+                android:id="@+id/item_airfield_category"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:input_type="4096"
+                app:is_show_footnote="false"
+                app:title_setting="CATEGORY" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_left_right"
+                android:layout_marginRight="@dimen/margin_left_right"
+                android:orientation="vertical">
+
+                <TextView
+                    style="@style/ItemSettingFormatTitle2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="LATITUDE" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <aero.pilotlog.widgets.MccEditText
+                            android:id="@+id/edt_item_airfield_latitude"
+                            style="@style/TextBoxAircraftStyle"
+                            android:layout_width="0dp"
+                            android:layout_weight="0.6"
+                            android:inputType="numberSigned"
+                            android:maxLength="6" />
+                        <TextView
+                            android:id="@+id/tv_item_airfield_latitude"
+                            style="@style/TextBoxAircraftStyle"
+                            android:gravity="center_vertical"
+                            android:layout_width="0dp"
+                            android:layout_weight="0.4"
+                            android:layout_height="match_parent"
+                            android:textColor="@color/grey_description_text" />
+                    </LinearLayout>
+
+
+                    <ImageView
+                        android:id="@+id/ivLat"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="5dp"
+                        android:background="@drawable/bg_image_view_click"
+                        android:clickable="true"
+                        android:src="@drawable/ic_cancel" />
+                </RelativeLayout>
+
+
+                <TextView
+                    style="@style/ItemSettingFormatTitle2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="LONGITUDE" />
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/margin_top">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <aero.pilotlog.widgets.MccEditText
+                            android:id="@+id/edt_item_airfield_longitude"
+                            style="@style/TextBoxAircraftStyle"
+                            android:layout_width="0dp"
+                            android:layout_weight="0.6"
+                            android:inputType="numberSigned"
+                            android:maxLength="7" />
+                        <TextView
+                            android:id="@+id/tv_item_airfield_longitude"
+                            style="@style/TextBoxAircraftStyle"
+                            android:gravity="center_vertical"
+                            android:layout_width="0dp"
+                            android:layout_weight="0.4"
+                            android:layout_height="match_parent"
+                            android:textColor="@color/grey_description_text" />
+                    </LinearLayout>
+
+
+                    <ImageView
+                        android:id="@+id/ivLong"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="5dp"
+                        android:background="@drawable/bg_image_view_click"
+                        android:clickable="true"
+                        android:src="@drawable/ic_cancel" />
+                </RelativeLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="@dimen/margin_top"
+                    android:layout_marginBottom="@dimen/margin_top"
+                    android:orientation="horizontal">
+                    <LinearLayout android:id="@+id/ln_help"
+                        android:layout_marginLeft="-6dp"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.4"
+                        android:gravity="left"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:background="@android:color/white"
+                            android:src="@drawable/ic_help2" />
+                        <TextView
+                            style="@style/ItemSettingFormatFootNode"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:text="How to enter coordinates" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.6"
+                        android:layout_marginLeft="@dimen/margin_left_right"
+                        android:gravity="left"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:id="@+id/iv_global"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:background="@android:color/white"
+                            android:src="@drawable/ic_info2" />
+                        <TextView
+                            android:layout_gravity="center_vertical"
+                            style="@style/ItemSettingFormatFootNode"
+                            android:layout_marginLeft="@dimen/margin_left_right"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Grab my current GPS position and elevation" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tv_elevation"
+                        style="@style/ItemSettingFormatTitle2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="ELEVATION" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <aero.pilotlog.widgets.MccEditText
+                            android:id="@+id/edt_item_airfield_elevation"
+                            style="@style/TextBoxAircraftStyle"
+                            android:layout_width="0dp"
+                            android:layout_weight="0.5"
+                            android:inputType="number" />
+
+                        <TextView
+                            style="@style/ItemSettingFormatFootNode"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="@dimen/margin_left_right"
+                            android:layout_marginTop="10dp"
+                            android:layout_weight="0.5"
+                            android:text="feet" />
+
+                    </LinearLayout>
+                </LinearLayout>
+
+                <TextView
+                    style="@style/ItemSettingFormatTitle2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="NEARBY CITY" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <aero.pilotlog.widgets.MccEditText
+                        android:id="@+id/edt_item_airfield_nearbycity"
+                        style="@style/TextBoxAircraftStyle"/>
+
+                    <ImageView
+                        android:id="@+id/ivNearbycity"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="5dp"
+                        android:background="@drawable/bg_image_view_click"
+                        android:clickable="true"
+                        android:src="@drawable/ic_cancel" />
+
+                </RelativeLayout>
+
+                <TextView
+                    style="@style/ItemSettingFormatTitle2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="NOTES" />
+
+                <aero.pilotlog.widgets.MccEditText
+                    android:id="@+id/edt_item_airfield_notes"
+                    style="@style/TextBoxAircraftStyle"
+                    android:hint="Notes by MCC"
+                    android:focusable="false"/>
+
+                <TextView
+                    style="@style/ItemSettingFormatTitle2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="MY NOTES" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <aero.pilotlog.widgets.MccEditText
+                        android:id="@+id/edt_item_airfield_mynotes"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="top"
+                        style="@style/TextBoxAircraftStyle"
+                        android:inputType="textMultiLine|textCapSentences"
+                        android:maxLength="512"
+                        android:minLines="5"
+                        android:textColorHint="@color/grey_toolbar" />
+
+                    <ImageView
+                        android:id="@+id/ivMynotes"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="5dp"
+                        android:background="@drawable/bg_image_view_click"
+                        android:clickable="true"
+                        android:src="@drawable/ic_cancel" />
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="@dimen/margin_top"
+                    android:background="@color/grey_toolbar" />
+
+
+            </LinearLayout>
+
+            <aero.pilotlog.widgets.ItemSwitch
+                android:id="@+id/item_airfield_favorite"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:title_setting="FAVORITE" />
+        </LinearLayout>
+
+    </ScrollView>
+    </LinearLayout>
+

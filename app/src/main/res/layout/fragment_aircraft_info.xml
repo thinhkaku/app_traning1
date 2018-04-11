@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:id="@+id/sv_aircraft_info"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/transparent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <aero.pilotlog.widgets.ItemInputText
+                android:id="@+id/item_aircraft_type"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:input_type="8192"
+                app:isClickEnable="false"
+                app:title_setting="TYPE" />
+
+            <aero.pilotlog.widgets.ItemInputText
+                android:id="@+id/item_aircraft_class"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:input_type="8192"
+                app:isClickEnable="false"
+                app:title_setting="CLASS" />
+
+            <aero.pilotlog.widgets.ItemInputText
+                android:id="@+id/item_aircraft_category"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:input_type="8192"
+                app:isClickEnable="false"
+                app:maxLength="30"
+                app:title_setting="CATEGORY" />
+
+            <aero.pilotlog.widgets.ItemInputText
+                android:id="@+id/item_aircraft_power"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:input_type="8192"
+                app:isClickEnable="false"
+                app:title_setting="POWER" />
+
+            <aero.pilotlog.widgets.ItemInputText
+                android:id="@+id/edt_item_aircraft_type_rating"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:input_type="8192"
+                app:isClickEnable="false"
+                app:title_setting="TYPE RATING" />
+
+            <TextView
+                android:id="@+id/tvSpectification"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="25dp"
+                android:background="@color/event_info_gray"
+                android:paddingBottom="5dp"
+                android:paddingLeft="10dp"
+                android:paddingTop="5dp"
+                android:text="Specifications"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:visibility="gone" />
+
+            <aero.pilotlog.widgets.ItemWithDot
+                android:id="@+id/item_aircraft_seats"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="-25dp"
+                android:visibility="gone" />
+
+            <aero.pilotlog.widgets.ItemWithDot
+                android:id="@+id/item_aircraft_aerobatic"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="-25dp"
+                android:visibility="gone" />
+
+            <aero.pilotlog.widgets.ItemWithDot
+                android:id="@+id/item_aircraft_complex"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="-25dp"
+                android:visibility="gone" />
+
+            <aero.pilotlog.widgets.ItemWithDot
+                android:id="@+id/item_aircraft_high_performance"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="-25dp"
+                android:visibility="gone" />
+
+            <aero.pilotlog.widgets.ItemWithDot
+                android:id="@+id/item_aircraft_tm_glider"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="-25dp"
+                android:visibility="gone" />
+
+            <aero.pilotlog.widgets.ItemWithDot
+                android:id="@+id/item_aircraft_tailwheel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="-25dp"
+                android:visibility="gone" />
+
+            <aero.pilotlog.widgets.ItemWithDot
+                android:id="@+id/item_aircraft_more_than_57kg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="-25dp"
+                android:visibility="gone" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/event_info_gray"
+                android:paddingBottom="5dp"
+                android:paddingLeft="10dp"
+                android:paddingTop="5dp"
+                android:text="Auto Load - Default"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <aero.pilotlog.widgets.ItemInputText
+                android:id="@+id/edt_item_aircraft_function_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:input_type="8192"
+                app:isClickEnable="false"
+                app:title_setting="FUNCTION TIME" />
+
+            <aero.pilotlog.widgets.ItemInputText
+                android:id="@+id/edt_item_aircraft_condition_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:input_type="8192"
+                app:isClickEnable="false"
+                app:title_setting="CONDITION TIME" />
+
+            <aero.pilotlog.widgets.ItemInputTextWithIcon
+                android:id="@+id/edt_item_aircraft_operation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:input_type="8192"
+                app:isClickEnable="false"
+                app:maxLength="30"
+                app:title_setting="OPERATION" />
+
+            <aero.pilotlog.widgets.ItemInputTextWithIcon
+                android:id="@+id/edt_item_aircraft_approach"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:input_type="8192"
+                app:isClickEnable="false"
+                app:title_setting="APPROACH" />
+
+            <aero.pilotlog.widgets.ItemInputTextWithIcon
+                android:id="@+id/edt_item_aircraft_launch"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:input_type="8192"
+                app:isClickEnable="false"
+                app:title_setting="LAUNCH" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/event_info_gray"
+                android:paddingBottom="5dp"
+                android:paddingLeft="10dp"
+                android:paddingTop="5dp"
+                android:text="History"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <aero.pilotlog.widgets.ItemInputTextWithIcon
+                android:id="@+id/edt_item_aircraft_history"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:input_type="8192"
+                app:isClickEnable="false"
+                app:title_setting="LAST FLIGHT" />
+
+            <LinearLayout
+                android:id="@+id/ln_history"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/margin_left_right"
+                android:layout_marginRight="@dimen/margin_left_right"
+                android:gravity="center_vertical|right"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/ItemSettingFormatTitle2"
+                    android:layout_marginTop="0dp"
+                    android:paddingBottom="0dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/margin_left_right"
+                    android:text="Show full History"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_arrow" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <include layout="@layout/aircraft_header_with_image" />
+</RelativeLayout>

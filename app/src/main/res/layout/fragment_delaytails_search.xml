@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+        <android.support.v7.widget.SearchView
+            android:id="@+id/searchView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:queryBackground="@color/background_white"
+            android:queryHint="search..."
+            app:showDividers="none"
+            android:layout_marginBottom="-2dp"
+            app:iconifiedByDefault="false"/>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+                <ImageView
+                    android:id="@+id/ivBelowSearch"
+                    android:layout_width="@dimen/size_image_info_empty"
+                    android:layout_height="@dimen/size_image_info_empty"
+                    android:layout_gravity="center"
+                    android:src="@drawable/ic_airfields_large" />
+        </FrameLayout>
+
+</LinearLayout>

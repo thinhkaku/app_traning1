@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/transparent">
+    <LinearLayout android:id="@+id/lnHeader"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/mcc_cyan"
+        android:paddingTop="@dimen/padding_bottom"
+        android:paddingBottom="@dimen/padding_bottom"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/tv_af_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:text=""
+            android:textColor="@android:color/white"
+            style="@style/StyleTextTitle"
+            android:textStyle="bold"
+            android:typeface="sans"
+            android:minLines="1"/>
+        <TextView
+            android:id="@+id/tv_category"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:text=""
+            android:textColor="@android:color/white"
+            style="@style/StyleTextDescription"
+            android:typeface="sans"
+            android:minLines="1"/>
+        <TextView
+            android:id="@+id/tv_elevation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:text=""
+            android:textColor="@android:color/white"
+            style="@style/StyleTextDescription"
+            android:typeface="sans"
+            android:minLines="1"/>
+        <TextView
+            android:id="@+id/tv_af_icao"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:text=""
+            android:textColor="@android:color/white"
+            style="@style/StyleTextTitle"
+            android:textStyle="bold"
+            android:typeface="sans"
+            android:minLines="1"/>
+    </LinearLayout>
+    <aero.pilotlog.widgets.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/iv_image_menu"
+        android:visibility="invisible"
+        android:layout_width="@dimen/profile_image_size"
+        android:layout_height="@dimen/profile_image_size"
+        android:layout_alignParentRight="true"
+        android:src="@drawable/ic_airport_google_map"
+        android:layout_marginRight="@dimen/margin_right_profile_image"
+        android:layout_marginTop="@dimen/margin_top_profile_image"
+        app:civ_border_color="@color/mcc_cyan"
+        app:civ_border_width="1dp" />
+    <!--<fragment xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="200dp" />-->
+</RelativeLayout>

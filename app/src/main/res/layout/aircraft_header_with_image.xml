@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/transparent">
+    <LinearLayout android:id="@+id/lnHeader"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/mcc_cyan"
+        android:paddingTop="@dimen/padding_bottom"
+        android:paddingBottom="@dimen/padding_bottom"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/tvModel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:text="G-EZWL"
+            android:textColor="@android:color/white"
+            style="@style/StyleTextTitle"
+            android:textStyle="bold"
+            android:typeface="sans"
+            android:minLines="1"/>
+        <TextView
+            android:id="@+id/tvManufacture"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:text="Boeing"
+            android:textColor="@android:color/white"
+            style="@style/StyleTextDescription"
+            android:typeface="sans"
+            android:minLines="1"/>
+        <TextView
+            android:id="@+id/tvCompany"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:text="Jetairfly"
+            android:textColor="@android:color/white"
+            style="@style/StyleTextDescription"
+            android:typeface="sans"
+            android:minLines="1"/>
+        <TextView
+            android:id="@+id/tvRegistration"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:text="G-EZWL"
+            android:textColor="@android:color/white"
+            style="@style/StyleTextTitle"
+            android:textStyle="bold"
+            android:typeface="sans"
+            android:minLines="1"/>
+    </LinearLayout>
+    <aero.pilotlog.widgets.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/iv_image_menu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:src="@drawable/no_image"
+        android:layout_marginRight="@dimen/margin_right_profile_image"
+        android:layout_marginTop="@dimen/margin_top_profile_image"
+        app:civ_border_color="@color/mcc_blue"
+        app:civ_border_width="1dp" />
+</RelativeLayout>

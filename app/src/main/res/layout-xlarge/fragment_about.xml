@@ -1,0 +1,376 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/white"
+            android:orientation="vertical"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingBottom="10dp"
+                android:weightSum="6"
+                android:layout_gravity="center">
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    android:src="@drawable/ic_pilotlog_side_about"
+                    android:paddingRight="90dp"/>
+
+
+                <TextView
+                    android:id="@+id/tvVersion"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="3"
+                    android:paddingLeft="@dimen/about_padding_left_right"
+                    android:text="Version 1.0 \nBuild 20150823"
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/text_size_button_visit" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:background="@color/grey_divider" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_gravity="center">
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingRight="40dp"
+                    android:paddingTop="20dp"
+                    android:weightSum="5">
+
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="2.5"
+                        android:orientation="vertical"
+                        android:paddingRight="20dp"
+                        android:gravity="right">
+
+                        <TextView
+                            android:id="@+id/tvVisitWebsite"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:text="@string/text_visit_website"
+                            android:textColor="@android:color/black"
+                            android:textSize="@dimen/text_size_button_visit" />
+
+                        <TextView
+                            android:id="@+id/tvVisit"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_below="@+id/tvVisitWebsite"
+                            android:text="@string/text_mccpilotlog"
+                            android:textColor="@drawable/btn_visit_site"
+                            android:textSize="@dimen/text_size_button_visit" />
+
+                    </RelativeLayout>
+
+                    <ImageButton
+                        android:id="@+id/ibVisitWeb"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@android:color/white"
+                        android:src="@drawable/visit_web" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingRight="40dp"
+                    android:paddingTop="20dp"
+                    android:weightSum="5">
+
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="2.5"
+                        android:orientation="vertical"
+                        android:paddingRight="20dp">
+
+                        <TextView
+                            android:id="@+id/tvLikeApp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:text="@string/text_like_app"
+                            android:textColor="@android:color/black"
+                            android:textSize="@dimen/text_size_button_visit" />
+
+                        <TextView
+                            android:id="@+id/tvRateApp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_below="@+id/tvLikeApp"
+                            android:text="@string/text_rate_app"
+                            android:textColor="@drawable/btn_visit_site"
+                            android:textSize="@dimen/text_size_button_visit" />
+
+                    </RelativeLayout>
+
+                    <ImageButton
+                        android:id="@+id/ibRateApp"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@android:color/white"
+                        android:src="@drawable/rate_app" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingRight="40dp"
+                    android:paddingTop="20dp"
+                    android:weightSum="5">
+
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="2.5"
+                        android:orientation="vertical"
+                        android:paddingRight="20dp">
+
+                        <TextView
+                            android:id="@+id/tvEncounter"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:text="@string/text_encounter"
+                            android:textColor="@android:color/black"
+                            android:textSize="@dimen/text_size_button_visit" />
+
+                        <TextView
+                            android:id="@+id/tvContactHelpDesk"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_below="@+id/tvEncounter"
+                            android:text="@string/text_contact_helpdesk"
+                            android:textColor="@drawable/btn_visit_site"
+                            android:textSize="@dimen/text_size_button_visit" />
+
+                    </RelativeLayout>
+
+                    <ImageButton
+                        android:id="@+id/ibContactHelpDesk"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@android:color/white"
+                        android:src="@drawable/contact_me" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingBottom="20dp"
+                    android:paddingRight="40dp"
+                    android:paddingTop="20dp"
+                    android:weightSum="5">
+
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="2.5"
+                        android:orientation="vertical"
+                        android:paddingRight="20dp">
+
+                        <TextView
+                            android:id="@+id/tvReadTerms"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:text="@string/text_read_terms"
+                            android:textColor="@android:color/black"
+                            android:textSize="@dimen/text_size_button_visit" />
+
+                        <TextView
+                            android:id="@+id/tvLinkToTerms"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_below="@+id/tvReadTerms"
+                            android:text="@string/text_terms_and_cond"
+                            android:textColor="@drawable/btn_visit_site"
+                            android:textSize="@dimen/text_size_button_visit" />
+
+                    </RelativeLayout>
+
+                    <ImageButton
+                        android:id="@+id/ibTermAndCond"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@android:color/white"
+                        android:src="@drawable/term_and_cond" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:background="@color/grey_divider" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/margin_top_version"
+                android:layout_marginTop="@dimen/margin_pilot_logbook"
+                android:gravity="center"
+                android:text="@string/text_pilot_logbook"
+                style="@style/ItemSettingFormatFootNode" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>
+
+    <!--<?xml version="1.0" encoding="utf-8"?>-->
+<!--<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent"-->
+    <!--android:orientation="vertical">-->
+
+    <!--<LinearLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="0dip"-->
+        <!--android:layout_weight="1"-->
+        <!--android:gravity="center"-->
+        <!--android:background="@android:color/white">-->
+
+        <!--<ScrollView-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!-->-->
+
+            <!--<LinearLayout-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:orientation="vertical">-->
+
+                <!--<ImageView-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:src="@drawable/logo_about"-->
+                    <!--android:layout_marginTop="@dimen/margin_top_version"/>-->
+
+                <!--<TextView-->
+                    <!--android:id="@+id/tvVersion"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:gravity="center"-->
+                    <!--android:layout_marginTop="@dimen/margin_top_version"-->
+                    <!--android:textSize="@dimen/text_size_button_visit"-->
+                    <!--android:textColor="@android:color/darker_gray"/>-->
+
+                <!--<TextView-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:text="@string/text_encounter"-->
+                    <!--android:gravity="center"-->
+                    <!--android:layout_marginTop="@dimen/margin_top_encounter"-->
+                    <!--android:textSize="@dimen/text_size_button_visit"-->
+                    <!--android:textColor="@android:color/darker_gray"/>-->
+
+                <!--<TextView-->
+                    <!--android:id="@+id/tvContactHelpdesk"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:text="@string/text_contact_helpdesk"-->
+                    <!--android:gravity="center"-->
+                    <!--android:textSize="@dimen/text_size_button_visit"-->
+                    <!--android:textColor="@drawable/btn_visit_site"/>-->
+
+                <!--<TextView-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:text="@string/text_like_app"-->
+                    <!--android:gravity="center"-->
+                    <!--android:layout_marginTop="@dimen/margin_top_version"-->
+                    <!--android:textSize="@dimen/text_size_button_visit"-->
+                    <!--android:textColor="@android:color/darker_gray"/>-->
+                <!--<TextView-->
+                    <!--android:id="@+id/tvRateApp"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:text="@string/text_rate_app"-->
+                    <!--android:gravity="center"-->
+                    <!--android:textSize="@dimen/text_size_button_visit"-->
+                    <!--android:textColor="@drawable/btn_visit_site"/>-->
+
+                <!--<View-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="1dp"-->
+                    <!--android:background="@android:color/darker_gray"-->
+                    <!--android:layout_marginTop="@dimen/margin_top_version"-->
+                    <!--android:layout_marginLeft="@dimen/margin_pilot_logbook"-->
+                    <!--android:layout_marginRight="@dimen/margin_pilot_logbook"/>-->
+
+                <!--<TextView-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:text="@string/text_pilot_logbook"-->
+                    <!--android:gravity="center"-->
+                    <!--android:layout_marginTop="@dimen/margin_pilot_logbook"-->
+                    <!--android:textSize="@dimen/text_size_button_visit"-->
+                    <!--android:textColor="@android:color/darker_gray"-->
+                    <!--android:layout_marginBottom="@dimen/margin_top_version"/>-->
+
+            <!--</LinearLayout>-->
+        <!--</ScrollView>-->
+    <!--</LinearLayout>-->
+
+    <!--<TextView-->
+        <!--android:id="@+id/tvVisit"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="@dimen/height_button_visit"-->
+        <!--android:background="@color/grey_toolbar"-->
+        <!--android:gravity="center"-->
+        <!--android:text="@string/text_visit_mccpilotlog"-->
+        <!--android:textColor="@drawable/btn_visit_site"-->
+        <!--android:textSize="@dimen/text_size_button_visit" />-->
+<!--</LinearLayout>-->

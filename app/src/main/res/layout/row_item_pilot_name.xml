@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<aero.pilotlog.widgets.swipelayout.SwipeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:swipe="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/swipe"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/list_selector"
+    swipe:leftEdgeSwipeOffset="0dp"
+    swipe:rightEdgeSwipeOffset="0dp">
+
+    <include layout="@layout/layout_swipe_menu_delete_deactive" />
+
+    <RelativeLayout
+        android:id="@+id/rlFront"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:tag="front">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <aero.pilotlog.widgets.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/ivPilotPic"
+                android:layout_width="@dimen/size_image_item_pilot"
+                android:layout_height="@dimen/size_image_item_pilot"
+                android:src="@drawable/pilot_profile"
+                android:scaleType="centerCrop"
+                android:padding="5dp"
+                android:layout_marginLeft="5dp"
+                app:civ_border_color="@color/mcc_cyan"
+                app:civ_border_width="0.5dp" />
+
+            <LinearLayout
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:layout_gravity="center_vertical">
+
+                <TextView
+                    android:id="@+id/position"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/tvPilotName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/pilot_list_side_margin"
+                    android:layout_marginTop="@dimen/pilot_list_top_margin"
+                    android:ellipsize="end"
+                    android:minLines="1"
+                    android:scrollHorizontally="true"
+                    android:text="@string/text_numeric_code"
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/size_text_numeric_code"
+                    android:textStyle="bold"
+                    android:typeface="sans" />
+
+                <TextView
+                    android:id="@+id/tvEmployeeID"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/pilot_name_left_margin"
+                    android:minLines="1"
+                    android:text="@string/text_delay_name"
+                    android:textColor="@color/mcc_cyan"
+                    android:textSize="@dimen/size_text_numeric_code"
+                    android:typeface="sans" />
+
+                <TextView
+                    android:id="@+id/tvCompany"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/margin_top_numeric_code"
+                    android:layout_marginLeft="@dimen/pilot_name_left_margin"
+                    android:layout_marginRight="@dimen/pilot_company_right_margin"
+                    android:minLines="1"
+                    android:text="@string/text_delay_name"
+                    android:textColor="@android:color/darker_gray"
+                    android:textSize="@dimen/size_text_description"
+                    android:typeface="sans" />
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+</aero.pilotlog.widgets.swipelayout.SwipeLayout>

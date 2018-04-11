@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@android:color/white">
+
+    <TextView
+        android:id="@+id/txt_setting_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/margin_left_right"
+        style="@style/ItemSettingFormatTitle2"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <aero.pilotlog.widgets.tagsedittext.TagsEditText
+        android:id="@+id/edtTags"
+        android:layout_marginRight="40dp"
+        android:paddingLeft="10dp"
+        android:paddingBottom="5dp"
+        android:paddingTop="5dp"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        app:allowSpaceInTag="true"
+        app:tagsBackground="@drawable/square"
+        app:tagsCloseImagePadding="@dimen/defaultTagsCloseImagePadding"
+        app:tagsCloseImageRight="@drawable/tag_close"
+        app:tagsTextColor="@color/background_white"
+        app:tagsTextSize="@dimen/defaultTagsTextSize"
+        app:tagsPaddingLeft="50dp"
+        android:background="@null"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center|left"
+        android:layout_below="@+id/txt_setting_title"
+        android:layout_alignLeft="@+id/txt_setting_title"
+        android:layout_alignStart="@+id/txt_setting_title"
+        style="@style/ItemSettingFormatDescriptionExtra2"
+        />
+    <TextView
+        android:id="@+id/txt_setting_footNote"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:layout_marginLeft="10dp"
+        android:layout_marginBottom="5dp"
+        android:minLines="1"
+        android:layout_marginRight="@dimen/margin_right_footnote"
+        android:layout_below="@+id/edtTags"
+        android:layout_alignLeft="@+id/txt_setting_title"
+        android:layout_alignStart="@+id/txt_setting_title"
+        style="@style/ItemSettingFormatFootNode" />
+
+    <ImageView
+        android:id="@+id/ib_setting_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:src="@drawable/ic_arrow"
+        android:layout_alignRight="@+id/profile_line"
+        android:layout_alignEnd="@+id/profile_line" />
+
+    <View android:layout_marginTop="5dp"
+        android:id="@+id/profile_line"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_below="@+id/txt_setting_footNote"
+        android:layout_marginBottom="1dp"
+        android:layout_height="1dp"
+        android:background="@color/grey_divider"/>
+
+</RelativeLayout>
+    <!-- android:layout_toRightOf="@+id/txt_setting_description"
+     android:layout_toLeftOf="@+id/ib_setting_icon"
+     android:layout_toStartOf="@+id/ib_setting_icon"-->

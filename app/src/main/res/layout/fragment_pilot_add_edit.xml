@@ -1,0 +1,382 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_white"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/white"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <include layout="@layout/title_bar_layout" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingBottom="@dimen/margin_top_pilot_add"
+                android:paddingLeft="@dimen/margin_left_right"
+                android:paddingRight="@dimen/margin_left_right"
+                android:paddingTop="@dimen/margin_top_pilot_add">
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="2">
+
+                    <LinearLayout
+                        android:layout_width="@dimen/layout_weight_empty"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/text_company"
+                            android:textColor="@color/mcc_cyan"
+                            android:textSize="@dimen/input_title_text_size"
+                            android:typeface="sans" />
+
+
+                        <aero.pilotlog.widgets.MccEditText
+                            android:id="@+id/edtCompany"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="@dimen/margin_edit_company"
+                            android:background="@color/edit_text_bg"
+                            android:hint="@string/edt_company_hint"
+                            android:imeOptions="actionDone"
+                            android:inputType="textCapCharacters"
+                            android:maxLength="50"
+                            android:padding="5dp"
+                            android:singleLine="true"
+                            android:textColor="@android:color/black"
+                            android:textColorHint="@color/grey_toolbar"
+                            android:textSize="@dimen/input_title_text_size" />
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="@dimen/layout_weight_empty"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/text_empId"
+                            android:textColor="@color/mcc_cyan"
+                            android:textSize="@dimen/input_title_text_size"
+                            android:typeface="sans" />
+
+                        <aero.pilotlog.widgets.MccEditText
+                            android:id="@+id/edtEmplId"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@color/edit_text_bg"
+                            android:hint="@string/edt_company_hint"
+                            android:imeOptions="actionDone"
+                            android:inputType="textCapCharacters"
+                            android:maxLength="10"
+                            android:padding="5dp"
+                            android:singleLine="true"
+                            android:textColor="@android:color/black"
+                            android:textColorHint="@color/grey_toolbar"
+                            android:textSize="@dimen/input_title_text_size" />
+
+                    </LinearLayout>
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="@dimen/padding_top_pilot_add"
+                    android:text="@string/text_pilot_name"
+                    android:textColor="@color/mcc_cyan"
+                    android:textSize="@dimen/input_title_text_size"
+                    android:typeface="sans" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <aero.pilotlog.widgets.MccEditText
+                        android:id="@+id/edtPilotName"
+                        style="@style/TextBoxAircraftStyle"
+                        android:hint="@string/edt_pilot_name_hint"
+                        android:inputType="textPersonName"
+                        android:maxLength="100"
+                        android:singleLine="true"
+                        android:textColorHint="@color/grey_toolbar" />
+
+                    <ImageView
+                        android:id="@+id/ivName"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="5dp"
+                        android:background="@drawable/bg_image_view_click"
+                        android:clickable="true"
+                        android:src="@drawable/ic_a" />
+                </RelativeLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="@dimen/padding_top_pilot_add"
+                    android:text="@string/text_pilot_phone"
+                    android:textColor="@color/mcc_cyan"
+                    android:textSize="@dimen/input_title_text_size"
+                    android:typeface="sans" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <aero.pilotlog.widgets.MccEditText
+                        android:id="@+id/edtCellPhone"
+                        style="@style/TextBoxAircraftStyle"
+                        android:hint="@string/edt_pilot_phone_hint"
+                        android:inputType="phone"
+                        android:maxLength="20"
+                        android:singleLine="true"
+                        android:textColorHint="@color/grey_toolbar" />
+
+                    <ImageView
+                        android:id="@+id/ivCellPhone"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="5dp"
+                        android:background="@drawable/bg_image_view_click"
+                        android:clickable="true"
+                        android:src="@drawable/ic_cancel" />
+                </RelativeLayout>
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="@dimen/padding_top_pilot_add"
+                    android:text="@string/text_pilot_email"
+                    android:textColor="@color/mcc_cyan"
+                    android:textSize="@dimen/input_title_text_size"
+                    android:typeface="sans" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <aero.pilotlog.widgets.MccEditText
+                        android:id="@+id/edtEmail"
+                        style="@style/TextBoxAircraftStyle"
+                        android:hint="@string/edt_pilot_email_hint"
+                        android:inputType="textEmailAddress"
+                        android:maxLength="100"
+                        android:singleLine="true"
+                        android:textColorHint="@color/grey_toolbar" />
+
+                    <ImageView
+                        android:id="@+id/ivEmail"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="5dp"
+                        android:background="@drawable/bg_image_view_click"
+                        android:clickable="true"
+                        android:src="@drawable/ic_cancel" />
+                </RelativeLayout>
+
+                <!--facebook-->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="@dimen/padding_top_pilot_add"
+                    android:text="FACEBOOK"
+                    android:textColor="@color/mcc_cyan"
+                    android:textSize="@dimen/input_title_text_size"
+                    android:typeface="sans" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <aero.pilotlog.widgets.MccEditText
+                        android:id="@+id/edtFacebook"
+                        style="@style/TextBoxAircraftStyle"
+                        android:hint="Facebook"
+                        android:maxLength="100"
+                        android:singleLine="true"
+                        android:textColorHint="@color/grey_toolbar" />
+
+                    <ImageView
+                        android:id="@+id/ivFacebook"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="5dp"
+                        android:background="@drawable/bg_image_view_click"
+                        android:clickable="true"
+                        android:src="@drawable/ic_cancel" />
+                </RelativeLayout>
+                <!--LinkedIn-->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="@dimen/padding_top_pilot_add"
+                    android:text="LINKED-IN"
+                    android:textColor="@color/mcc_cyan"
+                    android:textSize="@dimen/input_title_text_size"
+                    android:typeface="sans" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <aero.pilotlog.widgets.MccEditText
+                        android:id="@+id/edtLinkedIn"
+                        style="@style/TextBoxAircraftStyle"
+                        android:hint="Linked-In"
+                        android:maxLength="100"
+                        android:singleLine="true"
+                        android:textColorHint="@color/grey_toolbar" />
+
+                    <ImageView
+                        android:id="@+id/ivLinkedIn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="5dp"
+                        android:background="@drawable/bg_image_view_click"
+                        android:clickable="true"
+                        android:src="@drawable/ic_cancel" />
+                </RelativeLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="@dimen/padding_top_pilot_add"
+                    android:text="@string/text_pilot_certificate"
+                    android:textColor="@color/mcc_cyan"
+                    android:textSize="@dimen/input_title_text_size"
+                    android:typeface="sans" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <aero.pilotlog.widgets.MccEditText
+                        android:id="@+id/edtCertificate"
+                        style="@style/TextBoxAircraftStyle"
+                        android:hint="@string/edt_pilot_certificate_hint"
+                        android:imeOptions="actionDone"
+                        android:inputType="textCapCharacters"
+                        android:maxLength="50"
+                        android:textColorHint="@color/grey_toolbar" />
+
+                    <ImageView
+                        android:id="@+id/ivCertificate"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="5dp"
+                        android:background="@drawable/bg_image_view_click"
+                        android:clickable="true"
+                        android:src="@drawable/ic_cancel" />
+                </RelativeLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="@dimen/padding_top_pilot_add"
+                    android:text="@string/text_pilot_notes"
+                    android:textColor="@color/mcc_cyan"
+                    android:textSize="@dimen/input_title_text_size"
+                    android:typeface="sans" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <aero.pilotlog.widgets.MccEditText
+                        android:id="@+id/edtNotes"
+                        style="@style/TextBoxAircraftStyle"
+                        android:gravity="top"
+                        android:hint="@string/edt_notes_hint"
+                        android:inputType="textMultiLine|textCapSentences"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:maxLength="512"
+                        android:minLines="5"
+                        android:textColorHint="@color/grey_toolbar" />
+
+                    <ImageView
+                        android:id="@+id/ivNotes"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="5dp"
+                        android:background="@drawable/bg_image_view_click"
+                        android:clickable="true"
+                        android:src="@drawable/ic_cancel" />
+                </RelativeLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="@dimen/padding_top_pilot_add"
+                    android:text="@string/text_pilot_roster"
+                    android:textColor="@color/mcc_cyan"
+                    android:textSize="@dimen/input_title_text_size"
+                    android:typeface="sans" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <aero.pilotlog.widgets.MccEditText
+                        android:id="@+id/edtRoster"
+                        android:hint="@string/edt_pilot_roster_hint"
+                        android:imeOptions="actionDone"
+                        android:inputType="textCapCharacters"
+                        android:maxLength="100"
+                        style="@style/TextBoxAircraftStyle"
+                        android:textColorHint="@color/grey_toolbar" />
+
+                    <ImageView
+                        android:id="@+id/ivRoster"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="5dp"
+                        android:background="@drawable/bg_image_view_click"
+                        android:clickable="true"
+                        android:src="@drawable/ic_cancel" />
+                </RelativeLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+    </ScrollView>
+</LinearLayout>
+

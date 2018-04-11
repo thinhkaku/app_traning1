@@ -1,0 +1,410 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <LinearLayout android:id="@+id/ln_message_deduct"
+                    android:visibility="gone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@color/background_white"
+                        android:paddingTop="10dp"
+                        android:paddingBottom="10dp"
+                        android:paddingLeft="10dp"
+                        android:gravity="left"
+                        android:layout_gravity="left"
+                        android:textColor="@color/mcc_amber"
+                        android:text="● "
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@color/background_white"
+                        android:paddingTop="10dp"
+                        android:paddingBottom="10dp"
+                        android:paddingLeft="10dp"
+                        android:gravity="left"
+                        android:layout_gravity="left"
+                        android:textColor="@color/mcc_amber"
+                        android:text="Relief Time deducted"
+                        android:textSize="16sp"
+                        android:textStyle="bold|italic" />
+                </LinearLayout>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/event_info_gray"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:paddingLeft="10dp"
+                    android:textColor="@color/black"
+                    android:text="@string/text_totals_grand_total"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+
+                <aero.pilotlog.widgets.ItemTotal
+                    android:id="@+id/itemTotalAircraft"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:title_total1="@string/text_flight_route_aircraft" />
+                <aero.pilotlog.widgets.ItemTotal
+                    android:id="@+id/itemTotalSimulator"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:title_total1="@string/text_totals_simulator" />
+                <aero.pilotlog.widgets.ItemTotal
+                    android:id="@+id/itemTotalDrone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:title_total1="@string/text_totals_drone" />
+                <aero.pilotlog.widgets.ItemTotal
+                    android:id="@+id/itemGrandTotal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:title_total1="@string/text_totals_totals"
+                    app:has_line_border="false"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/event_info_gray"
+                    android:paddingTop="1dp"
+                    android:paddingBottom="1dp"
+                    android:textColor="@color/black"
+                    android:textSize="5sp" />
+
+                <LinearLayout
+                    android:layout_marginTop="@dimen/margin_top"
+                    android:layout_marginBottom="@dimen/margin_top"
+                    android:paddingBottom="@dimen/margin_top"
+                    android:paddingTop="@dimen/margin_top"
+                    android:gravity="center_horizontal"
+                    android:layout_margin="@dimen/margin_left_right"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <android.support.v7.widget.AppCompatCheckBox
+                        android:id="@+id/cbTotalAircraft"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="@string/text_flight_route_aircraft"
+                        android:checked="true"
+                        android:button="@android:color/transparent"
+                        android:background="@drawable/checkbox_selector_radius_left"
+                        android:textAppearance="?android:attr/textAppearanceSmallPopupMenu"
+                        android:textStyle="bold"
+                        android:textColor="@color/background_white" />
+                    <android.support.v7.widget.AppCompatCheckBox
+                        android:layout_marginLeft="-1dp"
+                        android:id="@+id/cbTotalSimulator"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="@string/text_totals_simulator"
+                        android:checked="false"
+                        android:button="@android:color/transparent"
+                        android:background="@drawable/checkbox_selector_no_radius"
+                        android:textAppearance="?android:attr/textAppearanceSmallPopupMenu"
+                        android:textStyle="bold"
+                        android:textColor="@color/mcc_cyan" />
+                    <android.support.v7.widget.AppCompatCheckBox
+                        android:layout_marginLeft="-1dp"
+                        android:id="@+id/cbTotalDrone"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="   DRONE   "
+                        android:checked="false"
+                        android:button="@android:color/transparent"
+                        android:background="@drawable/checkbox_selector_radius_right"
+                        android:textAppearance="?android:attr/textAppearanceSmallPopupMenu"
+                        android:textStyle="bold"
+                        android:textColor="@color/mcc_cyan" />
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/event_info_gray"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:paddingLeft="10dp"
+                    android:textColor="@color/black"
+                    android:text="@string/text_totals_function"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <aero.pilotlog.widgets.ItemTotal
+                    android:id="@+id/itemTotalPic"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:title_total1="@string/aircraft_pic" />
+                <aero.pilotlog.widgets.ItemTotal
+                    android:id="@+id/itemTotalPicUs"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:title_total1="PICUS" />
+
+                <aero.pilotlog.widgets.ItemTotal
+                    android:id="@+id/itemTotalCoPilot"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:title_total1="@string/text_totals_co_pilot" />
+
+                <aero.pilotlog.widgets.ItemTotal
+                    android:id="@+id/itemTotalDual"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:title_total1="@string/text_flight_hours_dual" />
+                <aero.pilotlog.widgets.ItemTotal
+                    android:id="@+id/itemTotalInstructor"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:title_total1="@string/text_flight_hours_instructor" />
+                <aero.pilotlog.widgets.ItemTotal
+                    android:id="@+id/itemTotalExaminer"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:has_line_border="false"
+                    app:title_total1="@string/text_flight_hours_examiner" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/event_info_gray"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:paddingLeft="10dp"
+                    android:textColor="@color/black"
+                    android:text="@string/text_totals_flight_cond"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <aero.pilotlog.widgets.ItemTotal
+                    android:id="@+id/itemTotalRelief"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:title_total1="@string/text_flight_hours_relief"/>
+
+                <aero.pilotlog.widgets.ItemTotal
+                    android:id="@+id/itemTotalNight"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:title_total1="@string/text_flight_hours_night" />
+                <aero.pilotlog.widgets.ItemTotal
+                    android:id="@+id/itemTotalIFR"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:title_total1="@string/text_flight_hours_ifr" />
+                <aero.pilotlog.widgets.ItemTotal
+                    android:id="@+id/itemTotalActualInstrument"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:title_total1="@string/text_flight_hours_act" />
+                <aero.pilotlog.widgets.ItemTotal
+                    android:id="@+id/itemTotalSimulatedInstrument"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:title_total1="@string/text_flight_hours_sim" />
+                <aero.pilotlog.widgets.ItemTotal
+                    android:id="@+id/itemTotalXC"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:title_total1="@string/text_flight_hours_xc" />
+
+                <aero.pilotlog.widgets.ItemTotal
+                    android:id="@+id/itemTotalUser1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <aero.pilotlog.widgets.ItemTotal
+                    android:id="@+id/itemTotalUser2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+                <aero.pilotlog.widgets.ItemTotal
+                    android:id="@+id/itemTotalUser3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+                <aero.pilotlog.widgets.ItemTotal
+                    android:id="@+id/itemTotalUser4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:has_line_border="false"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/event_info_gray"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:paddingLeft="10dp"
+                    android:textColor="@color/black"
+                    android:text="@string/text_totals_aircraft_class"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <aero.pilotlog.widgets.ItemTotal
+                    android:id="@+id/itemTotalMicroLight"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:title_total1="MICROLIGHT" />
+                <aero.pilotlog.widgets.ItemTotal
+                    android:id="@+id/itemTotalGlider"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:title_total1="GLIDER" />
+                <aero.pilotlog.widgets.ItemTotal
+                    android:id="@+id/itemTotalLighterThanAir"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:title_total1="LIGHTER-THAN-AIR" />
+                <aero.pilotlog.widgets.ItemTotal
+                    android:id="@+id/itemTotalRotorCraft"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:title_total1="ROTORCRAFT" />
+                <aero.pilotlog.widgets.ItemTotal
+                    android:id="@+id/itemTotalAeroplane"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:title_total1="AEROPLANE" />
+                <aero.pilotlog.widgets.ItemTotal
+                    android:id="@+id/itemTotalUnmannedAircraft"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:title_total1="UNMANNED AIRCRAFT"
+                    app:has_line_border="false"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/event_info_gray"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:paddingLeft="10dp"
+                    android:textColor="@color/black"
+                    android:text="@string/text_totals_engine_power"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <aero.pilotlog.widgets.ItemTotal
+                    android:id="@+id/itemTotalUnPower"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:title_total1="@string/text_totals_unpowered" />
+                <aero.pilotlog.widgets.ItemTotal
+                    android:id="@+id/itemTotalSePiston"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:title_total1="@string/text_totals_se_piston" />
+                <aero.pilotlog.widgets.ItemTotal
+                    android:id="@+id/itemTotalSeTurboprop"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:title_total1="@string/text_totals_se_turboprop" />
+                <aero.pilotlog.widgets.ItemTotal
+                    android:id="@+id/itemTotalSeTurbofan"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:title_total1="@string/text_totals_se_turbofan" />
+
+                <aero.pilotlog.widgets.ItemTotal
+                    android:id="@+id/itemTotalMePiston"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:title_total1="@string/text_totals_me_piston" />
+                <aero.pilotlog.widgets.ItemTotal
+                    android:id="@+id/itemTotalMeTurboprop"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:title_total1="@string/text_totals_me_turboprop" />
+                <aero.pilotlog.widgets.ItemTotal
+                    android:id="@+id/itemTotalMeTurbofan"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:title_total1="@string/text_totals_me_turbofan"
+                    app:has_line_border="false"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/event_info_gray"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:paddingLeft="10dp"
+                    android:textColor="@color/black"
+                    android:text="@string/text_flight_currencies"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <aero.pilotlog.widgets.ItemTotal
+                    android:id="@+id/itemTotalToday"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:title_total1="@string/text_totals_today" />
+                <aero.pilotlog.widgets.ItemTotal
+                    android:id="@+id/itemTotalLdgDay"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:title_total1="@string/text_totals_ldgday" />
+
+                <aero.pilotlog.widgets.ItemTotal
+                    android:id="@+id/itemTotalToNight"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:title_total1="@string/text_totals_tonight" />
+                <aero.pilotlog.widgets.ItemTotal
+                    android:id="@+id/itemTotalLdgNight"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:title_total1="@string/text_totals_ldgnight" />
+
+                <aero.pilotlog.widgets.ItemTotal
+                    android:id="@+id/itemTotalLift"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:title_total1="@string/text_flight_currencies_lifts" />
+
+                <aero.pilotlog.widgets.ItemTotal
+                    android:id="@+id/itemTotalHolding"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:title_total1="@string/text_flight_currencies_holding" />
+            </LinearLayout>
+
+        </ScrollView>
+
+        <LinearLayout
+            android:id="@+id/llLoading"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:visibility="gone">
+
+            <ProgressBar
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_text_loading"
+                android:text="@string/loading" />
+        </LinearLayout>
+</LinearLayout>

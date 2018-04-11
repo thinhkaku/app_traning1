@@ -1,0 +1,43 @@
+<FrameLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_gravity="bottom"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:id="@+id/ll_placeholder_register_step_one"
+        android:layout_marginBottom="@dimen/login_margin_top_bottom"
+        android:layout_gravity="bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            style="@style/StyleTextViewLoginScreen"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/login_margin_top_bottom"
+            android:text="@string/text_regis_des" />
+
+        <EditText
+            android:id="@+id/edtFirstName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/metro_ui_edittext_radius_top"
+            android:gravity="left"
+            android:hint="@string/text_first_name"
+            style="@style/StyleEditTextLoginScreen"
+            android:inputType="textCapSentences"
+            />
+        <EditText
+            android:layout_marginTop="-1dp"
+            android:id="@+id/edtLastName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:hint="@string/text_last_name"
+            android:inputType="textCapSentences"
+            android:background="@drawable/metro_ui_edittext_radius_bottom"
+            style="@style/StyleEditTextLoginScreen"
+            />
+    </LinearLayout>
+
+</FrameLayout>

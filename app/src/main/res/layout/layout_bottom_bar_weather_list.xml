@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/height_bottom_bar"
+    android:gravity="center"
+    android:orientation="horizontal"
+    android:background="@color/bg_bottom_bar"
+    android:id="@+id/rlBottomBar">
+    <RelativeLayout
+        android:layout_width="0dip"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+        <Button
+            android:id="@+id/btnAdd"
+            android:layout_width="@dimen/width_button_bar"
+            android:layout_height="fill_parent"
+            android:layout_centerInParent="true"
+            android:background="@drawable/ic_add" />
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="0dip"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+        <Button
+            android:id="@+id/btnRefresh"
+            android:layout_width="@dimen/width_button_bar"
+            android:layout_height="fill_parent"
+            android:layout_centerInParent="true"
+            android:background="@drawable/refresh"/>
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="0dip"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+        <Button
+            android:id="@+id/btnSort"
+            android:layout_width="@dimen/big_width_button_bar"
+            android:layout_height="fill_parent"
+            android:background="@drawable/ic_sort"
+            android:paddingBottom="@dimen/padding_button_sort"
+            android:layout_centerInParent="true"
+            android:textColor="@color/color_text_sort"
+            android:textSize="@dimen/size_text_button_bar" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="0dip"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+        <Button
+            android:id="@+id/btnDeleteAll"
+            android:layout_width="@dimen/width_button_bar"
+            android:layout_height="fill_parent"
+            android:layout_centerInParent="true"
+            android:background="@drawable/ic_delete" />
+    </RelativeLayout>
+
+
+</LinearLayout>

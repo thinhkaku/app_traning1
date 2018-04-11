@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/padding_text_title_route"
+            android:background="@color/grey_toolbar"
+            android:gravity="center"
+            android:text="@string/text_flight_log"
+            android:textColor="@color/mcc_blue"
+            android:textSize="@dimen/size_text_title_flight_add"
+            android:textStyle="bold"
+            android:typeface="sans"
+            android:layout_gravity="center_vertical"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_title_log"
+            android:background="@android:color/white"
+            android:paddingLeft="@dimen/padding_icon_title_route"
+            android:paddingRight="@dimen/padding_icon_title_route"
+            android:layout_marginLeft="@dimen/margin_icon_title_route"/>
+
+    </FrameLayout>
+
+    <aero.pilotlog.widgets.ItemFlightConfigure
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:configure_title="REMARKS"
+        android:tag="item_Remarks"
+        app:is_display_configure_checkbox="true"
+        app:configure_description="Comments are printed in logbook"
+        android:layout_marginTop="5dp"
+        android:id="@+id/item_configure_remarks"/>
+
+    <aero.pilotlog.widgets.ItemFlightConfigure
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:configure_title="INSTRUCTION"
+        android:tag="item_Training"
+        app:is_display_configure_checkbox="true"
+        app:configure_description="Type of training (given or received)"
+        android:id="@+id/item_configure_instruction"/>
+
+    <aero.pilotlog.widgets.ItemFlightConfigure
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:configure_title="JOURNEY LOG"
+        android:tag="item_FlightReport"
+        app:is_display_configure_checkbox="true"
+        app:configure_description="Comments are not printed in logbook"
+        android:id="@+id/item_configure_report"/>
+
+</LinearLayout>

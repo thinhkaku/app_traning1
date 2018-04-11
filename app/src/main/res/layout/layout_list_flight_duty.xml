@@ -1,0 +1,305 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginLeft="@dimen/margin_left_item_logbook"
+        android:layout_marginTop="@dimen/margin_top__list_duty"
+        android:layout_marginBottom="@dimen/margin_top__item_duty"
+        >
+
+        <TextView
+            android:id="@+id/tvIcaoIata1"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="4"
+            android:gravity="left"
+            android:singleLine="true"
+            android:text=""
+            android:textColor="@color/mcc_cyan"
+            android:textSize="@dimen/size_text_title_sub_route"
+            android:typeface="sans" />
+
+        <TextView
+            android:id="@+id/tvFlightTime1"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="4"
+            android:gravity="left"
+            android:singleLine="true"
+            android:text=""
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/size_text_title_sub_route"
+            android:typeface="sans" />
+
+        <TextView
+            android:id="@+id/tvTotalFlightTime1"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:gravity="left"
+            android:singleLine="true"
+            android:text=""
+            android:textColor="@android:color/black"
+            android:textStyle="bold"
+            android:textSize="@dimen/size_text_title_sub_route"
+            android:typeface="sans" />
+
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/grey_toolbar" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginLeft="@dimen/margin_left_item_logbook"
+        android:layout_marginBottom="@dimen/margin_top__item_duty"
+        >
+
+        <TextView
+            android:id="@+id/tvIcaoIata2"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="4"
+            android:gravity="left"
+            android:singleLine="true"
+            android:text=""
+            android:textColor="@color/mcc_cyan"
+            android:textSize="@dimen/size_text_title_sub_route"
+            android:typeface="sans" />
+
+        <TextView
+            android:id="@+id/tvFlightTime2"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="4"
+            android:gravity="left"
+            android:singleLine="true"
+            android:text=""
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/size_text_title_sub_route"
+            android:typeface="sans" />
+
+        <TextView
+            android:id="@+id/tvTotalFlightTime2"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:gravity="left"
+            android:singleLine="true"
+            android:text=""
+            android:textColor="@android:color/black"
+            android:textStyle="bold"
+            android:textSize="@dimen/size_text_title_sub_route"
+            android:typeface="sans" />
+
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/grey_toolbar" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginLeft="@dimen/margin_left_item_logbook"
+        android:layout_marginBottom="@dimen/margin_top__item_duty"
+        >
+
+        <TextView
+            android:id="@+id/tvIcaoIata3"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="4"
+            android:gravity="left"
+            android:singleLine="true"
+            android:text=""
+            android:textColor="@color/mcc_cyan"
+            android:textSize="@dimen/size_text_title_sub_route"
+            android:typeface="sans" />
+
+        <TextView
+            android:id="@+id/tvFlightTime3"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="4"
+            android:gravity="left"
+            android:singleLine="true"
+            android:text=""
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/size_text_title_sub_route"
+            android:typeface="sans" />
+
+        <TextView
+            android:id="@+id/tvTotalFlightTime3"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:gravity="left"
+            android:singleLine="true"
+            android:text=""
+            android:textColor="@android:color/black"
+            android:textStyle="bold"
+            android:textSize="@dimen/size_text_title_sub_route"
+            android:typeface="sans" />
+
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/grey_toolbar" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginLeft="@dimen/margin_left_item_logbook"
+        android:layout_marginBottom="@dimen/margin_top__item_duty"
+        >
+
+        <TextView
+            android:id="@+id/tvIcaoIata4"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="4"
+            android:gravity="left"
+            android:singleLine="true"
+            android:text=""
+            android:textColor="@color/mcc_cyan"
+            android:textSize="@dimen/size_text_title_sub_route"
+            android:typeface="sans" />
+
+        <TextView
+            android:id="@+id/tvFlightTime4"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="4"
+            android:gravity="left"
+            android:singleLine="true"
+            android:text=""
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/size_text_title_sub_route"
+            android:typeface="sans" />
+
+        <TextView
+            android:id="@+id/tvTotalFlightTime4"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:gravity="left"
+            android:singleLine="true"
+            android:text=""
+            android:textColor="@android:color/black"
+            android:textStyle="bold"
+            android:textSize="@dimen/size_text_title_sub_route"
+            android:typeface="sans" />
+
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/grey_toolbar" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginLeft="@dimen/margin_left_item_logbook"
+        android:layout_marginBottom="@dimen/margin_top__item_duty"
+        >
+
+        <TextView
+            android:id="@+id/tvIcaoIata5"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="4"
+            android:gravity="left"
+            android:singleLine="true"
+            android:text=""
+            android:textColor="@color/mcc_cyan"
+            android:textSize="@dimen/size_text_title_sub_route"
+            android:typeface="sans" />
+
+        <TextView
+            android:id="@+id/tvFlightTime5"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="4"
+            android:gravity="left"
+            android:singleLine="true"
+            android:text=""
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/size_text_title_sub_route"
+            android:typeface="sans" />
+
+        <TextView
+            android:id="@+id/tvTotalFlightTime5"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:gravity="left"
+            android:singleLine="true"
+            android:text=""
+            android:textColor="@android:color/black"
+            android:textStyle="bold"
+            android:textSize="@dimen/size_text_title_sub_route"
+            android:typeface="sans" />
+
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/grey_toolbar" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginLeft="@dimen/margin_left_item_logbook"
+        android:layout_marginBottom="@dimen/margin_top__item_duty"
+        >
+
+        <TextView
+            android:id="@+id/tvIcaoIata6"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="4"
+            android:gravity="left"
+            android:singleLine="true"
+            android:text=""
+            android:textColor="@color/mcc_cyan"
+            android:textSize="@dimen/size_text_title_sub_route"
+            android:typeface="sans" />
+
+        <TextView
+            android:id="@+id/tvFlightTime6"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="4"
+            android:gravity="left"
+            android:singleLine="true"
+            android:text=""
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/size_text_title_sub_route"
+            android:typeface="sans" />
+
+        <TextView
+            android:id="@+id/tvTotalFlightTime6"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:gravity="left"
+            android:singleLine="true"
+            android:text=""
+            android:textColor="@android:color/black"
+            android:textStyle="bold"
+            android:textSize="@dimen/size_text_title_sub_route"
+            android:typeface="sans" />
+
+    </LinearLayout>
+
+</LinearLayout>

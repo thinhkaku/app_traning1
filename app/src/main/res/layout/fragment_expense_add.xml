@@ -1,0 +1,315 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_white"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical">
+
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/sv_duty_add"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/background_white"
+        android:fitsSystemWindows="true"
+        android:isScrollContainer="false"
+        tools:context="aero.pilotlog.fragments.ExpenseAddFragment">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/background_white"
+            android:orientation="vertical">
+
+            <include layout="@layout/title_bar_layout" />
+
+            <aero.pilotlog.widgets.ItemInputTextWithIcon
+                android:id="@+id/item_expense_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:input_type="4096"
+                app:is_show_footnote="false"
+                app:title_setting="@string/text_flight_route_date" />
+
+            <aero.pilotlog.widgets.ItemInputTextWithIcon
+                android:id="@+id/item_expense_group"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:input_type="4096"
+                app:is_show_footnote="false"
+                app:title_setting="GROUP" />
+
+            <aero.pilotlog.widgets.ItemInputTextWithIcon
+                android:id="@+id/item_expense_type"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:input_type="4096"
+                app:is_show_footnote="false"
+                app:title_setting="TYPE" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_left_right"
+                android:layout_marginRight="@dimen/margin_left_right"
+                android:orientation="horizontal"
+                android:weightSum="1">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.6"
+                    android:orientation="vertical">
+
+                    <TextView
+                        style="@style/ItemSettingFormatTitle2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="ORIGINAL AMOUNT"
+                        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                    <aero.pilotlog.widgets.MccEditText
+                        android:id="@+id/edt_original_amount"
+                        style="@style/ItemSettingFormatDescriptionExtra2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/margin_left_right"
+                        android:layout_marginTop="@dimen/margin_top_route"
+                        android:background="@null"
+                        android:imeOptions="actionDone"
+                        android:inputType="number|numberDecimal|numberSigned"
+                        android:singleLine="true" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ln_original_amount_type"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.3"
+                    android:orientation="vertical">
+
+                    <TextView
+                        style="@style/ItemSettingFormatTitle2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                    <TextView
+                        android:id="@+id/tv_original_amount_type"
+                        style="@style/ItemSettingFormatDescriptionExtra2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="@dimen/margin_right_footnote"
+                        android:layout_marginTop="@dimen/margin_top_route"
+                        android:gravity="end"
+                        android:minLines="1" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ln_original_amount_type_button"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="5dp"
+                    android:layout_weight="0.1"
+                    android:gravity="center|right">
+
+                    <ImageView
+                        android:id="@+id/ib_setting_icon"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:src="@drawable/ic_arrow" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginBottom="1dp"
+                android:layout_marginLeft="@dimen/margin_left_right"
+                android:layout_marginRight="@dimen/margin_left_right"
+                android:layout_marginTop="@dimen/margin_top_bottom"
+                android:background="@color/grey_divider" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_left_right"
+                android:layout_marginRight="@dimen/margin_left_right"
+                android:orientation="horizontal"
+                android:weightSum="1">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.6"
+                    android:orientation="vertical">
+
+                    <TextView
+                        style="@style/ItemSettingFormatTitle2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="MY CURRENCY"
+                        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                    <aero.pilotlog.widgets.MccEditText
+                        android:id="@+id/edt_my_amount"
+                        style="@style/ItemSettingFormatDescriptionExtra2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/margin_left_right"
+                        android:layout_marginTop="@dimen/margin_top_route"
+                        android:background="@null"
+                        android:imeOptions="actionDone"
+                        android:inputType="number|numberDecimal"
+                        android:singleLine="true" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.3"
+                    android:orientation="vertical">
+
+                    <TextView
+                        style="@style/ItemSettingFormatTitle2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                    <TextView
+                        android:id="@+id/tv_currency_type"
+                        style="@style/ItemSettingFormatDescriptionExtra2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="@dimen/margin_right_footnote"
+                        android:layout_marginTop="@dimen/margin_top_route"
+                        android:gravity="end"
+                        android:minLines="1" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="5dp"
+                    android:layout_weight="0.1"
+                    android:gravity="center|right">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:visibility="invisible" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginBottom="1dp"
+                android:layout_marginLeft="@dimen/margin_left_right"
+                android:layout_marginRight="@dimen/margin_left_right"
+                android:layout_marginTop="@dimen/margin_top_bottom"
+                android:background="@color/grey_divider" />
+
+            <TextView
+                style="@style/ItemSettingFormatTitle2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_left_right"
+                android:layout_marginRight="@dimen/margin_left_right"
+                android:text="DESCRIPTION"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_left_right"
+                android:layout_marginRight="@dimen/margin_left_right">
+
+                <aero.pilotlog.widgets.MccEditText
+                    android:id="@+id/edtNotes"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    style="@style/StyleTextDescription"
+                    android:gravity="top"
+                    android:hint="@string/edt_notes_hint"
+                    android:layout_marginLeft="@dimen/margin_left_right"
+                    android:layout_marginRight="@dimen/margin_left_right"
+                    android:inputType="textMultiLine"
+                    android:maxLength="254"
+                    android:minLines="2"
+                    android:background="@color/transparent"
+                    android:singleLine="true"
+                    android:textColorHint="@color/grey_toolbar" />
+
+                <ImageView
+                    android:id="@+id/ivNotes"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:clickable="true"
+                    android:src="@drawable/icon_cross" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginBottom="1dp"
+                android:layout_marginLeft="@dimen/margin_left_right"
+                android:layout_marginRight="@dimen/margin_left_right"
+                android:layout_marginTop="@dimen/margin_top_bottom"
+                android:background="@color/grey_divider" />
+
+            <aero.pilotlog.widgets.ItemInputTextWithIcon
+                android:id="@+id/item_expense_document"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:input_type="4096"
+                app:is_show_footnote="false"
+                app:title_setting="DOCUMENT" />
+
+            <View
+                android:layout_width="150dp"
+                android:layout_height="1dp"
+                android:layout_gravity="end"
+                android:layout_marginBottom="1dp"
+                android:layout_marginLeft="@dimen/margin_left_right"
+                android:layout_marginRight="@dimen/margin_left_right"
+                android:layout_marginTop="@dimen/margin_top_bottom"
+                android:background="@color/grey_divider" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:layout_marginRight="@dimen/margin_left_right"
+                android:layout_marginBottom="@dimen/margin_top"
+                android:orientation="horizontal">
+                <ImageView android:id="@+id/iv_find_file"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/margin_left_right"
+                    android:background="@drawable/bg_image_view_click"
+                    android:clickable="true"
+                    android:src="@drawable/ic_find_folder"
+                    android:layout_marginLeft="@dimen/margin_left_right" />
+                <ImageView
+                    android:id="@+id/iv_camera"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/margin_left_right"
+                    android:background="@drawable/bg_image_view_click"
+                    android:clickable="true"
+                    android:src="@drawable/ic_photo_camera" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

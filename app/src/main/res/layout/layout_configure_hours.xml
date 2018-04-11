@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/white">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/padding_text_title_route"
+            android:background="@color/grey_toolbar"
+            android:gravity="center"
+            android:text="@string/text_flight_hours"
+            android:textColor="@color/mcc_blue"
+            android:textSize="@dimen/size_text_title_flight_add"
+            android:textStyle="bold"
+            android:typeface="sans"
+            android:layout_gravity="center_vertical"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_title_hours"
+            android:background="@android:color/white"
+            android:paddingLeft="@dimen/padding_icon_title_route"
+            android:paddingRight="@dimen/padding_icon_title_route"
+            android:layout_marginLeft="@dimen/margin_icon_title_route"/>
+
+    </FrameLayout>
+
+    <aero.pilotlog.widgets.ItemFlightConfigure
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:configure_title="OUT - IN HOBBS"
+        android:tag="Hours_Hobbs"
+        app:is_display_configure_checkbox="true"
+        app:configure_description="Start/End Hobbs meter"
+        android:id="@+id/item_configure_hobbs"/>
+
+    <aero.pilotlog.widgets.ItemFlightConfigure
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:configure_title="OUT - IN HOURS"
+        android:tag="Hours_DepArr"
+        app:is_display_configure_checkbox="true"
+        app:configure_description="Off/On Block - Out/In times (ATD / ATA)"
+        android:id="@+id/item_configure_off_block"/>
+
+    <aero.pilotlog.widgets.ItemFlightConfigure
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:configure_title="TO - LDG HOURS"
+        android:tag="Hours_ToLdg"
+        app:is_display_configure_checkbox="true"
+        app:configure_description="Takeoff/Landing - Off/On times"
+        android:id="@+id/item_configure_take_off"/>
+
+    <aero.pilotlog.widgets.ItemFlightConfigure
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:configure_title="TOTAL TIME"
+        android:tag="Time_Total"
+        app:is_display_configure_checkbox="true"
+        app:configure_description="Total Block Time"
+        android:id="@+id/item_configure_total_time"/>
+
+    <aero.pilotlog.widgets.ItemFlightConfigure
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:configure_title="SCHEDULED HOURS"
+        android:tag="Hours_DepArrSCHED"
+        app:is_display_configure_checkbox="true"
+        app:configure_description="Scheduled Hours (STD / STA)"
+        android:id="@+id/item_configure_schedule_hours"/>
+
+    <aero.pilotlog.widgets.ItemFlightConfigure
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:configure_title="PIC"
+        android:tag="Time_PIC"
+        app:is_display_configure_checkbox="true"
+        app:configure_description="Pilot-in-Command or SOLO time"
+        android:id="@+id/item_configure_pic"/>
+
+    <aero.pilotlog.widgets.ItemFlightConfigure
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:configure_title="PICUS"
+        android:tag="Time_PICus"
+        app:is_display_configure_checkbox="true"
+        app:configure_description="PIC under Supervision time, Upgrade to PIC"
+        android:id="@+id/item_configure_picus"/>
+
+    <aero.pilotlog.widgets.ItemFlightConfigure
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:configure_title="SIC"
+        android:tag="Time_SIC"
+        app:is_display_configure_checkbox="true"
+        app:configure_description="First Officer / SIC time"
+        android:id="@+id/item_configure_copilot"/>
+
+    <aero.pilotlog.widgets.ItemFlightConfigure
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:configure_title="DUAL"
+        android:tag="Time_Dual"
+        app:is_display_configure_checkbox="true"
+        app:configure_description="Dual time, either given or received"
+        android:id="@+id/item_configure_dual"/>
+
+    <aero.pilotlog.widgets.ItemFlightConfigure
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:configure_title="INSTRUCTOR"
+        android:tag="Time_Instructor"
+        app:is_display_configure_checkbox="true"
+        app:configure_description="Instructor time (given)"
+        android:id="@+id/item_configure_instructor"/>
+
+    <aero.pilotlog.widgets.ItemFlightConfigure
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:configure_title="EXAMINER"
+        android:tag="Time_Examiner"
+        app:is_display_configure_checkbox="true"
+        app:configure_description="Examiner time, both flight and sim"
+        android:id="@+id/item_configure_examiner"/>
+
+    <aero.pilotlog.widgets.ItemFlightConfigure
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:configure_title="RELIEF"
+        android:tag="Time_Relief"
+        app:is_display_configure_checkbox="true"
+        app:configure_description="Pilot Relief (non-flying) time, Supernumery"
+        android:id="@+id/item_configure_relief"/>
+
+    <aero.pilotlog.widgets.ItemFlightConfigure
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:configure_title="NIGHT"
+        android:tag="Time_Night"
+        app:is_display_configure_checkbox="true"
+        app:configure_description="Night time (automatic or manual)"
+        android:id="@+id/item_configure_night"/>
+
+    <aero.pilotlog.widgets.ItemFlightConfigure
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:configure_title="IFR"
+        android:tag="Time_IFR"
+        app:is_display_configure_checkbox="true"
+        app:configure_description="IFR time (remaining becomes VFR)"
+        android:id="@+id/item_configure_IFR"/>
+
+    <aero.pilotlog.widgets.ItemFlightConfigure
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:configure_title="ACTUAL INSTRUMENT"
+        android:tag="Time_ActInstr"
+        app:is_display_configure_checkbox="true"
+        app:configure_description="Actual time in IMC conditions"
+        android:id="@+id/item_configure_actual_instrument"/>
+
+    <aero.pilotlog.widgets.ItemFlightConfigure
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:configure_title="SIMULATED INSTRUMENT"
+        android:tag="Time_SimInstr"
+        app:is_display_configure_checkbox="true"
+        app:configure_description="Simulated IMC, Hood training time"
+        android:id="@+id/item_configure_simulated_instrument"/>
+
+    <aero.pilotlog.widgets.ItemFlightConfigure
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:configure_title="CROSS-COUNTRY"
+        android:tag="Time_XC"
+        app:is_display_configure_checkbox="true"
+        app:configure_description="Navigation 30 NM (rotor) / 50 NM (airplane)"
+        android:id="@+id/item_configure_cross_country"/>
+
+    <aero.pilotlog.widgets.ItemFlightConfigure
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:configure_title="USER TIME 1"
+        android:tag="Time_User1"
+        app:is_display_configure_checkbox="true"
+        app:configure_description="Setup your own time field"
+        android:id="@+id/item_configure_user_1"/>
+
+    <aero.pilotlog.widgets.ItemFlightConfigure
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:configure_title="USER TIME 2"
+        android:tag="Time_User2"
+        app:is_display_configure_checkbox="true"
+        app:configure_description="Setup your own time field"
+        android:id="@+id/item_configure_user_2"/>
+
+    <aero.pilotlog.widgets.ItemFlightConfigure
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:configure_title="USER TIME 3"
+        android:tag="Time_User3"
+        app:is_display_configure_checkbox="true"
+        app:configure_description="Setup your own time field"
+        android:id="@+id/item_configure_user_3"/>
+
+    <aero.pilotlog.widgets.ItemFlightConfigure
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:configure_title="USER TIME 4"
+        android:tag="Time_User4"
+        app:is_display_configure_checkbox="true"
+        app:configure_description="Setup your own time field"
+        android:id="@+id/item_configure_user_4"/>
+
+</LinearLayout>

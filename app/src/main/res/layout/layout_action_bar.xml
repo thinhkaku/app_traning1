@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/height_actionbar"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/mcc_cyan"
+    android:gravity="center_vertical"
+    android:orientation="horizontal">
+
+    <ImageButton
+        android:id="@+id/ibMenu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        android:padding="@dimen/padding_image_menu"
+        android:src="@drawable/btn_right_menu"
+        android:visibility="visible" />
+
+    <RelativeLayout
+        android:id="@+id/rlBackIcon"
+        android:layout_width="0dip"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:clickable="true"
+        android:gravity="center_vertical"
+        android:focusable="true">
+
+        <ImageButton
+            android:id="@+id/ibLeft"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:clickable="false"
+            android:src="@drawable/ic_back"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/tvTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_toRightOf="@+id/ibLeft"
+            android:clickable="false"
+            android:gravity="center_vertical"
+            android:singleLine="true"
+            android:textStyle="bold"
+            android:text="@string/text_flights"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/text_size_settings" />
+
+    </RelativeLayout>
+   <!-- <android.support.v7.widget.SearchView
+        android:id="@+id/searchView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:searchHintIcon="@drawable/ic_search"
+        android:queryHint="search..."
+        android:searchHintIcon="@drawable/ic_search"
+       android:searchIcon="@drawable/ic_search"
+        android:closeIcon="@drawable/ic_cancel"
+
+        app:iconifiedByDefault="false">
+
+    </android.support.v7.widget.SearchView>-->
+
+    <TextView
+        android:id="@+id/tvNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="@dimen/margin_number"
+        android:background="@android:color/transparent"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/size_text_number" />
+
+    <Button
+        android:layout_width="@dimen/width_button_save"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="70dp"
+        android:background="@drawable/btn_calendar"
+        android:visibility="gone" />
+
+    <Button
+        android:id="@+id/btnRight"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_marginRight="@dimen/margin_left_right"
+        android:background="@drawable/btn_save"
+        android:visibility="gone" />
+    <LinearLayout android:id="@+id/lnEdit"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:visibility="gone">
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@color/background_white" />
+
+        <TextView
+            android:id="@+id/tv_action_bar_right"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="3dp"
+            android:background="@drawable/bg_action_bar_button"
+            android:drawablePadding="13dp"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="EDIT"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/action_bar_text_size" />
+    </LinearLayout>
+</LinearLayout>

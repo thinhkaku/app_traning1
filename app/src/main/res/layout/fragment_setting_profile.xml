@@ -1,0 +1,122 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_white"
+    tools:context="aero.pilotlog.fragments.SettingProfileFragment">
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/event_info_gray"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:paddingLeft="10dp"
+                android:textColor="@color/black"
+                android:text="CrewLounge"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+            <include layout="@layout/setting_profile_with_image" />
+
+            <aero.pilotlog.widgets.ItemSettingList
+                android:id="@+id/item_setting_firstname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:description_setting="Pat"
+                app:title_setting="FIRST NAME" />
+            <aero.pilotlog.widgets.ItemSettingList
+                android:id="@+id/item_setting_function"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:description_setting="Flight Crew Member"
+                app:title_setting="FUNCTION" />
+            <aero.pilotlog.widgets.ItemSettingList
+                android:id="@+id/item_setting_birthday"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:is_select_date="true"
+                app:title_setting="BIRTHDAY" />
+            <aero.pilotlog.widgets.ItemSettingList
+                android:id="@+id/item_setting_address"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:title_setting="ADDRESS" />
+            <aero.pilotlog.widgets.ItemSettingList
+                android:id="@+id/item_setting_countryOfResidence"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:title_setting="COUNTRY OF RESIDENCE" />
+            <aero.pilotlog.widgets.ItemSettingList
+                android:id="@+id/item_setting_cityOfResidence"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:title_setting="CITY OF RESIDENCE" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/event_info_gray"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:paddingLeft="10dp"
+                android:textColor="@color/black"
+                android:text="Contact"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+            <aero.pilotlog.widgets.ItemSettingList
+                android:id="@+id/item_setting_contactEmail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:title_setting="CONTACT EMAIL" />
+            <aero.pilotlog.widgets.ItemSettingList
+                android:id="@+id/item_setting_cellPhone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:input_type="2"
+                app:title_setting="CELL PHONE" />
+            <aero.pilotlog.widgets.ItemSettingList
+                android:id="@+id/item_setting_facebook"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:title_setting="FACEBOOK" />
+            <aero.pilotlog.widgets.ItemSettingList
+                android:id="@+id/item_setting_linkedIn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:title_setting="LINKED-IN" />
+           <!-- <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/event_info_gray"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:paddingLeft="10dp"
+                android:textColor="@color/black"
+                android:text="More info"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+            <net.mcc3si.widgets.ItemSettingList
+                android:id="@+id/item_setting_moreAboutMe"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:title_setting="MORE ABOUT ME" />
+            <net.mcc3si.widgets.ItemSettingList
+                android:id="@+id/item_setting_myInterests"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:title_setting="MY INTERESTS" />-->
+        </LinearLayout>
+    </ScrollView>
+
+</FrameLayout>

@@ -1,0 +1,297 @@
+<resources>
+    <declare-styleable name="CircleImageView">
+        <attr name="civ_border_width" format="dimension" />
+        <attr name="civ_border_color" format="color" />
+        <attr name="civ_border_overlay" format="boolean" />
+        <attr name="civ_fill_color" format="color" />
+    </declare-styleable>
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimaryDark">@color/mcc_cyan</item>
+        <item name="colorPrimary">@color/mcc_cyan</item>
+        <item name="colorAccent">@color/mcc_cyan</item>
+    </style>
+
+    <style name="MyDialogTheme" parent="Theme.AppCompat.Light.Dialog.Alert">
+        <item name="android:background">@color/blackOlive</item>
+    </style>
+
+    <style name="DatePickerTheme" parent="Theme.AppCompat.Light.Dialog.Alert">
+        <item name="colorAccent">@color/mcc_magenta</item>
+    </style>
+    <style name="AlertDialogTheme" parent="Theme.AppCompat.Light.Dialog.Alert">
+        <item name="colorAccent">@color/mcc_magenta</item>
+    </style>
+    <style name="MessageDialogTheme" parent="Theme.AppCompat.Light.Dialog.Alert">
+        <item name="colorAccent">@color/mcc_cyan</item>
+    </style>
+    <style name="WhiteDialogTheme" parent="Theme.AppCompat.Light.Dialog.Alert">
+        <item name="colorAccent">@android:color/white</item>
+        <item name="android:windowBackground">@drawable/dialog_background_magenta</item>
+    </style>
+
+    <style name="AppThemeDialog" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="colorPrimaryDark">@color/mcc_cyan</item>
+        <item name="colorPrimary">@color/mcc_cyan</item>
+        <item name="colorAccent">@color/mcc_cyan</item>
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowTitleStyle">@style/RtlOverlay.DialogWindowTitle.AppCompat</item>
+        <item name="android:windowTitleBackgroundStyle">
+            @style/Base.DialogWindowTitleBackground.AppCompat
+        </item>
+        <item name="android:windowBackground">@color/background_material_light</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:backgroundDimEnabled">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowAnimationStyle">@style/Animation.AppCompat.Dialog</item>
+        <item name="android:windowSoftInputMode">stateUnspecified|adjustPan</item>
+
+        <item name="windowActionBar">false</item>
+        <item name="windowActionModeOverlay">true</item>
+    </style>
+
+    <!--mccSwitch-->
+    <declare-styleable name="MccItemSwitch">
+        <attr name="title" format="string" />
+        <attr name="description_left" format="string" />
+        <attr name="description_center" format="string" />
+        <attr name="description_right" format="string" />
+        <attr name="foot_note_left" format="string" />
+        <attr name="foot_note_center" format="string" />
+        <attr name="foot_note_right" format="string" />
+        <attr name="text_left" format="string" />
+        <attr name="text_center" format="string" />
+        <attr name="text_right" format="string" />
+        <attr name="setting_code" format="integer" />
+
+    </declare-styleable>
+
+    <declare-styleable name="ItemSetting">
+        <attr name="tag_setting" format="string" />
+        <attr name="title_setting" format="string" />
+        <attr name="default_setting" format="string" />
+        <attr name="arr_title" format="reference" />
+        <attr name="arr_value" format="reference" />
+        <attr name="min_number" format="integer" />
+        <attr name="max_number" format="integer" />
+        <attr name="description_setting" format="string" />
+        <attr name="title_bar" format="string" />
+        <attr name="summaryOn" format="string" />
+        <attr name="summaryOff" format="string" />
+        <attr name="switchTextOn" format="string" />
+        <attr name="switchTextOff" format="string" />
+        <attr name="minLines" format="integer" />
+        <attr name="maxLength" format="integer" />
+        <attr name="resourceId" format="integer" />
+        <attr name="text_color" format="integer" />
+        <attr name="input_type" format="integer" />
+        <attr name="is_select_date" format="boolean" />
+        <attr name="is_show_footnote" format="boolean" />
+        <attr name="isClickEnable" format="boolean" />
+        <attr name="isVisibleLineEnd" format="boolean" />
+        <attr name="text_checkbox" format="string" />
+        <attr name="tag_setting2" format="string" />
+    </declare-styleable>
+
+    <declare-styleable name="ItemFlight">
+        <attr name="title_flight" format="string" />//0
+        <attr name="flight_type" format="integer" />//1
+        <attr name="item_type" format="integer" />//2
+        <attr name="resIdIcon1" format="integer" />//3
+        <attr name="have_line_border" format="boolean" />//4
+        <attr name="text_title_color" format="integer" />//5
+        <attr name="text_value1_color" format="integer" />//6
+        <attr name="text_value2_color" format="integer" />//7
+        <attr name="crew_no_icon" format="boolean" />//8
+        <attr name="resIdIcon2" format="integer" />//9
+        <attr name="flight_log_no_icon" format="boolean" />//10
+        <attr name="enable_edit_text" format="boolean" />//11
+        <attr name="enable_edit_text2" format="boolean" />//12
+        <attr name="using_toggle" format="boolean" />//13
+        <attr name="is_show_bottom_line" format="boolean" />//14
+        <attr name="is_all_cap" format="boolean"/>//15
+        <attr name="is_numeric" format="boolean"/> //16
+        <attr name="max_length" format="integer"/> //17
+        <attr name="hint" format="string"/> //18
+        <attr name="icon_type" format="integer"/>//19
+    </declare-styleable>
+
+    <declare-styleable name="ItemFlightConfigure">
+        <attr name="configure_is_check" format="boolean" />//0
+        <attr name="configure_title" format="string" />//1
+        <attr name="configure_description" format="string" />//2
+        <attr name="is_display_configure_checkbox" format="boolean" />//3
+    </declare-styleable>
+
+    <declare-styleable name="ItemTotal">
+        <attr name="title_total1" format="string" />//0
+        <attr name="has_line_border" format="boolean" />//2
+    </declare-styleable>
+
+    <style name="ItemSettingFormatTitle" parent="TextAppearance.AppCompat.Small">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/mcc_cyan</item>
+        <item name="android:layout_marginTop">10dp</item>
+        <item name="android:layout_marginLeft">@dimen/margin_left_right</item>
+    </style>
+
+    <style name="ItemSettingFormatTitle2" parent="TextAppearance.AppCompat.Small">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">@dimen/margin_top_bottom</item>
+        <item name="android:textSize">@dimen/size_text_title_settings</item>
+        <item name="android:textColor">@color/mcc_cyan</item>
+        <item name="android:paddingBottom">@dimen/padding_bottom_title</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:typeface">sans</item>
+    </style>
+
+    <style name="ItemSettingFormatDescriptionExtra2" parent="TextAppearance.AppCompat.Small">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/size_text_title_sub_route</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:typeface">sans</item>
+    </style>
+
+    <style name="ItemSettingFormatFootNode" parent="TextAppearance.AppCompat.Small">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/size_text_route_small</item>
+        <item name="android:textColor">@color/grey_description_text</item>
+        <item name="android:typeface">sans</item>
+    </style>
+
+
+    <style name="StyleTextTitle" parent="TextAppearance.AppCompat.Small">
+        <item name="android:textSize">@dimen/size_text_route_small</item>
+        <item name="android:textColor">@color/mcc_cyan</item>
+        <item name="android:typeface">sans</item>
+    </style>
+
+    <style name="StyleTextDescription" parent="TextAppearance.AppCompat.Small">
+        <item name="android:textSize">@dimen/size_text_title_sub_route</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:typeface">sans</item>
+    </style>
+
+    <style name="StyleTextFootnote" parent="TextAppearance.AppCompat.Small">
+        <item name="android:textSize">@dimen/size_text_route_small</item>
+        <item name="android:textColor">@color/grey_description_text</item>
+        <item name="android:typeface">sans</item>
+    </style>
+
+    <style name="StyleTextTitleMenu" parent="TextAppearance.AppCompat.Small">
+        <item name="android:textSize">@dimen/text_size_settings</item>
+        <item name="android:textColor">@color/mcc_blue</item>
+        <item name="android:typeface">sans</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textAppearance">?android:attr/textAppearanceMedium</item>
+    </style>
+
+
+    <style name="TextBoxAircraftStyle" parent="TextAppearance.AppCompat.Small">
+        <item name="android:textColorHint">@color/grey_toolbar</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">35dp</item>
+        <item name="android:paddingLeft">5dp</item>
+        <item name="android:paddingRight">30dp</item>
+        <item name="android:inputType">textCapSentences</item>
+        <item name="android:textColor">@color/blackOlive</item>
+        <item name="android:textSize">@dimen/size_text_title_sub_route</item>
+        <item name="android:background">@color/edit_text_bg</item>
+        <item name="android:imeOptions">actionDone</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:typeface">sans</item>
+    </style>
+
+    <style name="PopupAnimation">
+        <item name="android:windowEnterAnimation">@android:anim/fade_in</item>
+        <item name="android:windowExitAnimation">@android:anim/fade_out</item>
+    </style>
+
+    <style name="RosterInfoTitle" parent="TextAppearance.AppCompat.Medium">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/mcc_cyan</item>
+        <item name="android:layout_marginTop">10dp</item>
+    </style>
+
+    <style name="RosterInfoSubject" parent="TextAppearance.AppCompat.Medium">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/mcc_cyan</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <!--   <declare-styleable name="TagsEditText">
+        <attr name="allowSpaceInTag" format="boolean"/>
+        <attr name="tagsTextColor" format="color"/>
+        <attr name="tagsTextSize" format="dimension"/>
+        <attr name="tagsBackground" format="integer"/>
+        <attr name="tagsCloseImageLeft" format="integer"/>
+        <attr name="tagsCloseImageRight" format="integer"/>
+        <attr name="tagsCloseImagePadding" format="dimension" />
+        <attr name="tagsPaddingLeft" format="dimension"/>
+        <attr name="tagsPaddingRight" format="dimension"/>
+        <attr name="tagsPaddingTop" format="dimension"/>
+        <attr name="tagsPaddingBottom" format="dimension"/>
+    </declare-styleable>-->
+
+    <style name="StyleLoginButton">
+        <item name="android:textAllCaps">false</item>
+        <item name="android:background">@drawable/transparent_button_login</item>
+        <item name="android:paddingLeft">5dp</item>
+        <item name="android:paddingRight">5dp</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="StyleMetroButton">
+        <item name="android:textAllCaps">false</item>
+        <item name="android:background">@drawable/metro_ui_button_background</item>
+        <item name="android:layout_marginTop">20dp</item>
+        <item name="android:textColor">@color/mcc_color_login_screen</item>
+    </style>
+
+    <style name="StyleEditTextLoginScreen">
+        <item name="android:textColor">@color/mcc_color_login_screen</item>
+        <item name="android:textColorHint">@color/mcc_color_login_screen_hint</item>
+        <item name="android:textSize">@dimen/size_text_route_small</item>
+        <item name="android:paddingLeft">10dp</item>
+        <item name="android:paddingRight">10dp</item>
+        <item name="android:paddingTop">@dimen/login_padding_top_bottom_edittext</item>
+        <item name="android:paddingBottom">@dimen/login_padding_top_bottom_edittext</item>
+        <item name="android:gravity">center</item>
+        <item name="android:singleLine">true</item>
+    </style>
+
+    <style name="StyleTextViewLoginScreen">
+        <item name="android:textColor">@color/mcc_color_login_screen</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">@dimen/size_text_route_small</item>
+    </style>
+
+    <style name="AppCompatAlertDialogStyleTranlucent" parent="Theme.AppCompat.Light.Dialog.Alert">
+        <item name="colorAccent">@android:color/black</item>
+        <item name="android:textColorPrimary">@color/black</item>
+        <!--<item name="android:background">@color/mcc_cyan</item>-->
+        <item name="android:textColor">@android:color/black</item>
+        <item name="titleTextColor">@android:color/black</item>
+        <item name="android:textColorSecondary">@color/black</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="colorControlActivated">@color/mcc_cyan</item>
+        <item name="colorControlHighlight">@color/mcc_cyan</item>
+        <item name="android:windowMinWidthMajor">@android:dimen/dialog_min_width_major</item>
+        <item name="android:windowMinWidthMinor">@android:dimen/dialog_min_width_minor</item>
+    </style>
+</resources>

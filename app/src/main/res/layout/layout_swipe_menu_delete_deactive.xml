@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:tag="back">
+
+    <FrameLayout
+        android:layout_width="@dimen/size_width_button_swipe_delete"
+        android:layout_height="match_parent"
+        android:background="@color/bg_bottom_bar">
+
+        <Button
+            android:id="@+id/btnDeActive"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@drawable/btn_de_active" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|center_horizontal"
+            android:layout_marginBottom="@dimen/padding_text_pilot_name"
+            android:gravity="bottom|center_horizontal"
+            android:text="DE-ACTIVATE"
+            android:textColor="@color/background_white"
+            android:textSize="9sp" />
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="@dimen/size_width_button_swipe_delete"
+        android:layout_height="match_parent"
+        android:background="@color/mcc_red">
+
+        <Button
+            android:id="@+id/btnDelete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@drawable/btn_delete" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|center_horizontal"
+            android:layout_marginBottom="@dimen/padding_text_pilot_name"
+            android:gravity="bottom|center_horizontal"
+            android:text="DELETE"
+            android:textColor="@color/background_white"
+            android:textSize="9sp" />
+    </FrameLayout>
+
+
+</LinearLayout>

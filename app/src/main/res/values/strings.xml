@@ -1,0 +1,694 @@
+<resources>
+    <string name="app_name">PILOTLOG - CrewLounge</string>
+
+    <string name="loading">Loading&#8230;</string>
+    <string name="connecting">Connecting&#8230;</string>
+    <string name="no_internet_connection">No internet connection!</string>
+
+    <string name="message_close_app">Press again to quit App...</string>
+
+    <!--menu main-->
+    <string name="text_airfields_camelcase">Airfields</string>
+    <string name="text_airfields_Info">Airfield Info</string>
+    <string name="text_aircraft_camelcase">Aircraft</string>
+    <string name="text_weather_camelcase">Weather</string>
+    <string name="text_sign_camelcase">Sign</string>
+    <string name="text_pilots_camelcase">Pilots</string>
+    <string name="text_duty_camelcase">Duty</string>
+    <string name="text_limit_camelcase">Limits</string>
+    <string name="text_expenses_camelcase">Expenses</string>
+    <string name="text_totals_camelcase">Totals</string>
+    <string name="text_logbook_camelcase">Logbook</string>
+    <string name="text_currency_camelcase">Qualifications</string>
+    <string name="text_delay_camelcase">Delay</string>
+    <string name="text_sync_camelcase">Sync</string>
+    <string name="text_help">Help</string>
+
+    <!--Splash-->
+    <string name="message_coping_picture">Copying data (Pictures) to CrewLounge PILOTLOG version 4.0</string>
+
+    <!--Sync History-->
+    <string name="text_sync_history_flight">Flight Records</string>
+    <string name="text_sync_history_sign">Signature</string>
+    <string name="text_sync_history_pilot_picture">Pilot Picture</string>
+
+    <!--fragment main-->
+    <string name="text_sync_description">Synchronize CL-CLOUD</string>
+    <string name="text_flights_description">Log new Flights and Simulator</string>
+    <string name="text_pilots_description">Who\'s flying with you ?</string>
+    <string name="text_airfields_description">Local Time, Earth, Navigation</string>
+    <string name="text_aircraft_description">Aircraft, Simulators, Drones</string>
+    <string name="text_totals_description">My flying experience</string>
+    <string name="text_logbook_description">Historical flight records</string>
+    <string name="text_duty_description">Log your Duty Period</string>
+    <string name="text_limit_description">Flight &amp; Duty Times, Flat Rate</string>
+    <string name="text_expenses_description">Hotel, Tickets, Uniform, Taxi</string>
+    <string name="text_currency_description">Certificates &amp; Proficiencies</string>
+    <string name="text_weather_description">Take the METAR and TAF</string>
+    <string name="text_delay_description">Look-up IATA delay codes</string>
+    <string name="text_tails_description">Spot an aircraft on the apron</string>
+    <string name="text_sign_description">Capture Endorsements</string>
+    <string name="text_about_description">Version</string>
+    <string name="text_help_description">User Guide - SUPPORT</string>
+    <!--bottom bar-->
+    <string name="text_type">Type</string>
+
+    <!--flights-->
+    <string name="text_flights">Flights</string>
+    <string name="text_flight_add">Add Flight</string>
+    <string name="text_flight_edit">Edit Flight</string>
+    <string name="confirm_delete_all_flight_content">Confirm you want to delete ALL Flights ?</string>
+    <string name="confirm_delete_all_flight_title">Delete Flights</string>
+
+    <string name="confirm_delete_flight_title">Delete Flight</string>
+    <string name="confirm_delete_single_flight">Confirm you want to %s ?</string>
+    <string name="confirm_delete_all_flight_prior_content">Confirm you want to delete ALL Flights prior Today ?</string>
+    <string name="confirm_delete_all_flight_older_than_6months">Confirm you want to delete Flights older than 180 days ?</string>
+    <string name="confirm_delete_all_flight_in_content">Confirm you want to delete Today\'s Flights only</string>
+
+    <!--airfield-->
+    <string name="text_name">Name</string>
+    <string name="text_iata">IATA</string>
+    <string name="text_icao">ICAO</string>
+    <string name="msg_title_delete_airfield">Delete Airfield</string>
+    <string name="msg_allow_delete_all_airfield">To delete a single Airfield, swipe the record from right to left.\n\nUse this button to delete all airfields from the list.\n\nConfirm you want to delete ALL airfields ?</string>
+    <string name="msg_cannot_delete_airfield">%s cannot be deleted from the database. This airfield is logged on a flight.\n\nThe airfield will be removed from the list.</string>
+    <string name="msg_not_allow_delete_all_airfield">To delete a single Airfield, swipe the record from right to left.\n\nUse this button to delete all airfields from the list.\n\nTo delete all airfields, the Flights list must be empty.</string>
+    <string name="delete_single_airfield_confirm">Confirm you want to delete %s from the Airfield list ?</string>
+    <string name="delete_airfield_done">The airfield has been deleted from the mobile app database.\n\nTo permanently delete this airfield, you need to delete or de-activate the airfield from the main database on the desktop.</string>
+
+    <!--weather-->
+    <string name="text_airfield_weather">Airfield Weather</string>
+    <string name="text_weather_reports">WX Reports</string>
+    <string name="msg_title_delete_weather">Delete Reports</string>
+    <string name="msg_delete_all_weather">Confirm you want to delete ALL Weather Reports ?</string>
+
+    <!-- Settings page -->
+    <string name="setting_title">Settings</string>
+    <string name="flight_prefix">FLIGHT PREFIX</string>
+    <string name="company_name">COMPANY</string>
+    <string name="airfield_identifier">AIRFIELD IDENTIFIER</string>
+
+    <!--fragment about-->
+    <string name="text_about">About</string>
+    <string name="text_mccpilotlog"><![CDATA[<u>crewlounge.aero</u>]]></string>
+    <string name="text_visit_website">Visit the website</string>
+    <string name="text_version">Version</string>
+    <string name="text_build">Build</string>
+    <string name="text_mcc">© MCC</string>
+    <string name="text_encounter">If you encounter issues</string>
+    <string name="text_like_app">If you like this app</string>
+    <string name="text_contact_helpdesk"><![CDATA[<u>Contact the Help Desk</u>]]></string>
+    <string name="text_rate_app"><![CDATA[<u>Rate our App in store</u>]]></string>
+    <string name="text_read_terms">Read the</string>
+    <string name="text_terms_and_cond"><![CDATA[<u>Terms and Conditions</u>]]></string>
+    <string name="text_pilot_logbook">This pilot logbook app is a mobile companion to the main desktop application CrewLounge PILOTLOG for Windows PC and Mac OS.\nThis app cannot be used stand-alone</string>
+    <string name="msg_confirm_rate_app">Thank you for rating this app.\n\nShould you encounter issues with this app, please first contact the Helpdesk 24/7 for assistance. Your feedback is most important !\n\nContinue to App Store for rating ?</string>
+    <string name="msg_not_found_email_app">Sorry,  there are no email clients or applications installed on the device</string>
+    <string name="msg_not_found_browser">Sorry,  there are no browser clients installed on the device</string>
+
+    <!-- Alert Dialog -->
+    <string name="alert_search_button">SEARCH</string>
+    <string name="alert_create_new_button">CREATE NEW</string>
+    <string name="alert_ok_button">OK</string>
+    <string name="alert_de_active_button">DE-ACTIVATE</string>
+    <string name="alert_cancel_button">Cancel</string>
+    <string name="alert_deleteAll_button">Delete ALL</string>
+    <string name="alert_delete_button">Delete</string>
+    <string name="alert_continue_button">Continue</string>
+    <string name="alert_yes_button">Yes</string>
+    <string name="alert_save_button">Save</string>
+    <string name="alert_no_button">No</string>
+    <string name="alert_remindLater_button">Remind Later</string>
+    <string name="alert_view_button">View</string>
+
+    <!--Fragment Help-->
+    <string name="market_label">Market</string>
+    <string name="no_application_found">No Application Found</string>
+    <string name="download_from_market">Download one from Android Market ?</string>
+    <string name="accept_download">Yes, Please</string>
+    <string name="refuse_download">No, Thanks</string>
+    <string name="unavailable_market">Error, market is unavailable</string>
+    <string name="return_http">Server returned HTTP </string>
+    <string name="user_guide_download_error">Download error : </string>
+    <string name="user_guide_downloaded">File downloaded</string>
+    <string name="unavailable_network">Network unavailable</string>
+    <string name="help_download_version">Getting version &#8230;</string>
+
+    <string name="error">Error</string>
+
+    <!--Fragment Delay-->
+    <string name="text_numeric_code">9 (SG)</string>
+    <string name="text_delay_name">Documentation, Packing</string>
+
+    <string name="text_search">Search :</string>
+    <string name="text_delay_codes">Delay Codes</string>
+
+    <!--Fragment Pilot-->
+    <string name="delete_pilot_dialog_title">Delete Pilot</string>
+    <string name="de_active_pilot_dialog_title">De-activate Pilot</string>
+    <string name="delete_all_pilot_dialog_title">Delete Pilots</string>
+    <string name="delete_all_pilots">To delete a single Pilot, swipe the record from right to left.\n\nUse this button to delete all pilots from the list.\n\nConfirm you want to delete ALL Pilots ?</string>
+    <string name="delete_each_pilot">To delete a single Pilot, swipe the record from right to left.\n\nUse this button to delete all pilots from the list.\n\nTo delete all pilots, the Flights list must be empty.</string>
+    <!--<string name="delete_pilot_denied">Pilot %s cannot be deleted. This pilot is currently logged on a flight...</string>-->
+    <string name="delete_pilot_done">The pilot has been deleted from the mobile app database.\n\nTo permanently delete this pilot, you need to delete or de-activate the pilot from the main database on the desktop.</string>
+    <string name="delete_pilot_self_denied">Cannot delete Self</string>
+    <string name="de_active_pilot_self_denied">Cannot de-activate Self</string>
+    <string name="delete_single_pilot_confirm">Confirm you want to delete %s from the Pilot list ?</string>
+    <string name="de_active_single_pilot_confirm">Confirm you want to de-activate %s ?</string>
+    <string name="pilot_list_title">Pilots</string>
+    <string name="add_pilot_title">Add Pilot</string>
+    <string name="sort_pilot_list_empId">Emp. ID</string>
+    <string name="sort_pilot_list_name">Name</string>
+    <string name="toast_camera_not_found">Sorry, camera application not found!</string>
+    <string name="delete_pilot_denied">%s cannot be deleted from the database. This pilot is logged on a flight.\n\n Press \'De-Activate\' to remove this pilot from the list."</string>
+
+    <!--Fragment Tails-->
+    <string name="text_tails">Tails</string>
+    <string name="text_asia">Asia</string>
+    <string name="text_south_america">South America</string>
+    <string name="text_north_america">North America</string>
+    <string name="text_africa">Africa</string>
+    <string name="text_europe">Europe</string>
+    <string name="text_antarctica">Antarctica</string>
+    <string name="text_oceania">Oceania</string>
+
+    <!--Pilot info -->
+    <string name="pilot_info_title">Pilot Info</string>
+    <string name="export_contact_dialog_title">Export Pilot</string>
+    <string name="export_contact_dialog_message">Export pilot to Android Contact Persons ?</string>
+
+    <!--Pilot Add - Edit-->
+    <string name="pilot_add_title">Add Pilot</string>
+    <string name="pilot_edit_title">Edit Pilot</string>
+    <string name="error_used_empId">This Employee ID is already used</string>
+    <string name="error_short_empId">Employee ID must be 2 characters minimum</string>
+    <string name="error_short_pilot_name">Pilot Name must be 3 characters minimum</string>
+    <string name="error_invalid_email">Invalid Email Address</string>
+    <string name="text_company">COMPANY</string>
+    <string name="edt_company_hint">PREFIX</string>
+    <string name="text_empId">EMPLOYEE ID</string>
+    <string name="text_pilot_name">PILOT NAME</string>
+    <string name="edt_pilot_name_hint">Pilot Name</string>
+    <string name="text_pilot_phone">CELL PHONE</string>
+    <string name="edt_pilot_phone_hint">Cell Phone</string>
+    <string name="text_pilot_email">E-MAIL</string>
+    <string name="edt_pilot_email_hint">E-Mail</string>
+    <string name="text_pilot_certificate">CERTIFICATE</string>
+    <string name="edt_pilot_certificate_hint">Instructor License</string>
+    <string name="text_pilot_roster">ROSTER NAME</string>
+    <string name="edt_pilot_roster_hint">Airline Roster Alias</string>
+    <string name="text_pilot_notes">PILOT NOTES</string>
+    <string name="edt_notes_hint">Notes</string>
+    <string name="pilot_export_success">Pilot was successfully added to contact</string>
+    <string name="pilot_export_fail">Failed to Export to Contact</string>
+
+    <!--Add airfield -->
+
+    <!--Airfield navigation -->
+    <string name="navigation_title">Navigation</string>
+    <string name="airfield_not_found">Airfield not found!</string>
+    <string name="error_navigation">Navigation Error</string>
+    <string name="error_missing_airfield">Insert both airfields in order to calculate distance.</string>
+
+    <!--Airfield Notes-->
+
+    <!--Airfield Globe-->
+    <string name="text_airfield_globe">Airfield Globe</string>
+    <string name="text_airfield_google">Airfield Google</string>
+    <string name="airfield_globe_msg_not">This airfield cannot be displayed on Globe View</string>
+    <string name="airfield_google_coordinates_miss">Airfield coordinates are missing</string>
+
+    <!--Weather -->
+    <string name="getting_weather_info">Getting weather information …</string>
+    <string name="no_internet_weather">Updating the weather requires internet connection…</string>
+    <string name="today_airfield">Today\'s Airfields</string>
+    <string name="all_reports">All Reports</string>
+    <string name="updating_weather_data">Updating data for %s …</string>
+
+    <!-- Fragment Signature -->
+    <string name="signature_bottom_text">Your signature is watermarked for today\'s flight / sim only</string>
+    <string name="sign_file_format_sign">sign.</string>
+    <string name="sign_file_format_jpg">.jpg</string>
+    <string name="sign_folder">Sign</string>
+    <string name="sign_text_cancel">CANCEL</string>
+    <string name="sign_text_save">SAVE</string>
+    <string name="sign_text_calendar">SET DATE</string>
+    <string name="caution">Caution</string>
+    <string name="message_interrupt_click_back">Click Back to interrupt Sync</string>
+
+    <!-- Fragment Aircraft List -->
+    <string name="de_active_aircraft_dialog_title">De-activate Aircraft</string>
+    <string name="de_active_single_aircraft_confirm">Confirm you want to de-activate %s ?</string>
+    <string name="aircraft_add_title">Add Aircraft</string>
+    <string name="aircraft_edit_title">Edit Aircraft</string>
+    <string name="delete_each_aircraft">To delete a single Aircraft, swipe the record from right to left.\n\nUse this button to delete all aircraft from the list.\n\nTo delete all aircraft, the Flights list must be empty.</string>
+    <string name="sort_aircraft_list_type">Type</string>
+    <string name="sort_aircraft_list_tail">Tail</string>
+    <string name="delete_aircraft_denied">%s cannot be deleted from the database. This aircraft is logged on a flight.\n\n Press \'De-Activate\' to remove this aircraft from the list."</string>
+    <string name="delete_single_aircraft_confirm">Confirm you want to delete %s from the Aircraft list ?</string>
+    <string name="aircraft_list_title">Aircraft</string>
+    <string name="delete_aircraft_dialog_title">Delete Aircraft</string>
+    <string name="delete_all_aircraft">To delete a single Aircraft, swipe the record from right to left.\n\nUse this button to delete all aircraft from the list.\n\nConfirm you want to delete ALL aircraft ?</string>
+    <string name="delete_aircraft_done">The aircraft has been deleted from the mobile app database.\n\nTo permanently delete this aircraft, you need to delete or de-activate the aircraft from the main database on the desktop.</string>
+    <string name="aircraft_list_hyphen">-</string>
+
+    <!-- Fragment Aircraft Info-->
+    <string name="aircraft_pic">PIC</string>
+    <string name="aircraft_info_title">Aircraft Info</string>
+    <!--Logbook-->
+    <string name="text_flight_route">Route</string>
+    <string name="text_flight_route_date">DATE</string>
+    <string name="text_flight_route_aircraft">AIRCRAFT</string>
+    <string name="text_flight_route_departure">DEPARTURE</string>
+    <string name="text_flight_route_arrival">ARRIVAL</string>
+
+    <string name="text_flight_hours">Flight Hours</string>
+    <string name="text_flight_hours_off_block">OUT</string>
+    <string name="text_flight_hours_hobbs_out">HOBBS OUT</string>
+    <string name="text_flight_hours_hobbs_in">HOBBS IN</string>
+    <string name="invalid_hobbs">Invalid Hobbs</string>
+    <string name="invalid_hobbs_message">Verify Hobbs Out / In</string>
+    <string name="invalid_hobbs_missing_message">Hobbs Out / In missing</string>
+    <string name="text_flight_hours_on_block">IN</string>
+    <string name="text_flight_hours_total">TOTAL</string>
+    <string name="text_flight_hours_pic">PIC</string>
+    <string name="text_flight_hours_copilot">SIC</string>
+    <string name="text_flight_hours_dual">DUAL</string>
+    <string name="text_flight_hours_ifr">IFR</string>
+    <string name="text_flight_hours_act">ACTUAL INSTRUMENT</string>
+    <string name="text_flight_hours_sim">SIMULATED INSTRUMENT</string>
+    <string name="text_flight_hours_takeoff">TO - OFF</string>
+    <string name="text_flight_hours_picus">PICUS</string>
+    <string name="text_flight_hours_instructor">INSTRUCTOR</string>
+    <string name="text_flight_hours_examiner">EXAMINER</string>
+    <string name="text_flight_hours_night">NIGHT</string>
+    <string name="text_flight_hours_xc">XC</string>
+    <string name="text_flight_hours_relief">RELIEF</string>
+    <string name="text_flight_hours_landing">LDG - ON</string>
+    <string name="text_flight_hours_scheduled">SCHEDULED</string>
+
+    <string name="text_flight_currencies">Currencies</string>
+    <string name="text_flight_currencies_task">TASK</string>
+    <string name="text_flight_currencies_delay">DELAY</string>
+    <string name="text_flight_currencies_today">TO DAY</string>
+    <string name="text_flight_currencies_tonight">TO NIGHT</string>
+    <string name="text_flight_currencies_approach">TYPE APPROACH</string>
+    <string name="text_flight_currencies_operation">TYPE OPERATION</string>
+    <string name="text_flight_currencies_glider">GLIDER LAUNCH</string>
+    <string name="text_flight_currencies_holding">HOLDING</string>
+    <string name="text_flight_currencies_fuel">FUEL</string>
+    <string name="text_flight_currencies_fuel_used">FUEL USED</string>
+    <string name="text_flight_currencies_fuel_planned">FUEL PLANNED</string>
+    <string name="text_flight_currencies_sign_box">SIGN BOX</string>
+    <string name="text_flight_currencies_ldg_day">LDG DAY</string>
+    <string name="text_flight_currencies_ldg_night">LDG NIGHT</string>
+    <string name="text_flight_currencies_autoland">AUTOLAND</string>
+    <string name="text_flight_currencies_lifts">LIFTS</string>
+    <string name="text_flight_currencies_deicing">DE-ICING</string>
+    <string name="text_flight_currencies_pax">PAX</string>
+    <string name="text_flight_currencies_sign_pen">SIGN PEN</string>
+
+    <string name="text_flight_crew">Crew</string>
+    <string name="text_flight_crew_pic">PIC PILOT</string>
+    <string name="text_flight_crew_2nd">2nd PILOT</string>
+    <string name="text_flight_crew_3rd">3rd PILOT</string>
+    <string name="text_flight_crew_4th">4th PILOT</string>
+
+    <string name="text_flight_log">Flight Log</string>
+    <string name="text_flight_log_remarks">REMARKS</string>
+    <string name="text_flight_log_instruction">INSTRUCTION</string>
+
+    <string name="text_flight_configure">Configure</string>
+
+    <string name="text_flight_view">Flight View</string>
+
+    <!--Logbook-->
+    <string name="text_menu_delete_all_flight">Delete ALL Flights</string>
+    <string name="text_menu_delete_all_flight_prior">Delete ALL Flights prior Today</string>
+    <string name="text_menu_delete_all_flight_older_than_6_months">Delete Flights older than 180 days</string>
+    <string name="not_found_aircraft">not found</string>
+    <string name="airfield_unknown_title">Airfield \"%s\" unknown</string>
+    <string name="airfield_unknown_message">Enter ICAO or IATA code to search airfield</string>
+    <string name="tail_number">tail number</string>
+    <string name="icao_iata_hint">icao-iata</string>
+    <string name="hours_hint">00:00</string>
+    <string name="hobbs_hint">0</string>
+
+    <string name="decimal_hint">0.0</string>
+    <string name="invalid_hobbs_title">Invalid Hobbs</string>
+    <string name="invalid_time_title">Invalid Time</string>
+    <string name="confirm_time_title">Confirm Time</string>
+    <string name="invalid_time_message">%s Time exceeds Total Time</string>
+    <string name="invalid_time_content">Auto Corrected!</string>
+    <string name="cancel_message_content">Changes have not been saved yet.\n\nContinue without saving ?</string>
+    <!--Flight-->
+    <string name="text_sort_1greatthan31">1&gt;31</string>
+    <string name="text_sort_31greatthan1">31&gt;1</string>
+    <string name="text_sort_31lessthan1">31&lt;1</string>
+    <string name="text_edit_flight">Edit Flight</string>
+    <string name="text_return_flight">Create Return Flight</string>
+    <string name="text_next_flight">Create Next Flight</string>
+    <string name="text_delete_flight">Delete Flight</string>
+    <string name="text_edit_flight_paste">Edit Flight (paste data)</string>
+    <string name="warning">Warning</string>
+    <string name="confirm_message_delete_pilot_picture">Do you want to delete pilot picture ?</string>
+    <string name="invalid_pilot">Invalid Pilot</string>
+
+    <string name="confirm_fuel">Confirm Fuel</string>
+    <string name="confirm_fuel_message">Fuel Used is only %1$d %2$s from Block Fuel</string>
+    <string name="confirm_without_fuel_message">Log without Fuel numbers ?</string>
+
+
+    <string name="flight_quantity_warning_message">This application is limited to 100 flights - Sync with CL-CLOUD to clear memory</string>
+
+    <!--Totals-->
+    <string name="text_title_totals">Total Time</string>
+    <string name="text_totals_grand_total">Grand Total</string>
+    <string name="text_totals_simulator">SIMULATOR</string>
+    <string name="text_totals_drone">DRONE</string>
+    <string name="text_totals_totals">TOTAL</string>
+    <string name="text_totals_function">Function</string>
+    <string name="text_totals_flight_cond">Flight Condition</string>
+    <string name="text_totals_aircraft_class">Aircraft Class</string>
+    <string name="text_totals_engine_power">Engine Power</string>
+    <string name="text_totals_co_pilot">SIC</string>
+    <string name="text_totals_unpowered">UNPOWERED</string>
+    <string name="text_totals_se_piston">SE - PISTON</string>
+    <string name="text_totals_me_piston">ME - PISTON</string>
+    <string name="text_totals_se_turboprop">SE - TURBOPROP-SHAFT</string>
+    <string name="text_totals_me_turboprop">ME - TURBOPROP-SHAFT</string>
+    <string name="text_totals_se_turbofan">SE - TURBOFAN</string>
+    <string name="text_totals_me_turbofan">ME - TURBOFAN</string>
+    <string name="text_totals_today">TO - DAY</string>
+    <string name="text_totals_ldgday">LDG - DAY</string>
+    <string name="text_totals_tonight">TO - NIGHT</string>
+    <string name="text_totals_ldgnight">LDG - NIGHT</string>
+
+
+    <!--Currencies-->
+    <string name="text_currency_last_update">Last update :</string>
+    <string name="no_flight_today">No Flight today</string>
+    <string name="delete_picture">Delete Picture</string>
+
+
+    <!--Expense-->
+    <string name="invalid_expense_type_title">Invalid Type</string>
+    <string name="invalid_expense_type_content">Type is missing</string>
+    <string name="invalid_my_currency">Invalid My Currency</string>
+    <string name="invalid_my_currency_content">My Currency is missing</string>
+    <string name="confirm_delete_expense_title">Delete Expense</string>
+    <string name="confirm_delete_expense_content">Confirm you want to delete this record ?</string>
+    <string name="confirm_delete_all_expense_title">Delete Expenses</string>
+    <string name="confirm_delete_all_expense_content">Confirm you want to delete ALL Expenses ?</string>
+    <string name="expense_add_title">Add Expense</string>
+    <string name="expense_edit_title">Edit Expense</string>
+
+    <!--Duty-->
+    <string name="duty_add_title">Add Duty</string>
+    <string name="duty_edit_title">Edit Duty</string>
+    <string name="duty_title">Duty</string>
+    <string name="duty_time">Duty Time</string>
+    <string name="text_duty_hours_check_in">CHECK-IN</string>
+    <string name="text_duty_hours_check_out">CHECK-OUT</string>
+    <string name="text_duty_hours_duration">DURATION</string>
+    <string name="text_duty_type_event">TYPE OF EVENT</string>
+    <string name="duty_description">DESCRIPTION</string>
+    <string name="text_duty_notes">NOTES</string>
+    <string name="text_time_zone">TIME ZONE</string>
+    <string name="invalid_duty_check_in">Invalid Check In</string>
+    <string name="invalid_duty_check_in_content">Check In is missing</string>
+    <string name="invalid_duty_check_out">Invalid Check Out</string>
+    <string name="invalid_duty_check_out_content">Check Out is missing</string>
+
+    <string name="invalid_duty_description">Invalid Description</string>
+    <string name="invalid_duty_description_content">Description is missing</string>
+
+    <string name="confirm_delete_duty_title">Delete Duty</string>
+    <string name="confirm_delete_single_duty">Confirm you want to delete this record ?</string>
+
+    <string name="confirm_delete_all_duty_title">Delete Duties</string>
+    <string name="confirm_delete_all_duty_content">Confirm you want to delete ALL Duties ?</string>
+
+
+    <!--Help-->
+    <string name="help_title_action_bar">Help</string>
+    <string name="help_user_guide">User Guide</string>
+    <string name="help_user_guide_content">How to use the mobile app and sync with the main desktop, read the user guide PDF …</string>
+    <string name="help_mcc_support">CrewLounge SUPPORT</string>
+    <string name="help_mcc_support_content">Take a look at our online solution knowledge base with commonly reported issues and FAQ …</string>
+    <string name="help_helpdesk">Contact Helpdesk</string>
+    <string name="help_helpdesk_content">Should you not find the answer in the User Guide or CrewLounge SUPPORT, then contact the Helpdesk for support …</string>
+    <string name="help_title">How can we help you today ?</string>
+    <string name="help_start">Getting Started with CrewLounge PILOTLOG</string>
+    <string name="no_wx_report_available">No WX report available</string>
+
+    <!--Setting and Tool-->
+    <string name="setting_general"> App General</string>
+    <string name="setting_flight_logging">Flight Logging</string>
+    <string name="setting_my_profile">My Profile</string>
+    <string name="setting_flight_license">Flight License</string>
+    <string name="setting_airline_interface">Airline Interface</string>
+    <string name="setting_other">Other</string>
+    <string name="setting_user_account">User Account</string>
+    <string name="setting_database_backup">Database Backup</string>
+    <string name="setting_start_over">Start-Over</string>
+    <string name="setting_general_content">ICAO-IATA, Flight Number, Printer...</string>
+    <string name="setting_flight_logging_content">Home Base, Night Time, Fuel...</string>
+    <string name="setting_my_profile_content">Share your profile and photo with others...</string>
+    <string name="setting_flight_license_content">License Number, Date of First Flight...</string>
+    <string name="setting_airline_interface_content">Import your Flight Roster</string>
+    <string name="setting_user_account_content">Register your account and purchase a subscription</string>
+    <string name="setting_database_backup_content">Manage and Restore your Backups</string>
+    <string name="setting_start_over_content">Clear the database and start-over</string>
+    <string name="settings">Settings</string>
+    <string name="tools">Tools</string>
+    <string name="settings_and_tools">Settings &amp; Tools</string>
+    <string name="text_setting_description">Config, Profile, Backup</string>
+    <string name="share_with_all_user">all users</string>
+    <string name="share_only_with_same_company">only with same Company</string>
+    <string name="share_with_same_company_and_function">same Company + Function</string>
+    <string name="share_with_nobody">nobody</string>
+    <string name="share_setting_dialog_title">Share %s with</string>
+    <string name="settings_group_config_sys">config.sys</string>
+    <string name="settings_group_config_profile">config.profile</string>
+    <string name="settings_group_config_airline">config.airline</string>
+    <string name="settings_group_config_logbook">config.logbook</string>
+    <string name="add_aircraft_message">Add Aircraft</string>
+    <string name="missing_aircraft_company">Company is missing!</string>
+    <string name="missing_aircraft_registration">Registration is missing!</string>
+    <string name="missing_aircraft_model">Model is missing!</string>
+    <string name="missing_aircraft_type">Type is missing!</string>
+    <string name="missing_aircraft_class">Class is missing!</string>
+    <string name="missing_aircraft_subclass">Sub-Class is missing!</string>
+    <string name="missing_aircraft_category">Category is missing!</string>
+    <string name="missing_aircraft_power">Power is missing!</string>
+    <string name="missing_device_power">Device is missing!</string>
+    <string name="aircraft_already_used">This Registration is already used</string>
+
+    <!--Airfield-->
+    <string name="airfield_confirm_add">The PILOTLOG database contains more than 40.000 airfields.\n
+Use \'Search Airfield\' (at the top of the page) to find any airfield.  Select the \'Favorite\' property to keep the airfield listed.\n
+Use the \'Create New\' function ONLY to create new airfields that cannot be found in the database.</string>
+    <string name="unable_to_load_weather_label">Unable to load weather</string>
+    <string name="metar_label">Aviation weather and forecast</string>
+    <string name="more_weather_info_label">Find more weather on-line</string>
+    <string name="forecast_info_label">This week weather forecast</string>
+    <string name="tripadvisor">Tourist recommended places</string>
+    <string name="wikipedia">Read more about this airport</string>
+    <string name="sky_vector">Pilot aeronautical info</string>
+    <string name="notams">Notice to Airmen</string>
+    <string name="dialog_no_internet_content">This function requires internet connection</string>
+    <string name="dialog_loading">Loading…</string>
+    <string name="title_activity_airfield_wikipedia">Wikipedia</string>
+    <string name="title_activity_airfield_trip_advisor">TripAdvisor</string>
+    <string name="title_activity_airfield_notams">NOTAMS</string>
+    <string name="title_activity_airfield_sky_vector">Sky Vector</string>
+    <string name="general_api_error">There is an error occurred while processing, please try again later</string>
+    <string name="wrong_user_account_msg">The user account does not exist or invalid</string>
+    <string name="setting_user_password_incorrect">Invalid Password - Verify or Reset your password on [Settings - User Account] page.</string>
+    <string name="forecast_label">Forecast</string>
+    <string name="google_map">Google Map</string>
+
+    <string name="ok">OK</string>
+    <string name="co2_text">CO₂</string>
+
+    <string name="invalid_date">Invalid Date</string>
+    <string name="missing_flight_date">Flight Date is missing!</string>
+    <string name="invalid_airfield">Invalid Airfield</string>
+
+    <string name="invalid_aircraft">Invalid Aircraft</string>
+    <string name="invalid_total_time">Invalid Total Time</string>
+    <string name="total_time_difference_from_on_off_block">Total Time exceeds the difference between Out/In  Hours</string>
+    <string name="confirm_total_time">Confirm Total Time</string>
+    <string name="total_time_not_match_with_block_hours">Total Time does not match with the Out/In hours…</string>
+    <string name="exceed_max_total_time">Total Time should not exceed 22 hours</string>
+    <string name="total_time_exceed_one_four_hours">Total Time is more than 14 hours</string>
+    <string name="confirm_function_time">Confirm Function Time</string>
+    <string name="missing_function_time">Log flight without Function times ?</string>
+    <string name="invalid_air_time">Invalid Air Time</string>
+    <string name="confirm_air_time">Confirm Air Time</string>
+    <string name="verify_take_off_time">Verify Takeoff Time (long taxi out)</string>
+    <string name="invalid_take_off_time">Invalid Takeoff Time</string>
+    <string name="invalid_landing_time">Invalid Landing Time</string>
+    <string name="verify_landing_time">Verify Landing Time (long taxi in)</string>
+    <string name="five_time_fields_exceed_total_time">The sum of PIC + SIC + Dual + PICus + Relief exceeds Total Time</string>
+    <string name="invalid_aircraft_message">Invalid Aircraft\n\nTo add a new Aircraft, click the arrow > and then click +</string>
+    <string name="invalid_departure_airfield_message">Invalid Departure Airfield\n\nTo add new Airfield, click the arrow > and then +</string>
+
+    <string name="invalid_arrival_airfield_message">Invalid Arrival Airfield\n\nTo add new Airfield, click the arrow > and then +</string>
+    <string name="invalid_out_in">Invalid Block Hours</string>
+    <string name="invalid_out_in_message">Out / In Hours are missing</string>
+    <string name="confirm_block_hours">Confirm Block Hours</string>
+    <string name="confirm_out_hours_message">Log Out-Time as midnight ?</string>
+    <string name="confirm_in_hours_message">Log In-Time as midnight ?</string>
+    <string name="confirm_schedule_hours">Confirm SCHED Hours</string>
+    <string name="confirm_schedule_as_midnight">Log SCHED %s Time as midnight ?</string>
+    <string name="confirm_schedule_hours_log_without_block_hours">Log without Scheduled Block hours ?</string>
+    <string name="confirm_to_ldg_hours">Confirm TO-LDG Hours</string>
+    <string name="confirm_to_ldg_hours_without_off_on_message">Log without Off / On Hours ?</string>
+    <string name="confirm_log_to_ldg_hours_as_midnight">Log %s Time as midnight ?</string>
+    <string name="verify_take_off_and_landing">Verify Takeoff and Landing times</string>
+    <string name="invalid_pilot_message">Invalid Pilot Name or ID</string>
+    <string name="confirm_pilot">Confirm Pilots</string>
+    <string name="confirm_pilot_log_without_self">Log without Pilot SELF ?</string>
+    <string name="confirm_pilot_in_command_message">Pilot-in-Command name is missing</string>
+    <string name="confirm_co_pilot_message">SIC name is missing\n(multi-pilot aircraft)</string>
+    <string name="confirm_solo_time">Confirm SOLO Time</string>
+    <string name="confirm_solo_time_message">Log SOLO on a multi-pilot Aircraft ?</string>
+    <string name="confirm_log_solo_time_message">You should log Pic Time for a SOLO flight...</string>
+    <string name="confirm_schedule_was_two_seven_hours_flight">This flight was scheduled %s hours</string>
+    <string name="confirm_schedule_was_two_seven_hours_simulator">This simulator was scheduled %s hours</string>
+    <string name="confirm_schedule_was_two_seven_hours_drone">This drone was scheduled %s hours</string>
+    <string name="confirm_act_instr">Confirm Act.Instr</string>
+    <string name="confirm_act_instr_message_decimal">You should not log Actual Instrument Time during a visual approach...\n\nShall I subtract 0.1 hours from the Act.Instr Time ?</string>
+    <string name="confirm_act_instr_message_non_decimal">You should not log Actual Instrument Time during a visual approach...\n\nShall I subtract 4 minutes from the Act. Instr Time ?</string>
+    <string name="confirm_launch_type">Confirm Launch Type</string>
+    <string name="confirm_launch_type_message">Launch should be logged only with Glider or Drone...</string>
+    <string name="confirm_night_time">Confirm Night Time</string>
+    <string name="confirm_night_time_message">Log TO Night without Night Time ?</string>
+    <string name="confirm_log_to_ldg_during_day">Log TO LDG during Day ?</string>
+    <string name="confirm_pax">Confirm Pax load</string>
+    <string name="pax_message">Log without number of passengers ?</string>
+    <string name="confirm_pax_message_sub_one">Passenger Load exceeds the aircraft capacity (%d seats)</string>
+    <string name="confirm_pax_message_sub_two">\nLog with %d pax ?</string>
+    <string name="invalid_fuel">Invalid Fuel</string>
+    <string name="fuel_exceed_block_fuel">Fuel Used exceeds Block Fuel</string>
+
+    <!--Airfield add-->
+    <string name="add_airfield_name_country">Invalid Country</string>
+    <string name="add_airfield_name_category">Invalid Category</string>
+    <string name="add_airfield_name">Invalid Name</string>
+    <string name="add_airfield_icao">Invalid ICAO</string>
+    <string name="add_airfield_iata">Invalid IATA</string>
+    <string name="add_airfield">Add Airfield</string>
+    <string name="add_airfield_coordinates">Invalid Coordinates</string>
+    <string name="invalid_time_zone">Invalid Time Zone</string>
+    <string name="invalid_time_zone_message">Select the Time Zone</string>
+
+    <string name="coordinates_both_empty">Latitude - Longitude</string>
+    <string name="coordinates_both_empty_message">Coordinates are needed for Night Time calculation.\n\nYou can press the GPS icon to grab your current location and elevation.</string>
+
+    <string name="edit_airfield">Edit Airfield</string>
+    <string name="add_airfield_already_used_message">The ICAO or IATA code is already in use by another Airfield :\n\n%1$s\n%2$s%3$s</string>
+    <string name="add_airfield_message_country">Select a Country from the list</string>
+    <string name="add_airfield_message_category">Select the Airfield Category</string>
+    <string name="add_airfield_name_message">Airfield Name must be at least 5 characters long</string>
+    <string name="add_airfield_icao_message">The ICAO code is mandatory and must be 4 characters long.\n\nIn case there is no official ICAO identifier for this airfield, insert ZZZZ or create your own code starting with Q, like %s or Q001</string>
+    <string name="add_airfield_iata_message">The IATA code should be 3 characters long.\n\nThe IATA code is mandatory when there is no ICAO code.</string>
+    <string name="add_airfield_iata_message_2">The IATA code should be 3 characters long.</string>
+    <string name="add_airfield_coordinates_incomplete">Coordinates are incomplete</string>
+    <string name="add_airfield_message_favorite_show">Show this airfield in the Airfield List</string>
+    <string name="add_airfield_message_favorite_notshow">Do not show this airfield in the\nAirfield List</string>
+    <string name="add_airfield_latitude_invalid_message">Latitude must start with N or S and value must be in range 00 to 90\n\ne.g. Enter  66557 for N66°55.7\'  or  -3221 for S03°22.1\'</string>
+    <string name="add_airfield_longitude_invalid_message">Longitude must start with W or E and value must be in range 00 to 180 \n\ne.g. Enter  66557 for W066°55.7\'  or  -3221 for E003° 22.1\'</string>
+    <string name="invalid_operation">Invalid Operation</string>
+    <string name="message_both_night_time_select">This option requires that User Time Field 4 is still available...\nUser Time Field 4 is already taken for (%s).</string>
+    <string name="airfield_coordinates">Coordinates</string>
+    <string name="airfield_coordinates_message">Enter coordinates in format (-)HHMMm\n\nEnter South and East as negative values\n\ne.g.  Latitude\n\nEnter  66557  for  N66°55.7\'\nEnter   -3221  for  S03°22.1\'\n\ne.g.  Longitude\n\nEnter  66557  for  W066°55.7\'\nEnter   -3221  for  E003° 22.1\'</string>
+
+    <!--Limits-->
+
+    <string name="message_empty_limits">Create your own set of Flight Time, Duty Time and Flat Rate rules on the desktop application...</string>
+
+    <!--Qualification-->
+    <string name="qualification_dialog_warning_title">Qualification Warning</string>
+    <string name="qualification_dialog_warning_content">One or more Certificates or Proficiencies require your attention !</string>
+    <string name="title_activity_maps">Map</string>
+
+
+    <!--setting privacy-->
+    <string name="privacy_des_hide_name_first">Your Name, Airline Company and Function are shared with all users of CrewLounge Connect</string>
+    <string name="privacy_des_hide_name_second">You can hide your name from the <b>Flight Look-up</b> and the <b>Meet People</b> functions. When doing so, you will not have access to these features yourself</string>
+    <string name="privacy_hide_name">Hide my name in Search functions</string>
+
+    <string name="start_date">Start Date</string>
+    <string name="end_date">End Date</string>
+    <!--login screen-->
+    <string name="text_btn_login">Login with my CrewLounge account</string>
+    <string name="text_btn_regis">Create a new CrewLounge account</string>
+    <string name="text_btn_demo">Let me first run to free DEMO</string>
+    <string name="email_empty">Fill out the Email field</string>
+    <string name="password_empty">Fill out the Password field</string>
+    <string name="first_name_empty">Fill out the First Name field</string>
+    <string name="last_name_empty">Fill out the Last Name field</string>
+    <string name="text_email_was_send">An email was sent to</string>
+    <string name="account_exists">This User account already exists...</string>
+    <string name="text_must_acknowledge">You must acknowledge the registration\nand accept the Terms and Conditions !</string>
+    <string name="text_choose_password">Choose a Password</string>
+    <string name="text_all_done">All done !\nFasten your seatbelts\nfor Takeoff !</string>
+    <string name="text_video_tour">You are now ready to use the app.\nThe best place to start are the <b>Settings</b>\n pages, where you can configure the app\n and complete your Profile.  Would you\n be interested in a video tour ?</string>
+    <string name="text_regis_des">We are delighted to welcome you\nonboard !  With a single user account,\nyou get access to a wide range of\napps, desktop applications and our\nonline web shop !</string>
+    <string name="text_first_name">First Name</string>
+    <string name="text_last_name">Last Name</string>
+    <string name="text_need_assistance">Whenever you need assistance,\nyou can reach us via</string>
+    <string name="text_title_login">Login with your\nCrewLounge User Account</string>
+    <string name="email_support">support@crewlounge.aero</string>
+    <string name="email_address">Email address</string>
+    <string name="have_to_acknowledge_our_email_message">( you\'ll receive an email to acknowledge )</string>
+    <string name="how_can_we_reach_you">How can we reach you ?</string>
+    <string name="invalid_account">Invalid account</string>
+    <string name="password_incorrect">Password is not correct for this account</string>
+    <string name="email_incorrect">We could not find this user</string>
+    <string name="text_continue">Continue</string>
+    <string name="server_error">Server error! Please try again!</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="confirm">Confirm</string>
+    <string name="option">Options</string>
+    <string name="current_password">Current Password</string>
+    <string name="new_passward">New Password</string>
+    <string name="repeat_new_passward">Repeat New Password</string>
+    <string name="reset_password">Reset my password and e-mail the new password to the following mailbox :</string>
+    <string name="change_password_success">Password was successfully changed.</string>
+    <string name="invalid_password_length">Invalid password! Password length must be more than 6 characters</string>
+    <string name="invalid_password_length_quatar">Invalid password! Password length must be between 3 and 16</string>
+    <string name="invalid_password_contains">Invalid password! Password must not contain space and comma character</string>
+    <string name="password_not_the_same">Error! Please check the repeat password field. It must be as same as the new password</string>
+    <string name="current_password_empty">Fill out the Current Password field</string>
+    <string name="new_password_empty">Fill out the New Password field</string>
+    <string name="repeat_new_password_empty">Fill out the Repeat New Password field</string>
+    <string name="confirm_dialog_title">User Password</string>
+    <string name="forgot_password_dialog_title">Password Reset</string>
+    <string name="confirm_dialog_content">Confirm you want to obtain a new password ?</string>
+    <string name="reset_password_success">A reset link was sent to your mailbox (%s)</string>
+    <string name="change_password_dialog_message">Changing Password…</string>
+    <string name="processing_dialog_reseting_password">Resetting password…</string>
+    <string name="connecting_account_dialog_message">Connecting…</string>
+    <string name="dialog_cancelled">Cancel download</string>
+    <string name="invalid_email">Invalid email address!</string>
+    <string name="error_change_password">There was an error while changing your password. Try again later or contact Help Desk.</string>
+    <string name="error_old_password_empty">Fill out the Old password</string>
+    <string name="error_new_password_empty">Fill out the New password</string>
+    <string name="error_confirm_password_empty">Fill out the Confirm password</string>
+    <string name="error_confirm_password_not_match">Confirm password is not match with New password</string>
+
+    <!--menu-->
+    <string name="title_sync">Cloud Sync</string>
+    <string name="title_devices">My Devices</string>
+    <string name="title_reset_database">Reset Database</string>
+</resources>

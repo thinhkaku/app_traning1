@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<aero.pilotlog.widgets.swipelayout.SwipeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:swipe="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/swipe"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/list_selector"
+    android:scrollbars="none"
+    swipe:leftEdgeSwipeOffset="0dp"
+    swipe:rightEdgeSwipeOffset="0dp">
+
+    <include layout="@layout/layout_swipe_menu_delete" />
+
+    <RelativeLayout
+        android:id="@+id/rlFront"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:tag="front">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/grey_toolbar" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_top_flight"
+                android:orientation="horizontal">
+
+                <LinearLayout
+
+                    android:id="@+id/lnFlight"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/margin_left_right"
+                    android:layout_weight="0.3"
+                    android:gravity="left"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/tvFlightDate"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/margin_top_numeric_code"
+                            android:ellipsize="end"
+                            android:singleLine="true"
+                            android:text="11 Jan 2011"
+                            android:textColor="@color/mcc_cyan"
+                            android:textSize="@dimen/size_text_numeric_code"
+                            android:typeface="sans" />
+
+                        <ImageView
+                            android:id="@+id/iv_arrowInfo"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="@dimen/margin_left_info_arrow"
+                            android:layout_marginTop="@dimen/margin_top_numeric_code"
+                            android:src="@drawable/ic_info_arrow_up"
+                            android:visibility="visible" />
+                    </LinearLayout>
+
+
+                    <TextView
+                        android:id="@+id/tvDescription"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/margin_top_flight_deparr"
+                        android:singleLine="true"
+                        android:text="DAAJ - EPKT"
+                        android:textColor="@android:color/black"
+                        android:textSize="@dimen/size_text_numeric_code"
+                        android:textStyle="bold"
+                        android:typeface="sans" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/margin_left_right"
+                    android:layout_weight="0.4"
+                    android:gravity="right"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tvCheckOutIn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/margin_top_numeric_code"
+                        android:text="simulator"
+                        android:textColor="@color/mcc_cyan"
+                        android:textSize="@dimen/size_text_numeric_code"
+                        android:typeface="sans" />
+
+                    <TextView
+                        android:id="@+id/tvDuration"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/margin_top_flight_deparr"
+                        android:singleLine="true"
+                        android:text="2:55"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/size_text_numeric_code"
+                        android:typeface="sans" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/lnNoFlight"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_left_right"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginLeft="80dp"
+                    android:background="@color/grey_toolbar" />
+
+                <TextView
+                    style="@style/ItemSettingFormatFootNode"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:minHeight="68dp"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="center_vertical"
+                    android:layout_marginLeft="80dp"
+                    android:text="no flights or simulator found" />
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <!-- </LinearLayout>-->
+    </RelativeLayout>
+
+</aero.pilotlog.widgets.swipelayout.SwipeLayout>

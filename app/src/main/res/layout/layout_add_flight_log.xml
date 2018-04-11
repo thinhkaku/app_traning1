@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_marginTop="@dimen/margin_top_bottom">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_title_log_2"
+            android:background="@android:color/white"
+            android:paddingLeft="@dimen/padding_icon_title_route"
+            android:paddingRight="@dimen/padding_icon_title_route"
+            android:layout_marginLeft="@dimen/margin_icon_title_route"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_marginLeft="@dimen/margin_left2_item_logbook"
+            android:layout_marginRight="@dimen/margin_right_item_logbook"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="FLIGHT LOG"
+                android:textColor="@color/mcc_blue"
+                android:textSize="@dimen/size_text_title_duty"
+                android:textStyle="bold"
+                android:typeface="normal" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="@color/mcc_blue" />
+        </LinearLayout>
+    </LinearLayout>
+
+
+    <aero.pilotlog.widgets.ItemsFlightView
+        android:id="@+id/item_flight_log_remarks"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_row_witch_title"
+        app:title_flight="@string/text_flight_log_remarks"
+        app:flight_type="5"
+        app:max_length="1024"
+        app:icon_type="3"
+        app:flight_log_no_icon="false"
+        app:enable_edit_text="true" />
+
+    <aero.pilotlog.widgets.ItemsFlightView
+        android:id="@+id/item_flight_log_instruction"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:title_flight="@string/text_flight_log_instruction"
+        app:flight_type="5"
+        app:max_length="1024"
+        app:icon_type="3"
+        app:flight_log_no_icon="false"
+        app:enable_edit_text="true" />
+
+    <aero.pilotlog.widgets.ItemsFlightView
+        android:id="@+id/item_flight_report"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:title_flight="JOURNEY LOG"
+        app:flight_type="5"
+        app:max_length="1024"
+        app:icon_type="3"
+        app:flight_log_no_icon="false"
+        app:enable_edit_text="true"
+        android:layout_marginBottom="@dimen/margin_left_right"/>
+
+</LinearLayout>

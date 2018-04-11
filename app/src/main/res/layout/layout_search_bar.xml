@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/height_actionbar"
+    android:id="@+id/rlSearchBar"
+    android:padding="5dp"
+    android:background="@color/event_info_gray">
+
+    <EditText
+        android:id="@+id/edtSearch"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:background="@drawable/rectangle_edit_text"
+        android:imeOptions="actionSearch"
+        android:inputType="textCapCharacters"
+        android:paddingBottom="@dimen/padding_bottom_text_search"
+        android:paddingLeft="@dimen/padding_left_text_search"
+        android:singleLine="true"
+        android:textColor="@android:color/black"
+        android:textCursorDrawable="@null"
+        android:textSize="@dimen/size_text_search"
+        android:layout_centerInParent="true"
+        android:text=""
+        android:layout_marginRight="@dimen/padding_left_text_search"
+        android:layout_centerVertical="true"/>
+
+    <Button
+        android:id="@+id/btnCancel"
+        android:layout_width="@dimen/size_button_cancel"
+        android:layout_height="@dimen/size_button_cancel"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/ic_cancel_small"
+        android:clickable="true"
+        android:focusable="true"
+        android:layout_centerVertical="true"/>
+
+    <ImageView
+        android:layout_width="@dimen/size_image_search"
+        android:layout_height="@dimen/size_image_search"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/margin_left_image_search"
+        android:layout_marginTop="@dimen/margin_top_image_search"
+        android:background="@drawable/search_loupe_left" />
+
+</RelativeLayout>

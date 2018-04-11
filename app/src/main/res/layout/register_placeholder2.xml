@@ -1,0 +1,60 @@
+<FrameLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_gravity="bottom"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:id="@+id/ll_placeholder_register_step_two"
+        android:layout_marginBottom="@dimen/login_margin_top_bottom"
+        android:layout_gravity="bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            style="@style/StyleTextViewLoginScreen"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/margin_top_bottom"
+            android:text="@string/text_need_assistance" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/metro_ui_edittext_radius"
+            android:gravity="center"
+            android:hint="@string/email_support"
+            android:enabled="false"
+            android:paddingTop="3dp"
+            android:paddingBottom="3dp"
+            android:layout_marginBottom="@dimen/login_margin_top_bottom"
+            style="@style/StyleEditTextLoginScreen"
+            android:textColorHint="@color/mcc_color_login_screen"
+            />
+        <TextView
+            android:layout_marginBottom="@dimen/margin_top_bottom"
+            style="@style/StyleTextViewLoginScreen"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/how_can_we_reach_you" />
+
+        <EditText
+            android:id="@+id/edtEmail"
+            android:tag="edtEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/metro_ui_edittext_radius"
+            android:gravity="left"
+            android:hint="@string/email_address"
+            android:inputType="textEmailAddress"
+            style="@style/StyleEditTextLoginScreen"
+            android:layout_marginBottom="5dp"
+            />
+
+        <TextView
+            style="@style/StyleTextViewLoginScreen"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="12sp"
+            android:text="@string/have_to_acknowledge_our_email_message" />
+    </LinearLayout>
+</FrameLayout>

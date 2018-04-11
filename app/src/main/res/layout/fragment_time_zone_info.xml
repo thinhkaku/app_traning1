@@ -1,0 +1,121 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@android:color/white"
+    android:orientation="vertical"
+    tools:context="aero.pilotlog.fragments.CountryInfoFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/transparent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:orientation="horizontal">
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:layout_weight="0.56">
+                    <ImageView
+                        android:id="@+id/iv_flag"
+                        android:layout_width="@dimen/size_flag_country_width"
+                        android:layout_height="@dimen/size_flag_country_height"
+                        android:layout_gravity="right"
+                        android:scaleType="fitXY"
+                        android:layout_marginLeft="@dimen/margin_left_right"
+                        android:layout_marginRight="@dimen/margin_left_right" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="top"
+                    android:layout_marginLeft="@dimen/margin_left_right"
+                    android:layout_weight="0.44"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_gravity="top"
+                        android:id="@+id/tv_city"
+                        style="@style/ItemSettingFormatTitle2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:maxLines="2" />
+
+                    <TextView
+                        android:layout_gravity="top"
+                        android:id="@+id/tv_country"
+                        style="@style/ItemSettingFormatDescriptionExtra2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:maxLines="1" />
+                </LinearLayout>
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:background="@color/grey_divider" />
+
+            <aero.pilotlog.widgets.ItemInputTextWithIcon
+                android:id="@+id/item_timezone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:input_type="8192"
+                app:isClickEnable="false"
+                app:isVisibleLineEnd="false"
+                app:title_setting="TIME ZONE" />
+            <aero.pilotlog.widgets.ItemInputTextWithIcon
+                android:id="@+id/item_local_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:input_type="8192"
+                app:isClickEnable="false"
+                app:isVisibleLineEnd="true"
+                app:title_setting="LOCAL TIME" />
+
+            <aero.pilotlog.widgets.ItemInputTextFootnote
+                android:id="@+id/item_dst_rule"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:input_type="8192"
+                app:isClickEnable="false"
+                app:isVisibleLineEnd="true"
+                app:title_setting="DST RULE" />
+
+            <LinearLayout android:id="@+id/ln_more_timezone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <aero.pilotlog.widgets.ItemInputTextFootnote
+                    android:id="@+id/item_more_timezone"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.9"
+                    app:description_setting="More Time Zone info"
+                    app:input_type="8192"
+                    app:isClickEnable="false"
+                    app:isVisibleLineEnd="false"
+                    app:title_setting="TIME ZONE" />
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="0.1"
+                    android:src="@drawable/ic_arrow" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

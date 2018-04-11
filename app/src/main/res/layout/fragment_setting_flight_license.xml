@@ -1,0 +1,162 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/background_white"
+    tools:context="aero.pilotlog.fragments.SettingFlightLicenseFragment">
+
+    <ScrollView
+        android:id="@+id/scrollView3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/event_info_gray"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:paddingLeft="10dp"
+        android:textColor="@color/black"
+        android:text="Flight License"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+        <aero.pilotlog.widgets.ItemInputText
+            android:id="@+id/item_license_class"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:input_type="8192"
+            app:maxLength="30"
+            app:tag_setting="LicenseClass"
+            app:title_setting="TYPE OF LICENSE" />
+        <aero.pilotlog.widgets.ItemInputText
+            android:id="@+id/item_license_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:input_type="8192"
+            app:maxLength="30"
+            app:tag_setting="LicenseNbr"
+            app:title_setting="LICENSE NUMBER" />
+        <aero.pilotlog.widgets.ItemInputText
+            android:id="@+id/item_license_issued"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:input_type="8192"
+            app:maxLength="30"
+            app:tag_setting="LicenseIssued"
+            app:is_select_date="true"
+            app:title_setting="DATE ISSUED" />
+        <aero.pilotlog.widgets.ItemInputText
+            android:id="@+id/item_license_valid"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:input_type="8192"
+            app:maxLength="30"
+            app:tag_setting="LicenseValid"
+            app:is_select_date="true"
+            app:title_setting="DATE VALID TILL" />
+
+        <aero.pilotlog.widgets.ItemInputText
+            android:id="@+id/item_license_2_class"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:input_type="8192"
+            app:maxLength="30"
+            app:tag_setting="License2Class"
+            app:title_setting="TYPE OF LICENSE" />
+        <aero.pilotlog.widgets.ItemInputText
+            android:id="@+id/item_license_2_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:input_type="8192"
+            app:maxLength="30"
+            app:tag_setting="License2Nbr"
+            app:title_setting="LICENSE NUMBER" />
+        <aero.pilotlog.widgets.ItemInputText
+            android:id="@+id/item_license_2_issued"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:input_type="8192"
+            app:maxLength="30"
+            app:tag_setting="License2Issued"
+            app:is_select_date="true"
+            app:title_setting="DATE ISSUED" />
+        <aero.pilotlog.widgets.ItemInputText
+            android:id="@+id/item_license_2_valid"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:input_type="8192"
+            app:maxLength="30"
+            app:tag_setting="License2Valid"
+            app:is_select_date="true"
+            app:title_setting="DATE VALID TILL" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/event_info_gray"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:paddingLeft="10dp"
+            android:textColor="@color/black"
+            android:text="Dates"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+        <aero.pilotlog.widgets.ItemInputText
+            android:id="@+id/item_license_date_begin_career"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:input_type="8192"
+            app:maxLength="30"
+            app:tag_setting="BeginCarreer"
+            app:is_select_date="true"
+            app:title_setting="BEGIN CAREER" />
+        <aero.pilotlog.widgets.ItemInputText
+            android:id="@+id/item_license_xc150"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:input_type="8192"
+            app:maxLength="30"
+            app:tag_setting="XCountry150NM"
+            app:is_select_date="true"
+            app:title_setting="XC FLIGHT (150 NM)"/>
+        <aero.pilotlog.widgets.ItemInputText
+            android:id="@+id/item_license_xc300"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:input_type="8192"
+            app:maxLength="30"
+            app:tag_setting="XCountry300NM"
+            app:is_select_date="true"
+            app:title_setting="XC FLIGHT (300 NM)"/>
+        <aero.pilotlog.widgets.ItemInputText
+            android:id="@+id/item_license_xc100"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:input_type="8192"
+            app:maxLength="30"
+            app:tag_setting="XCountryRotor100NM"
+            app:is_select_date="true"
+            app:title_setting="XC FLIGHT ROTORCRAFT (100 NM)"/>
+        <aero.pilotlog.widgets.ItemInputText
+            android:id="@+id/item_license_night_dual"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:input_type="8192"
+            app:maxLength="30"
+            app:tag_setting="NightDualNavigation"
+            app:is_select_date="true"
+            app:title_setting="DUAL NAVIGATION NIGHT"/>
+
+    </LinearLayout>
+    </ScrollView>
+
+</FrameLayout>
